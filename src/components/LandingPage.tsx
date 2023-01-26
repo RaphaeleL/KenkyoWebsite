@@ -5,15 +5,15 @@ import Autoplay from 'embla-carousel-autoplay';
 import {useRef} from "react";
 export default function LandingPage() {
     let images = [
-        "../assets/LandingPage-1.jpeg",
-        "../assets/LandingPage-2.jpeg",
-        "../assets/LandingPage-3.jpeg",
-        "../assets/LandingPage-4.jpeg",
-        "../assets/LandingPage-5.jpeg",
-        "../assets/LandingPage-6.jpeg",
-        "../assets/LandingPage-7.jpeg",
-        "../assets/LandingPage-8.jpeg",
-        "../assets/LandingPage-9.jpeg",
+        "./src/assets/LandingPage-1.jpeg",
+        "./src/assets/LandingPage-2.jpeg",
+        "./src/assets/LandingPage-3.jpeg",
+        "./src/assets/LandingPage-4.jpeg",
+        "./src/assets/LandingPage-5.jpeg",
+        "./src/assets/LandingPage-6.jpeg",
+        "./src/assets/LandingPage-7.jpeg",
+        "./src/assets/LandingPage-8.jpeg",
+        "./src/assets/LandingPage-9.jpeg",
     ];
 
     const autoplay = useRef(Autoplay({ delay: 2000 }));
@@ -27,15 +27,15 @@ export default function LandingPage() {
 
     return (
         <div className={"LandingPage"}>
-            <div className={"BackgroundImage"} />
-            {/*<Carousel
+            {/*<div className={"BackgroundImage"} />*/}
+            <Carousel
                 className={"Carousel"}
                 plugins={[autoplay.current]}
                 onMouseEnter={autoplay.current.stop}
                 onMouseLeave={autoplay.current.reset}
             >
                 {slides}
-            </Carousel>*/}
+            </Carousel>
             <div className={"Title"}>
                 Karateverein Kenkyo Rheinzabern
             </div>
