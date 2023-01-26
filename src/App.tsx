@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 import {ColorScheme, MantineProvider} from "@mantine/core";
 import {useLocalStorage} from "@mantine/hooks";
-import Colorscheme from "./components/Colorscheme/Colorscheme";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/LandingPage/LandingPage";
+import Body from "./components/Body/Body";
 
 export default function App() {
 
@@ -25,8 +25,9 @@ export default function App() {
             }}
         >
             <div className="App">
-                <Colorscheme colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}/>
+                {/*<Colorscheme colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}/>*/}
                 <LandingPage />
+                <Body />
             </div>
         </MantineProvider>
     );
