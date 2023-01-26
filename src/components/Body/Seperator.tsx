@@ -1,5 +1,12 @@
+import {Space} from "@mantine/core";
+
 export default function Seperator() {
     return (
-        <div className={"Seperator"} />
+        <>
+            <Space h="xl" />
+            <Space h="xl" />
+            <Space h="xl" />
+        </>
+
     );
 }

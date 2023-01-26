@@ -12,7 +12,7 @@ const images = [
     "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-6.jpeg",
     "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-7.jpeg",
     "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg",
-    "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-9.jpeg",
+    "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-9.jpeg", //x
 ];
 export default function ImageViewCarousel(props: any) {
     const autoplay = useRef(Autoplay({ delay: 2000 }));
