@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$white-1: #ccc8c8;
+$blur-black-1: #000000d0;
+
+.App {
+  text-align: center;
+
+  .LandingPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .Carousel {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+    }
+
+    .BackgroundImage {
+      background-image: url("./assets/LandingPage-8.jpeg");
+      background-color: #cccccc;
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .BackgroundImage:after {
+      top: 0;
+      left: 0;
+      content: "";
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      background-color: $blur-black-1;
+      z-index: -1;
+
+    }
+
+    .Title {
+      color: $white-1;
+      z-index: 1;
+      font-size: 5vw;
+    }
+
+    .scrollHint {
+      position: absolute;
+      bottom: 0px;
+      color: $white-1;
+
+      animation-name: move_scroll_hint;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .App {
+    .LandingPage {
+      .Title {
+        font-size: 15vw;
+      }
+    }
+  }
+}
+
+@keyframes move_scroll_hint {
+  0% { bottom: 0px; }
+  25% { bottom: 10px; }
+  50% { bottom: 0px; }
+  75% { bottom: 10px; }
+  100% { bottom: 0px; }
+}
