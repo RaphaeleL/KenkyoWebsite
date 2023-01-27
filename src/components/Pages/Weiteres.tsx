@@ -16,7 +16,7 @@ export default function Weiteres(props: any) {
             <LandingPage
                 subtitle={"Weiteres"}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-3.jpeg"}/>
-            <WeiteresBody />
+            <WeiteresBody lang={props.lang} />
         </>
     );
 }

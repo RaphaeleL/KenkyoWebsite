@@ -4,33 +4,28 @@ import React from "react";
 import TrainerBody from "./Trainer/TrainerBody";
 
 export default function Trainer(props: any) {
+    let current_lang = window.location.href.split("/")[3];
+
     let title1 = "Training";
 
-    if (props.currentLang === 1) {
+    if (current_lang === "de") {
         title1 = "Training";
-    } else if (props.currentLang === 2) {
+    } else if (current_lang === "ja") {
         title1 = "トレーニング";
-    } else if (props.currentLang === 3) {
+    } else if (current_lang === "un") {
         title1 = "Kepzes";
     }
 
     return (
         <>
             <Header
-                show={props.show}
                 toggle={props.toggle}
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}
-                currentLang={props.currentLang}
-                setCurrentLang={props.setCurrentLang} />
+                lang={props.lang}
+                show={props.show} />
             <LandingPage
                 subtitle={title1}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg"}/>
-            <TrainerBody
-                lang={props.lang}
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}
-                currentLang={props.currentLang} />
+            <TrainerBody lang={props.lang}/>
         </>
     );
 }

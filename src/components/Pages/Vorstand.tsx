@@ -16,7 +16,7 @@ export default function Vorstand(props: any) {
             <LandingPage
                 subtitle={"Vorstand"}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-5.jpeg"}/>
-            <VorstandBody />
+            <VorstandBody lang={props.lang}/>
         </>
     );
 }

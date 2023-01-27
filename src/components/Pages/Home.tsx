@@ -6,32 +6,24 @@ import HomeBody from "./Home/HomeBody";
 export default function Home(props: any) {
     let title1 = "Karate Rheinzabern";
 
-    if (props.lang === 1) {
+    if (props.lang === "en") {
         title1 = "Karate Rheinzabern";
-    } else if (props.lang === 2) {
+    } else if (props.lang === "ja") {
         title1 = "空手ラインツァーベルン";
-    } else if (props.lang === 3) {
+    } else if (props.lang === "un") {
         title1 = "Karate Club Rheinzabern";
     }
 
     return (
         <div className={"Home"}>
             <Header
-                lang={props.lang}
-                show={props.show}
                 toggle={props.toggle}
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}
-                currentLang={props.currentLang}
-                setCurrentLang={props.setCurrentLang} />
+                lang={props.lang}
+                show={props.show} />
             <LandingPage
                 subtitle={title1}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg"}/>
-            <HomeBody
-                lang={props.lang}
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}
-                currentLang={props.currentLang} />
+            <HomeBody lang={props.lang} />
         </div>
     );
 }

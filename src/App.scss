@@ -19,6 +19,10 @@ $gray-2: rgba(245, 244, 244, 0.44);
   position: absolute;
   height: 10vh;
   width: 100vw;
+
+  .languageChooser:hover {
+    cursor: pointer;
+  }
 }
 
 a {

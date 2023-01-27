@@ -5,23 +5,24 @@ import {BsPersonCheck} from "@react-icons/all-files/bs/BsPersonCheck";
 import {IoTrophyOutline} from "@react-icons/all-files/io5/IoTrophyOutline";
 import {BsPencil} from "@react-icons/all-files/bs/BsPencil";
 
-export default function Success(props: any) {
+export default function Success() {
+    let current_lang = window.location.href.split("/")[3];
     let title1 = "Schwarze Gürtel";
     let title2 = "Trainer";
     let title3 = "Champions";
     let title4 = "Prüfer";
 
-    if (props.currentLang === 1) {
+    if (current_lang === "en") {
         title1 = "Black Belt";
         title2 = "Trainer";
         title3 = "Champions";
         title4 = "Exmanier";
-    } else if (props.currentLang === 2) {
+    } else if (current_lang === "ja") {
         title1 = "有段者";
         title2 = "コーチ";
         title3 = "チャンピオンズ";
         title4 = "審査員";
-    } else if (props.currentLang === 3) {
+    } else if (current_lang === "un") {
         title1 = "Fekete öv";
         title2 = "Edző";
         title3 = "Bajnokok";

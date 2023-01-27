@@ -7,10 +7,10 @@ export default function HomeBody(props: any) {
     return (
         <div className={"HomeBody"}>
             <Seperator />
-            <Success currentLang={props.currentLang}/>
+            <Success
+                lang={props.lang} />
             <FooterBody
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}/>
+                lang={props.lang} />
         </div>
     );
 }

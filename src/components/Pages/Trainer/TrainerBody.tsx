@@ -6,6 +6,8 @@ import FooterBody from "../Footer/FooterBody";
 import React from "react";
 
 export default function TrainerBody(props: any) {
+    let current_lang = window.location.href.split("/")[3];
+
     let title1 = "Unser Dojo";
     let text1 = "Wir freuen uns darauf, Sie in unserer Karate-Sparte begrüßen zu dürfen. Unsere Sporthalle befindet sich in einer günstigen Lage und ist leicht zu erreichen. Bitte zögern Sie nicht uns zu kontaktieren, falls Sie Hilfe bei der Anfahrt benötigen.";
     let title2 = "Unsere Trainingszeiten";
@@ -16,7 +18,7 @@ export default function TrainerBody(props: any) {
     let times3 = "Fr: 18:00 - 20:30";
     let times4 = "Sa: 08:00 - 12:00";
     let place = "Dojo";
-    if (props.currentLang === 1) {
+    if (current_lang === "en") {
         title1 = "Our Dojo";
         text1 = "We look forward to welcoming you to our karate division. Our gym is conveniently located and easy to get to. Please do not hesitate to contact us if you need any help with directions.";
         title2 = "Our training times";
@@ -26,7 +28,7 @@ export default function TrainerBody(props: any) {
         times3 = "Fr: 18:00 - 20:30";
         times4 = "Sa: 08:00 - 12:00";
         place = "Dojo";
-    } else if (props.currentLang === 2) {
+    } else if (current_lang === "ja") {
         title1 = "私たちの道場";
         text1 = "空手部へのご参加をお待ちしております。 私たちのスポーツホールは、便利な場所にあり、簡単にアクセスできます。案内が必要な場合は、ご遠慮なくお問い合わせください。";
         title2 = "トレーニング時間";
@@ -36,7 +38,7 @@ export default function TrainerBody(props: any) {
         times3 = "金曜日: 18:00 - 20:30";
         times4 = "土曜日: 08:00 - 12:00";
         place = "挌技場";
-    } else if (props.currentLang === 3) {
+    } else if (current_lang === "un") {
         title1 = "A mi Dojo-nk";
         text1 = "Szeretettel várjuk Önt karate részlegünkben. Edzőtermünk kényelmes helyen található és könnyen megközelíthető. Kérjük, ne habozzon kapcsolatba lépni velünk, ha segítségre van szüksége az útbaigazítással kapcsolatban.";
         title2 = "Edzésidőpontjaink";
