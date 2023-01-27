@@ -11,6 +11,7 @@ $white-1: #ccc8c8;
 $blur-black-1: #000000d0;
 $gray-1: #dedede;
 $red-1: #5b0204;
+$gray-2: rgba(245, 244, 244, 0.44);
 
 .App {
   text-align: center;
@@ -122,7 +123,6 @@ $red-1: #5b0204;
     }
 
     .BackgroundImage {
-      background-image: url("./assets/LandingPage-3.jpeg");
       background-color: #cccccc;
       background-repeat: no-repeat, repeat;
       background-position: center;
@@ -164,6 +164,8 @@ $red-1: #5b0204;
         color: $blur-black-1;
         z-index: 1;
         font-size: 8vw;
+        font-family: o-wee-ental;
+        src: url("./assets/o-wee-ental.ttf");
       }
 
       .Subtitle {
@@ -188,11 +190,26 @@ $red-1: #5b0204;
   .Body {
     height: 100vh;
 
-    .Seperator {
-      background: white;
-      width: 100vw;
-      height: 5vh;
+    .Success {
+      background-color: $gray-2;
+      border-radius: 10px;
+      padding: 10px;
+      margin-left: 10vw;
+      margin-right: 10vw;
+
+      .SuccessItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .Card {
+        float: right;
+
+      }
     }
+
   }
 
 }

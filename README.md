@@ -6,7 +6,7 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 
 ## TODO
 
-- [x] Theme Switcher (Light Theme Default) 
+- [x] Theme Switcher (Light Theme Default)
+- [x] Routes
 - Markdown Blogs
 - SEO
-- Routes
