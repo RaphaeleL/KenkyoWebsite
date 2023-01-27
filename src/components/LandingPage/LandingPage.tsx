@@ -2,11 +2,8 @@ import {SlArrowDown} from "react-icons/sl";
 import ImageView from "./ImageView";
 
 export default function LandingPage(props: any) {
-    // TODO: zuerst Title dann Subtitle anzeigen -> siehe Sestertius Image Gen.
     return (
         <div className={"LandingPage"}>
-
-            {/* <ImageViewCarousel /> */}
             <ImageView imgurl={props.imgurl}/>
 
             <div className={"TextContainer"}>
@@ -14,7 +11,7 @@ export default function LandingPage(props: any) {
                     Kenkyo
                 </div>
                 <div className={"Subtitle"}>
-                    Karateverein Rheinzabern
+                    {props.subtitle}
                 </div>
             </div>
 

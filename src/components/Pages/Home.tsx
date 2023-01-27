@@ -7,7 +7,9 @@ export default function Home() {
     return (
         <>
             <Header />
-            <LandingPage imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg"}/>
+            <LandingPage
+                subtitle={"Karate"}
+                imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg"}/>
             <Body />
         </>
     );

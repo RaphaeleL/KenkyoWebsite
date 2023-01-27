@@ -17,7 +17,9 @@ $gray-2: rgba(245, 244, 244, 0.44);
   text-align: center;
 
   .HeaderMobile {
-    z-index: 6;
+    z-index: 11;      // Header is overlayed by Body
+                      // put Header inside Body and
+                      // make it sticky?
     position: fixed;
 
     .DesktopHeader {
@@ -64,6 +66,7 @@ $gray-2: rgba(245, 244, 244, 0.44);
     }
 
     .OpenMenu {
+      color: black;
       postion: fixed;
       top: 0;
       right: 0;
@@ -110,11 +113,14 @@ $gray-2: rgba(245, 244, 244, 0.44);
   }
 
   .LandingPage {
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+    position: fixed;
 
     .Carousel {
       width: 100vw;
@@ -172,6 +178,8 @@ $gray-2: rgba(245, 244, 244, 0.44);
         color: $blur-black-1;
         z-index: 1;
         font-size: 3vw;
+        font-family: o-wee-ental;
+        src: url("./assets/o-wee-ental.ttf");
       }
     }
 
@@ -179,7 +187,6 @@ $gray-2: rgba(245, 244, 244, 0.44);
       position: absolute;
       bottom: 0;
       color: $white-1;
-
       animation-name: move_scroll_hint;
       animation-duration: 4s;
       animation-iteration-count: infinite;
@@ -188,7 +195,13 @@ $gray-2: rgba(245, 244, 244, 0.44);
   }
 
   .Body {
-    height: 100vh;
+    margin-top: 100vh;
+    position: absolute;
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    z-index: 100;
+    border-radius: 50px;
 
     .Success {
       background-color: $gray-2;

@@ -6,7 +6,9 @@ export default function Trainer() {
     return (
         <>
             <Header />
-            <LandingPage imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg"}/>
+            <LandingPage
+                subtitle={"Trainer"}
+                imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg"}/>
             Trainer
         </>
     );

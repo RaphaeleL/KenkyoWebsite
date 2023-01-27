@@ -6,7 +6,9 @@ export default function Weiteres() {
     return (
         <>
             <Header />
-            <LandingPage imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-3.jpeg"}/>
+            <LandingPage
+                subtitle={"Weiteres"}
+                imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-3.jpeg"}/>
             Weiters
         </>
     );
