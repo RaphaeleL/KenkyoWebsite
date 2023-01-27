@@ -9,7 +9,7 @@ export default function FooterBody(props: any) {
                 <Image
                     onClick={props.toggleLang}
                     className={"Language"}
-                    width={"8vw"}
+                    width={"3vw"}
                     radius="md"
                     src={props.currentLangString}
                     alt="Flag"

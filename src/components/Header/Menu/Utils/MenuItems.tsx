@@ -1,4 +1,3 @@
-import {Center, Image} from "@mantine/core";
 import React from "react";
 
 export default function MenuItems() {

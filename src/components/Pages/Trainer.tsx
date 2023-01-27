@@ -26,7 +26,11 @@ export default function Trainer(props: any) {
             <LandingPage
                 subtitle={title1}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg"}/>
-            <TrainerBody currentLang={props.currentLang} />
+            <TrainerBody
+                lang={props.lang}
+                toggleLang={props.toggleLang}
+                currentLangString={props.currentLangString}
+                currentLang={props.currentLang} />
         </>
     );
 }

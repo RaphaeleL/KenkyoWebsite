@@ -8,11 +8,17 @@ import Vorstand from "./components/Pages/Vorstand";
 import Weiteres from "./components/Pages/Weiteres";
 import NoPage from "./components/Pages/NoPage";
 import {hideNotification, NotificationsProvider, showNotification} from "@mantine/notifications";
+import {useLocalStorage} from "@mantine/hooks";
 
 export default function App() {
     const [currentLang, setCurrentLang] = useState(0);
     const [currentLangString, setCurrentLangString] = useState("https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/GER.png");
     const [show, setShow] = useState(false);
+    const [lang, setLang] = useLocalStorage<number>({
+        key: 'current-choosen-language',
+        defaultValue: 0,
+        getInitialValueInEffect: true,
+    });
 
     function toggleLang() {
         let ger = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/GER.png";
@@ -49,6 +55,7 @@ export default function App() {
             hideNotification("jap-banner");
             setCurrentLangString(ger);
         }
+        setLang(currentLang);
     }
 
     function toggle() {
@@ -67,6 +74,7 @@ export default function App() {
                             <Route path="/">
                                 <Route index path="/" element={
                                     <Home
+                                        lang={lang}
                                         show={show}
                                         toggle={toggle}
                                         toggleLang={toggleLang}
@@ -76,6 +84,7 @@ export default function App() {
                                 } />
                                 <Route path="/training" element={
                                     <Trainer
+                                        lang={lang}
                                         show={show}
                                         toggle={toggle}
                                         toggleLang={toggleLang}
@@ -85,6 +94,7 @@ export default function App() {
                                 } />
                                 <Route path="/vorstand" element={
                                     <Vorstand
+                                        lang={lang}
                                         show={show}
                                         toggle={toggle}
                                         toggleLang={toggleLang}
@@ -94,6 +104,7 @@ export default function App() {
                                 } />
                                 <Route path="/weiteres" element={
                                     <Weiteres
+                                        lang={lang}
                                         show={show}
                                         toggle={toggle}
                                         toggleLang={toggleLang}

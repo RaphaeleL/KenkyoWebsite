@@ -4,8 +4,6 @@ import OpenButton from "./Utils/OpenButton";
 import DesktopMenu from "./DesktopMenu";
 export default function Menu(props: any) {
 
-    console.log(props.show);
-
     if (props.show) {
         return <MobileMenu
             show={props.show}

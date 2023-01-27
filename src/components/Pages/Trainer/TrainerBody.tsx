@@ -2,6 +2,8 @@ import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
 import {Container, Text} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
 import MyContent from "../../Utils/MyContent";
+import FooterBody from "../Footer/FooterBody";
+import React from "react";
 
 export default function TrainerBody(props: any) {
     let title1 = "Unser Dojo";
@@ -69,6 +71,9 @@ export default function TrainerBody(props: any) {
                 <MyContent content={<Text fs="italic">{times3}</Text>}/>
                 <MyContent content={<Text td="line-through" fs="italic">{times4}</Text>}/>
             </Container>
+            <FooterBody
+                toggleLang={props.toggleLang}
+                currentLangString={props.currentLangString}/>
         </div>
     );
 }

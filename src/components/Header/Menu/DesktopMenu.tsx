@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {Container, Flex, SimpleGrid} from "@mantine/core";
+import {Flex, SimpleGrid} from "@mantine/core";
 import Logo from "../Logo";
 import LogoName from "../LogoName";
 import MenuItems from "./Utils/MenuItems";
-import { Image } from '@mantine/core';
 
 export default function DesktopMenu(props: any) {
     const [offset, setOffset] = useState(0);

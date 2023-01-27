@@ -14,6 +14,13 @@ $gray-1: #dedede;
 $red-1: #5b0204;
 $gray-2: rgba(245, 244, 244, 0.44);
 
+.Footer {
+  bottom: 0;
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+}
+
 a {
   display: block;
   color: $blur-black-1;
@@ -211,13 +218,6 @@ a {
 
   .HomeBody {
 
-    .Footer {
-      bottom: 0;
-      position: absolute;
-      height: 10vh;
-      width: 100vw;
-    }
-
     .Success {
       background-color: $gray-2;
       border-radius: 10px;
@@ -243,7 +243,7 @@ a {
     margin-top: 100vh;
     position: absolute;
     background-color: white;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     z-index: 100;
     border-radius: 50px;
