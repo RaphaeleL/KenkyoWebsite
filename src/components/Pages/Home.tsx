@@ -3,14 +3,24 @@ import LandingPage from "../LandingPage/LandingPage";
 import React from "react";
 import HomeBody from "./Home/HomeBody";
 
-export default function Home() {
+export default function Home(props: any) {
+    let title1 = "Karate Rheinzabern";
+
+    if (props.currentLang === 1) {
+        title1 = "Karate Rheinzabern";
+    } else if (props.currentLang === 2) {
+        title1 = "空手ラインツァーベルン";
+    } else if (props.currentLang === 3) {
+        title1 = "Karate Club Rheinzabern";
+    }
+
     return (
         <div className={"Home"}>
-            <Header />
+            <Header currentLang={props.currentLang} setCurrentLang={props.setCurrentLang} />
             <LandingPage
-                subtitle={"Karate Rheinzabern" }
+                subtitle={title1}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg"}/>
-            <HomeBody />
+            <HomeBody currentLang={props.currentLang} />
         </div>
     );
 }

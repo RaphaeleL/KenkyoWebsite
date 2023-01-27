@@ -22,7 +22,6 @@ a {
   text-decoration: none;
 }
 
-
 .leaflet-container {
   height: 400px;
   width: 100%;
@@ -39,6 +38,14 @@ a {
       width: 100vw;
       backdrop-filter: blur(10px);
       background-color: $gray-2;
+
+      .Language {
+        width: 3vw;
+      }
+
+      .Language:hover {
+        cursor: pointer;
+      }
 
       .Logo, .LogoName {
         display: flex;
