@@ -27,6 +27,10 @@ a {
   width: 100%;
 }
 
+.Language {
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 
@@ -38,10 +42,6 @@ a {
       width: 100vw;
       backdrop-filter: blur(10px);
       background-color: $gray-2;
-
-      .Language {
-        width: 3vw;
-      }
 
       .Language:hover {
         cursor: pointer;
@@ -118,7 +118,7 @@ a {
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 4vw; // TODO: Mobile Size
+            font-size: 4vw;
           }
         }
       }
@@ -211,6 +211,13 @@ a {
 
   .HomeBody {
 
+    .Footer {
+      bottom: 0;
+      position: absolute;
+      height: 10vh;
+      width: 100vw;
+    }
+
     .Success {
       background-color: $gray-2;
       border-radius: 10px;
@@ -236,11 +243,10 @@ a {
     margin-top: 100vh;
     position: absolute;
     background-color: white;
-    height: 200vh;
+    height: 100vh;
     width: 100vw;
     z-index: 100;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius: 50px;
   }
 
 }
@@ -264,6 +270,9 @@ a {
   .App {
     .HeaderMobile {
       .Menu {
+        ul li ul li {
+          font-size: 6vw;
+        }
         ul li a {
           font-size: 8vw;
         }
@@ -294,10 +303,10 @@ a {
     .LandingPage {
       .TextContainer {
         .Title {
-          font-size: 20vw;
+          font-size: 12vw;
         }
         .Subtitle {
-          font-size: 10vw;
+          font-size: 6vw;
         }
       }
     }
