@@ -18,12 +18,57 @@ $red-1: #5b0204;
   .HeaderMobile {
     z-index: 6;
     position: fixed;
+
+    .DesktopHeader {
+      width: 100vw;
+      backdrop-filter: blur(10px);
+
+      .Logo, .LogoName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          float: right;
+
+          a {
+            display: block;
+            color: $blur-black-1;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .Header-fade-in {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+
+    .Header-fade-out {
+      opacity: 0;
+      transition: opacity 500ms ease-out;
+    }
+
     .OpenMenu {
       postion: fixed;
       top: 0;
       right: 0;
       z-index: 5;
     }
+
     .Menu {
       background-color: white;
       width: 100vw;
@@ -31,20 +76,25 @@ $red-1: #5b0204;
       display: flex;
       align-items: center;
       justify-content: center;
+
       .toggle {
         position: absolute;
         z-index: 5;
         top: 0;
         left: 0;
       }
+
       .toggle:hover {
         cursor: pointer;
       }
+
       ul {
         margin: 0;
         padding: 0;
         overflow: hidden;
+
         li {
+
           a {
             display: block;
             color: $blur-black-1;
@@ -125,7 +175,7 @@ $red-1: #5b0204;
 
     .scrollHint {
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       color: $white-1;
 
       animation-name: move_scroll_hint;
@@ -164,6 +214,13 @@ $red-1: #5b0204;
 
 @media only screen and (max-width: 600px) {
   .App {
+    .HeaderMobile {
+      .Menu {
+        ul li a {
+          font-size: 8vw;
+        }
+      }
+    }
     .LandingPage {
       .TextContainer {
         .Title {
@@ -179,6 +236,13 @@ $red-1: #5b0204;
 
 @media only screen and (max-width: 450px) {
   .App {
+    .HeaderMobile {
+      .Menu {
+        ul li a {
+          font-size: 8vw;
+        }
+      }
+    }
     .LandingPage {
       .TextContainer {
         .Title {
