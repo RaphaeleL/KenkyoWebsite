@@ -14,7 +14,20 @@ $gray-1: #dedede;
 $red-1: #5b0204;
 $gray-2: rgba(245, 244, 244, 0.44);
 
-$perspective: 1px;
+a {
+  display: block;
+  color: $blur-black-1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
+
 .App {
   text-align: center;
 
@@ -44,14 +57,6 @@ $perspective: 1px;
 
         li {
           float: right;
-
-          a {
-            display: block;
-            color: $blur-black-1;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-          }
         }
       }
     }

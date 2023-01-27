@@ -1,5 +1,6 @@
 import {SlArrowDown} from "react-icons/sl";
 import ImageView from "./ImageView";
+import React from "react";
 
 export default function LandingPage(props: any) {
     return (

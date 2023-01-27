@@ -8,7 +8,7 @@ export default function Trainer() {
         <>
             <Header />
             <LandingPage
-                subtitle={"Trainer"}
+                subtitle={"Training"}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg"}/>
             <TrainerBody />
         </>
