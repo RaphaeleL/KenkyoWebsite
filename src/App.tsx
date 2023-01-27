@@ -6,6 +6,7 @@ import Home from "./components/Pages/Home";
 import Trainer from "./components/Pages/Trainer";
 import Vorstand from "./components/Pages/Vorstand";
 import Weiteres from "./components/Pages/Weiteres";
+import NoPage from "./components/Pages/NoPage";
 
 export default function App() {
     return (
@@ -21,7 +22,7 @@ export default function App() {
                             <Route path="/trainer" element={<Trainer />} />
                             <Route path="/vorstand" element={<Vorstand />} />
                             <Route path="/weiteres" element={<Weiteres />} />
-                            {/*<Route path="*" element={<NoPage />} />*!/*/}
+                            <Route path="*" element={<NoPage />} />
                         </Route>
                     </Routes>
                 </BrowserRouter>
