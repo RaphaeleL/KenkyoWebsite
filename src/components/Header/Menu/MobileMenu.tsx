@@ -6,7 +6,7 @@ export default function MobileMenu(props: any) {
     return (
         <div className={"Menu"} id="toggle" >
             <GrClose size={50}  className={"toggle"} onClick={props.toggle}/>
-            <MenuItems lang={props.lang}/>
+            <MenuItems />
         </div>
     );
 }

@@ -44,7 +44,7 @@ export default function DesktopMenu(props: any) {
                         <Logo />
                         <LogoName />
                     </SimpleGrid>
-                    <MenuItems lang={props.lang}/>
+                    <MenuItems />
                 </SimpleGrid>
             </Flex>
         </div>

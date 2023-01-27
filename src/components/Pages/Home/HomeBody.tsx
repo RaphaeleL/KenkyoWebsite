@@ -7,10 +7,8 @@ export default function HomeBody(props: any) {
     return (
         <div className={"HomeBody"}>
             <Seperator />
-            <Success
-                lang={props.lang} />
-            <FooterBody
-                lang={props.lang} />
+            <Success />
+            <FooterBody />
         </div>
     );
 }

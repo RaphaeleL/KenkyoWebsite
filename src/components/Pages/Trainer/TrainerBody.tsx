@@ -73,9 +73,7 @@ export default function TrainerBody(props: any) {
                 <MyContent content={<Text fs="italic">{times3}</Text>}/>
                 <MyContent content={<Text td="line-through" fs="italic">{times4}</Text>}/>
             </Container>
-            <FooterBody
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}/>
+            <FooterBody />
         </div>
     );
 }

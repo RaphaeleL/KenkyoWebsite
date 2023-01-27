@@ -5,9 +5,7 @@ export default function VorstandBody(props: any) {
     return (
         <div className={"VorstandBody"}>
             Vorstand
-            <FooterBody
-                toggleLang={props.toggleLang}
-                currentLangString={props.currentLangString}/>
+            <FooterBody />
         </div>
     );
 }
