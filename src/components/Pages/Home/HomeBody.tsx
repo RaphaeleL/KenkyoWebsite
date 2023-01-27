@@ -1,11 +1,10 @@
 import Seperator from "./Seperator";
 import Success from "./Success";
-import Header from "../Header/Header";
 import React from "react";
 
-export default function Body() {
+export default function HomeBody() {
     return (
-        <div className={"Body"}>
+        <div className={"HomeBody"}>
             <Seperator />
             <Success />
         </div>

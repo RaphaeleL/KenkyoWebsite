@@ -8,23 +8,24 @@ body {
 }
 
 $white-1: #ccc8c8;
+$white-2: #f6f5f5;
 $blur-black-1: #000000d0;
 $gray-1: #dedede;
 $red-1: #5b0204;
 $gray-2: rgba(245, 244, 244, 0.44);
 
+$perspective: 1px;
 .App {
   text-align: center;
 
   .HeaderMobile {
-    z-index: 11;      // Header is overlayed by Body
-                      // put Header inside Body and
-                      // make it sticky?
+    z-index: 101;
     position: fixed;
 
     .DesktopHeader {
       width: 100vw;
       backdrop-filter: blur(10px);
+      background-color: $gray-2;
 
       .Logo, .LogoName {
         display: flex;
@@ -164,17 +165,19 @@ $gray-2: rgba(245, 244, 244, 0.44);
 
     .TextContainer {
       position: absolute;
-      top: 5vh;
+      top: 15vh;
 
       .Title {
         color: $blur-black-1;
         z-index: 1;
         font-size: 8vw;
+        letter-spacing: 20px;
         font-family: o-wee-ental;
         src: url("./assets/o-wee-ental.ttf");
       }
 
       .Subtitle {
+        letter-spacing: 15px;
         color: $blur-black-1;
         z-index: 1;
         font-size: 3vw;
@@ -194,14 +197,7 @@ $gray-2: rgba(245, 244, 244, 0.44);
 
   }
 
-  .Body {
-    margin-top: 100vh;
-    position: absolute;
-    background-color: white;
-    height: 200vh;
-    width: 100vw;
-    z-index: 100;
-    border-radius: 50px;
+  .HomeBody {
 
     .Success {
       background-color: $gray-2;
@@ -219,10 +215,20 @@ $gray-2: rgba(245, 244, 244, 0.44);
 
       .Card {
         float: right;
-
       }
     }
 
+  }
+
+  .HomeBody, .TrainerBody, .VorstandBody, .WeiteresBody {
+    margin-top: 100vh;
+    position: absolute;
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    z-index: 100;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 
 }
