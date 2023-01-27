@@ -1,11 +1,12 @@
-import {Space, Text} from "@mantine/core";
+import {Space, Text, Title} from "@mantine/core";
 import React from "react";
 
 export default function MyTitle(props: any) {
     return (
         <div>
-            <Text fw={700} fz="md">{props.content}</Text>
-            <Space h="xs" />
+            <Space h={"xl"} />
+            <Title order={1}>{props.content}</Title>
+            <Space h={"xl"} />
         </div>
     );
 }

@@ -19,7 +19,7 @@ export default function App() {
                     <Routes>
                         <Route path="/">
                             <Route index path="/" element={<Home />} />
-                            <Route path="/trainer" element={<Trainer />} />
+                            <Route path="/training" element={<Trainer />} />
                             <Route path="/vorstand" element={<Vorstand />} />
                             <Route path="/weiteres" element={<Weiteres />} />
                             <Route path="*" element={<NoPage />} />
