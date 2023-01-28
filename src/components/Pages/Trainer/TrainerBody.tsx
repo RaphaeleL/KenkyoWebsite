@@ -5,58 +5,56 @@ import MyContent from "../../Utils/MyContent";
 import FooterBody from "../Footer/FooterBody";
 import React from "react";
 import Seperator from "../Home/Seperator";
+import {succ} from "../Home/Content";
+import {dojo, times} from "./Content";
 
 export default function TrainerBody() {
     let current_lang = window.location.href.split("/")[3];
 
-    let title1 = "Unser Dojo";
-    let text1 = "Wir freuen uns darauf, Sie in unserer Karate-Sparte begrüßen zu dürfen. Unsere Sporthalle befindet sich in einer günstigen Lage und ist leicht zu erreichen. Bitte zögern Sie nicht uns zu kontaktieren, falls Sie Hilfe bei der Anfahrt benötigen.";
-    let title2 = "Unsere Trainingszeiten";
-    let text2 = "Unsere Karate-Sparte bietet regelmäßige Trainingseinheiten an drei Tagen in der Woche an. Dienstags und Donnerstags finden die Trainings von 18:00 Uhr bis 20:30 Uhr statt, während Freitags von 18:00 Uhr bis 20:30 Uhr spezielles Training für Fortgeschrittene  angeboten wird. Für diejenigen, die ihre Fähigkeiten auf die nächste Stufe bringen möchten, bieten wir auch ein Spezialtraining am Samstag von 8:00 Uhr bis 12:00 Uhr an.";
+    let dojo_title = dojo.de.title;
+    let dojo_text = dojo.de.text;
+    let time_title = times.de.title;
+    let time_text = times.de.title;
+    let times1 = times.de.title;
+    let times2 = times.de.title;
+    let times3 = times.de.title;
+    let times4 = times.de.title;
 
-    let times1 = "Di: 18:00 - 20:30";
-    let times2 = "Do: 18:00 - 20:30";
-    let times3 = "Fr: 18:00 - 20:30";
-    let times4 = "Sa: 08:00 - 12:00";
-    let place = "Dojo";
     if (current_lang === "en") {
-        title1 = "Our Dojo";
-        text1 = "We look forward to welcoming you to our karate division. Our gym is conveniently located and easy to get to. Please do not hesitate to contact us if you need any help with directions.";
-        title2 = "Our training times";
-        text2 = "Our karate division offers regular training sessions on three days in the week. On Tuesdays and Thursdays, training sessions are held from 18:00 to 20:30 while on Fridays from 18:00 to 20:30 special training for advanced students  is offered. For those who want to take their skills to the next level, we also offer special training on Saturdays from 8:00 am to 12:00 noon.";
-        times1 = "Tu: 18:00 - 20:30";
-        times2 = "Th: 18:00 - 20:30";
-        times3 = "Fr: 18:00 - 20:30";
-        times4 = "Sa: 08:00 - 12:00";
-        place = "Dojo";
+        dojo_title = dojo.en.title;
+        dojo_text = dojo.en.text;
+        time_title = times.en.title;
+        time_text = times.en.title;
+        times1 = times.en.title;
+        times2 = times.en.title;
+        times3 = times.en.title;
+        times4 = times.en.title;
     } else if (current_lang === "ja") {
-        title1 = "私たちの道場";
-        text1 = "空手部へのご参加をお待ちしております。 私たちのスポーツホールは、便利な場所にあり、簡単にアクセスできます。案内が必要な場合は、ご遠慮なくお問い合わせください。";
-        title2 = "トレーニング時間";
-        text2 = "空手部では週3日、定期的に練習を行っています。火曜日と木曜日は18時から20時30分まで、金曜日は18時から20時30分まで、上級者向けの特別なトレーニングが行われます。さらにレベルアップしたい方のために、土曜日の8:00～12:00に特別講習も行っています。";
-        times1 = "火曜日 : 18:00 - 20:30";
-        times2 = "木曜日: 18:00 - 20:30";
-        times3 = "金曜日: 18:00 - 20:30";
-        times4 = "土曜日: 08:00 - 12:00";
-        place = "挌技場";
+        dojo_title = dojo.ja.title;
+        dojo_text = dojo.ja.text;
+        time_title = times.ja.title;
+        time_text = times.ja.text;
+        times1 = times.ja.title;
+        times2 = times.ja.title;
+        times3 = times.ja.title;
+        times4 = times.ja.title;
     } else if (current_lang === "un") {
-        title1 = "A mi Dojo-nk";
-        text1 = "Szeretettel várjuk Önt karate részlegünkben. Edzőtermünk kényelmes helyen található és könnyen megközelíthető. Kérjük, ne habozzon kapcsolatba lépni velünk, ha segítségre van szüksége az útbaigazítással kapcsolatban.";
-        title2 = "Edzésidőpontjaink";
-        text2 = "Karate szakosztályunk a hét három napján rendszeres edzéseket tart. Kedden és csütörtökön 18:00 és 20:30 között tartjuk az edzéseket, míg pénteken 18:00 és 20:30 között speciális edzéseket kínálunk a haladóknak. Azok számára, akik szeretnék tudásukat a következő szintre emelni, szombatonként 8:00 és 12:00 óra között speciális edzéseket is kínálunk.";
-        times1 = "Kedd: 18:00 - 20:30";
-        times2 = "Csütörtök: 18:00 - 20:30";
-        times3 = "Péntek : 18:00 - 20:30";
-        times4 = "Szombat\n: 08:00 - 12:00";
-        place = "Dojo";
+        dojo_title = dojo.un.title;
+        dojo_text = dojo.un.text;
+        time_title = times.un.title;
+        time_text = times.un.text;
+        times1 = times.un.title;
+        times2 = times.un.title;
+        times3 = times.un.title;
+        times4 = times.un.title;
     }
 
     return (
         <div className={"TrainerBody"}>
             <Seperator />
             <Container>
-                <MyTitle content={title1} />
-                <MyContent content={text1} />
+                <MyTitle content={dojo_title} />
+                <MyContent content={dojo_text} />
 
                 <MapContainer center={[49.105648, 8.281833]} zoom={18} scrollWheelZoom={false}>
                     <TileLayer
@@ -64,14 +62,14 @@ export default function TrainerBody() {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={[49.105648, 8.281833]}>
-                        <Popup>{place}</Popup>
+                        <Popup>Dojo</Popup>
                     </Marker>
                 </MapContainer>
 
                 <Seperator />
 
-                <MyTitle content={title2} />
-                <MyContent content={text2} />
+                <MyTitle content={time_title} />
+                <MyContent content={time_text} />
                 <MyContent content={<Text fs="italic">{times1}</Text>}/>
                 <MyContent content={<Text fs="italic">{times2}</Text>}/>
                 <MyContent content={<Text fs="italic">{times3}</Text>}/>

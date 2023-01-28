@@ -3,7 +3,7 @@ import React from "react";
 import Seperator from "../Home/Seperator";
 import {Flex, Title, Text, Space} from "@mantine/core";
 import FloatingElement from "../../FloatingElement/FloatingElement";
-import MyTitle from "../../Utils/MyTitle";
+import {news1, news2,} from "./Content";
 
 function NewsBox(props: any) {
     return (
@@ -22,28 +22,10 @@ function NewsBox(props: any) {
 }
 
 export default function NewsBody() {
-    let current_lang = window.location.href.split("/")[3];
-
-    let pagetitle = "News";
-
-    if (current_lang === "de") {
-        pagetitle = "News";
-    } else if (current_lang === "ja") {
-        pagetitle = "ニュース";
-    } else if (current_lang === "un") {
-        pagetitle = "Hírek";
-    }
-
-    let image_url = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg";
-    let title1 = "Titel"
-    let text1 = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "
-    let fulltext1 = text1 + text1 + text1;
 
     return (
         <div className={"NewsBody"}>
             <Seperator />
-
-            <MyTitle content={pagetitle} />
 
             <Flex
                 mih={50}
@@ -54,22 +36,22 @@ export default function NewsBody() {
                 wrap="wrap"
             >
                 <NewsBox
-                    url={image_url}
-                    title={title1}
-                    text={text1}
-                    full_content={fulltext1}
+                    url={news1.image_url}
+                    title={news1.de_title}
+                    text={news1.de_text}
+                    full_content={news1.de_fulltext}
                 />
                 <NewsBox
-                    url={image_url}
-                    title={title1}
-                    text={text1}
-                    full_content={fulltext1}
+                    url={news2.image_url}
+                    title={news2.de_title}
+                    text={news2.de_text}
+                    full_content={news2.de_fulltext}
                 />
                 <NewsBox
-                    url={image_url}
-                    title={title1}
-                    text={text1}
-                    full_content={fulltext1}
+                    url={news1.image_url}
+                    title={news1.de_title}
+                    text={news1.de_text}
+                    full_content={news1.de_fulltext}
                 />
             </Flex>
             <FooterBody />

@@ -4,29 +4,31 @@ import {GiBlackBelt} from "@react-icons/all-files/gi/GiBlackBelt";
 import {BsPersonCheck} from "@react-icons/all-files/bs/BsPersonCheck";
 import {IoTrophyOutline} from "@react-icons/all-files/io5/IoTrophyOutline";
 import {BsPencil} from "@react-icons/all-files/bs/BsPencil";
+import {succ} from "./Content";
 
 export default function Success() {
     let current_lang = window.location.href.split("/")[3];
-    let title1 = "Schwarze Gürtel";
-    let title2 = "Trainer";
-    let title3 = "Champions";
-    let title4 = "Prüfer";
+
+    let title1 = succ.de.black;
+    let title2 = succ.de.trainer;
+    let title3 = succ.de.champ;
+    let title4 = succ.de.exam;
 
     if (current_lang === "en") {
-        title1 = "Black Belt";
-        title2 = "Trainer";
-        title3 = "Champions";
-        title4 = "Exmanier";
+        title1 = succ.en.black;
+        title2 = succ.en.trainer;
+        title3 = succ.en.champ;
+        title4 = succ.en.exam;
     } else if (current_lang === "ja") {
-        title1 = "有段者";
-        title2 = "コーチ";
-        title3 = "チャンピオンズ";
-        title4 = "審査員";
+        title1 = succ.ja.black;
+        title2 = succ.ja.trainer;
+        title3 = succ.ja.champ;
+        title4 = succ.ja.exam;
     } else if (current_lang === "un") {
-        title1 = "Fekete öv";
-        title2 = "Edző";
-        title3 = "Bajnokok";
-        title4 = "Exmanier";
+        title1 = succ.un.black;
+        title2 = succ.un.trainer;
+        title3 = succ.un.champ;
+        title4 = succ.un.exam;
     }
 
     return (
