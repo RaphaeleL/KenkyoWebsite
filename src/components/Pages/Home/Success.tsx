@@ -3,19 +3,19 @@ import Card from "./Card";
 import {GiBlackBelt} from "@react-icons/all-files/gi/GiBlackBelt";
 import {BsPersonCheck} from "@react-icons/all-files/bs/BsPersonCheck";
 import {IoTrophyOutline} from "@react-icons/all-files/io5/IoTrophyOutline";
-import {BsPencil} from "@react-icons/all-files/bs/BsPencil";
 import {succ} from "../../Content/HomeContent";
+import {IoSchoolOutline} from "@react-icons/all-files/io5/IoSchoolOutline";
 
 export default function Success() {
     let current_lang = window.location.href.split("/")[3] as String;
     // @ts-ignore
     let title1 = succ[current_lang][0];
     // @ts-ignore
-    let title2 = succ[current_lang][1];
+    let title2 = succ[current_lang][2];
     // @ts-ignore
-    let title3 = succ[current_lang][2];
+    let title3 = succ[current_lang][3];
     // @ts-ignore
-    let title4 = succ[current_lang][3];
+    let title4 = succ[current_lang][1];
 
     return (
         <Grid grow className={"Success"}>
@@ -29,7 +29,7 @@ export default function Success() {
                 <Card logo={<IoTrophyOutline size={50}/>} title={title3} count={"2"}/>
             </Grid.Col>
             <Grid.Col span="auto" className={"SuccessItem"}>
-                <Card logo={<BsPencil size={50}/>} title={title4} count={"1"}/>
+                <Card logo={<IoSchoolOutline size={50}/>} title={title4} count={"1"}/>
             </Grid.Col>
         </Grid>
     );
