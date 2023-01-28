@@ -15,16 +15,20 @@ export default function FooterBody() {
     function handleUng() { handle("un") }
 
     return (
-        <div className={"Footer"}>
-            <Divider my="sm" />
-            <Container>
-                <SimpleGrid cols={4}>
-                    <Text className={"languageChooser"} onClick={handleGer}>Deutsch</Text>
-                    <Text className={"languageChooser"} onClick={handleEng}>Englisch</Text>
-                    <Text className={"languageChooser"} onClick={handleJap}>やまと</Text>
-                    <Text className={"languageChooser"} onClick={handleUng}>Magyar</Text>
-                </SimpleGrid>
-            </Container>
-        </div>
+        <>
+            <Space h={"xl"} />
+            <div className={"Footer"}>
+                <Divider my="sm" />
+                <Space h={"xl"} />
+                <Container>
+                    <SimpleGrid cols={4}>
+                        <Text className={"languageChooser"} onClick={handleGer}>Deutsch</Text>
+                        <Text className={"languageChooser"} onClick={handleEng}>Englisch</Text>
+                        <Text className={"languageChooser"} onClick={handleJap}>やまと</Text>
+                        <Text className={"languageChooser"} onClick={handleUng}>Magyar</Text>
+                    </SimpleGrid>
+                </Container>
+            </div>
+        </>
     );
 }
