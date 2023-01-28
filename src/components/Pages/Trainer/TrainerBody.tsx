@@ -5,7 +5,7 @@ import MyContent from "../../Utils/MyContent";
 import FooterBody from "../Footer/FooterBody";
 import React from "react";
 import Seperator from "../Home/Seperator";
-import {dojo, times} from "./Content";
+import {dojo, times} from "../../Content/TrainerContent";
 
 export default function TrainerBody() {
     let current_lang = window.location.href.split("/")[3] as String;

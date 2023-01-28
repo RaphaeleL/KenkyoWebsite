@@ -1,5 +1,5 @@
 import React from "react";
-import {items} from "./Content";
+import {items} from "../../../Content/MenuContent";
 
 export default function MenuItems() {
     let current_lang = window.location.href.split("/")[3] as String;

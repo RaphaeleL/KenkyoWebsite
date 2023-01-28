@@ -3,7 +3,7 @@ import React from "react";
 import Seperator from "../Home/Seperator";
 import {Flex, Title, Text, Space, Container} from "@mantine/core";
 import FloatingElement from "../../FloatingElement/FloatingElement";
-import {news1, news2} from "./Content";
+import {news1, news2} from "../../Content/NewsContent";
 
 function NewsBox(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;

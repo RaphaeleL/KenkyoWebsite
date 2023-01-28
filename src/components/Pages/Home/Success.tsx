@@ -4,7 +4,7 @@ import {GiBlackBelt} from "@react-icons/all-files/gi/GiBlackBelt";
 import {BsPersonCheck} from "@react-icons/all-files/bs/BsPersonCheck";
 import {IoTrophyOutline} from "@react-icons/all-files/io5/IoTrophyOutline";
 import {BsPencil} from "@react-icons/all-files/bs/BsPencil";
-import {succ} from "./Content";
+import {succ} from "../../Content/HomeContent";
 
 export default function Success() {
     let current_lang = window.location.href.split("/")[3] as String;
