@@ -6,28 +6,28 @@ export const page = {
 }
 
 export const succ = {
-    de: {
-        black: "Schwarze Gürtel",
-        exam: "Prüfer",
-        trainer: "Trainer",
-        champ: "Champions",
-    },
-    en: {
-        black: "Black Belt",
-        trainer: "Trainer",
-        champ: "Champions",
-        exam: "Exmanier",
-    },
-    ja: {
-        champ: "チャンピオンズ",
-        trainer: "コーチ",
-        exam: "審査員",
-        black: "有段者",
-    },
-    un: {
-        champ: "Bajnokok",
-        exam: "könyvvizsgáló",
-        black: "Fekete öv",
-        trainer: "Edző",
-    },
+    "de": [
+        "Schwarze Gürtel",
+        "Prüfer",
+        "Trainer",
+        "Champions",
+    ],
+    "en": [
+        "Black Belt",
+        "Trainer",
+        "Champions",
+        "Exmanier",
+    ],
+    "ja": [
+        "チャンピオンズ",
+        "コーチ",
+        "審査員",
+        "有段者",
+    ],
+    "un": [
+        "Bajnokok",
+        "könyvvizsgáló",
+        "Fekete öv",
+        "Edző",
+    ],
 }

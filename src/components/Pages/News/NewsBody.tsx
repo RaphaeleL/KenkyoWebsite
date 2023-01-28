@@ -3,17 +3,27 @@ import React from "react";
 import Seperator from "../Home/Seperator";
 import {Flex, Title, Text, Space} from "@mantine/core";
 import FloatingElement from "../../FloatingElement/FloatingElement";
-import {news1, news2,} from "./Content";
+import {news1, news2} from "./Content";
 
 function NewsBox(props: any) {
+    let current_lang = window.location.href.split("/")[3] as String;
+    // @ts-ignore
+    let title = props.news_id[current_lang][1];
+    // @ts-ignore
+    let text = props.news_id[current_lang][2];
+    // @ts-ignore
+    let url = props.news_id[current_lang][0];
+    // @ts-ignore
+    let full_content = props.news_id[current_lang][3];
+
     return (
         <div className={"NewsBox"}>
             <div style={{ width: 240, marginLeft: 'auto', marginRight: 'auto' }}>
-                <FloatingElement label={props.title} pic={props.url} size={"xl"} full_content={props.full_content}/>
+                <FloatingElement label={title} pic={url} size={"xl"} full_content={full_content}/>
                 <Space h={"md"} />
-                <Title order={2}>{props.title}</Title>
+                <Title order={2}>{title}</Title>
                 <Text c="dimmed">
-                    {props.text}
+                    {text}
                 </Text>
             </div>
 
@@ -35,24 +45,8 @@ export default function NewsBody() {
                 direction="row"
                 wrap="wrap"
             >
-                <NewsBox
-                    url={news1.image_url}
-                    title={news1.de_title}
-                    text={news1.de_text}
-                    full_content={news1.de_fulltext}
-                />
-                <NewsBox
-                    url={news2.image_url}
-                    title={news2.de_title}
-                    text={news2.de_text}
-                    full_content={news2.de_fulltext}
-                />
-                <NewsBox
-                    url={news1.image_url}
-                    title={news1.de_title}
-                    text={news1.de_text}
-                    full_content={news1.de_fulltext}
-                />
+                <NewsBox news_id={news1} />
+                <NewsBox news_id={news2} />
             </Flex>
             <FooterBody />
         </div>

@@ -5,17 +5,9 @@ import TrainerBody from "./Trainer/TrainerBody";
 import {items} from "../Header/Menu/Utils/Content";
 
 export default function Trainer(props: any) {
-    let current_lang = window.location.href.split("/")[3];
-
-    let title1 = items.de.training;
-
-    if (current_lang === "en") {
-        title1 = items.en.training;
-    } else if (current_lang === "ja") {
-        title1 = items.ja.training;
-    } else if (current_lang === "un") {
-        title1 = items.un.training;
-    }
+    let current_lang = window.location.href.split("/")[3] as String;
+    // @ts-ignore
+    let title1 = items[current_lang][1];
 
     return (
         <>

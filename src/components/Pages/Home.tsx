@@ -5,17 +5,9 @@ import HomeBody from "./Home/HomeBody";
 import {items} from "../Header/Menu/Utils/Content";
 
 export default function Home(props: any) {
-    let current_lang = window.location.href.split("/")[3];
-
-    let title1 = items.de.home;
-
-    if (current_lang === "en") {
-        title1 = items.en.home;
-    } else if (current_lang === "ja") {
-        title1 = items.ja.home;
-    } else if (current_lang === "un") {
-        title1 = items.un.home;
-    }
+    let current_lang = window.location.href.split("/")[3] as String;
+    // @ts-ignore
+    let title1 = items[current_lang][0];
 
     return (
         <div className={"Home"}>

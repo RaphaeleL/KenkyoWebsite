@@ -7,29 +7,15 @@ import {BsPencil} from "@react-icons/all-files/bs/BsPencil";
 import {succ} from "./Content";
 
 export default function Success() {
-    let current_lang = window.location.href.split("/")[3];
-
-    let title1 = succ.de.black;
-    let title2 = succ.de.trainer;
-    let title3 = succ.de.champ;
-    let title4 = succ.de.exam;
-
-    if (current_lang === "en") {
-        title1 = succ.en.black;
-        title2 = succ.en.trainer;
-        title3 = succ.en.champ;
-        title4 = succ.en.exam;
-    } else if (current_lang === "ja") {
-        title1 = succ.ja.black;
-        title2 = succ.ja.trainer;
-        title3 = succ.ja.champ;
-        title4 = succ.ja.exam;
-    } else if (current_lang === "un") {
-        title1 = succ.un.black;
-        title2 = succ.un.trainer;
-        title3 = succ.un.champ;
-        title4 = succ.un.exam;
-    }
+    let current_lang = window.location.href.split("/")[3] as String;
+    // @ts-ignore
+    let title1 = succ[current_lang][0];
+    // @ts-ignore
+    let title2 = succ[current_lang][1];
+    // @ts-ignore
+    let title3 = succ[current_lang][2];
+    // @ts-ignore
+    let title4 = succ[current_lang][3];
 
     return (
         <Grid grow className={"Success"}>
