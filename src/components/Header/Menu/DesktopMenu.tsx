@@ -32,7 +32,6 @@ export default function DesktopMenu(props: any) {
         <div className={"DesktopHeader"} id={"DesktopHeader"}>
             <Flex
                 mih={50}
-                bg="rgba(0, 0, 0, .3)"
                 gap="md"
                 justify="center"
                 align="center"

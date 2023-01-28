@@ -1,5 +1,6 @@
 import React from "react";
 import {items} from "../../../Content/MenuContent";
+import {Text} from "@mantine/core";
 
 export default function MenuItems() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -13,14 +14,34 @@ export default function MenuItems() {
     let title4 = items[current_lang][3];
     // @ts-ignore
     let title5 = items[current_lang][4];
-
+//<Text td="line-through" c={"dimmed"}>{title1}</Text>
     return (
         <ul>
-            <li><a href={"/" + current_lang + "/home"}>{title1}</a></li>
-            <li><a href={"/" + current_lang + "/training"}>{title2}</a></li>
-            <li><a href={"/" + current_lang + "/vorstand"}>{title3}</a></li>
-            <li><a href={"/" + current_lang + "/weiteres"}>{title4}</a></li>
-            <li><a href={"/" + current_lang + "/news"}>{title5}</a></li>
+            <li>
+                <a href={"/" + current_lang + "/home"}>
+                    <Text>{title1}</Text>
+                </a>
+            </li>
+            <li>
+                <a href={"/" + current_lang + "/training"}>
+                    <Text>{title2}</Text>
+                </a>
+            </li>
+            <li>
+                <a href={"/" + current_lang + "/vorstand"}>
+                    <Text td="line-through" c={"dimmed"}>{title3}</Text>
+                </a>
+            </li>
+            <li>
+                <a href={"/" + current_lang + "/weiteres"}>
+                    <Text td="line-through" c={"dimmed"}>{title4}</Text>
+                </a>
+            </li>
+            <li>
+                <a href={"/" + current_lang + "/news"}>
+                    <Text>{title5}</Text>
+                </a>
+            </li>
         </ul>
     );
 }

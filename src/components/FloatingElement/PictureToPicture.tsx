@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import {Text, Group, Image, Modal, Space} from "@mantine/core";
 
-export default function FloatingElement(props: any) {
+export default function PictureToPicture(props: any) {
     const [opened, setOpened] = useState(false);
     return (
-        <div className={"NewsImage"}>
+        <div>
             <Modal
                 size={props.size}
                 overlayOpacity={0.55}
@@ -25,7 +25,7 @@ export default function FloatingElement(props: any) {
             </Modal>
 
             <Group>
-                <Image className={"click"}
+                <Image className={"NewsImage"}
                        onClick={() => setOpened(true)}
                        radius="md"
                        src={props.pic}

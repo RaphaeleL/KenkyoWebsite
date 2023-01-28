@@ -2,7 +2,7 @@ import FooterBody from "../Footer/FooterBody";
 import React from "react";
 import Seperator from "../Home/Seperator";
 import {Flex, Space, Divider} from "@mantine/core";
-import FloatingElement from "../../FloatingElement/FloatingElement";
+import PictureToPicture from "../../FloatingElement/PictureToPicture";
 import {news1, news2} from "../../Content/NewsContent";
 import MyTitle from "../../Utils/MyTitle";
 import MyContent from "../../Utils/MyContent";
@@ -21,7 +21,7 @@ function NewsBox(props: any) {
     return (
         <div className={"NewsBox"}>
             <div style={{ width: 400, marginLeft: 'auto', marginRight: 'auto' }}>
-                <FloatingElement label={title} pic={url} size={"xl"} full_content={full_content}/>
+                <PictureToPicture label={title} pic={url} size={"xl"} full_content={full_content}/>
                 <Space h={"md"} />
                 <MyTitle content={title} />
                 <MyContent content={text} />

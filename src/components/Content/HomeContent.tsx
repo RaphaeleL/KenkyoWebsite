@@ -14,20 +14,20 @@ export const succ = {
     ],
     "en": [
         "Black Belt",
+        "Exmanier",
         "Trainer",
         "Champions",
-        "Exmanier",
     ],
     "ja": [
-        "チャンピオンズ",
-        "コーチ",
-        "審査員",
-        "有段者",
+        "ブラックベルト ",
+        "イグザミナー ",
+        "トレーナー ",
+        "チャンピオン ",
     ],
     "un": [
+        "Fekete övek",
+        "Examiner",
+        "edzők",
         "Bajnokok",
-        "könyvvizsgáló",
-        "Fekete öv",
-        "Edző",
     ],
 }

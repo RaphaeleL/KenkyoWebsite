@@ -5,7 +5,7 @@ export default function LogoName() {
         <div className={"LogoName"}>
             <Text fz="xl">
                 <a href="/">
-                    Karateverein Kenkyo Rheinzabern
+                    Karateverein Kenkyo Rheinzabern e.V.
                 </a>
             </Text>
         </div>
