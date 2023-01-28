@@ -7,6 +7,7 @@ import Trainer from "./components/Pages/Trainer";
 import Vorstand from "./components/Pages/Vorstand";
 import Weiteres from "./components/Pages/Weiteres";
 import {NotificationsProvider} from "@mantine/notifications";
+import News from "./components/Pages/News";
 
 export default function App() {
     const [show, setShow] = useState(false);
@@ -42,6 +43,9 @@ export default function App() {
                                 <Route index path="/de/weiteres" element={
                                     <Weiteres show={show} lang={"de"} toggle={toggle}/>
                                 } />
+                                <Route index path="/de/news" element={
+                                    <News show={show} lang={"de"} toggle={toggle}/>
+                                } />
                                 {/* ENGLISCH */}
                                 <Route index path="/en/home" element={
                                     <Home show={show} lang={"en"} toggle={toggle}/>
@@ -54,6 +58,9 @@ export default function App() {
                                 } />
                                 <Route index path="/en/weiteres" element={
                                     <Weiteres show={show} lang={"de"} toggle={toggle}/>
+                                } />
+                                <Route index path="/en/news" element={
+                                    <News show={show} lang={"en"} toggle={toggle}/>
                                 } />
                                 {/* JAPAN */}
                                 <Route index path="/ja/home" element={
@@ -68,6 +75,9 @@ export default function App() {
                                 <Route index path="/ja/weiteres" element={
                                     <Weiteres show={show} lang={"de"} toggle={toggle}/>
                                 } />
+                                <Route index path="/ja/news" element={
+                                    <News show={show} lang={"ja"} toggle={toggle}/>
+                                } />
                                 {/* HUNGARY */}
                                 <Route index path="/un/home" element={
                                     <Home show={show} lang={"en"} toggle={toggle}/>
@@ -80,6 +90,9 @@ export default function App() {
                                 } />
                                 <Route index path="/un/weiteres" element={
                                     <Weiteres show={show} lang={"de"} toggle={toggle}/>
+                                } />
+                                <Route index path="/un/news" element={
+                                    <News show={show} lang={"un"} toggle={toggle}/>
                                 } />
                             </Route>
                                 {/*<Route path="/training" element={

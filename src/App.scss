@@ -154,7 +154,7 @@ a {
     }
 
     .BackgroundImage {
-      background-color: #cccccc;
+      background-color: white;
       background-repeat: no-repeat, repeat;
       background-position: center;
       background-size: cover;
@@ -244,7 +244,7 @@ a {
 
   }
 
-  .HomeBody, .TrainerBody, .VorstandBody, .WeiteresBody {
+  .HomeBody, .TrainerBody, .VorstandBody, .WeiteresBody, .NewsBody {
     margin-top: 100vh;
     position: absolute;
     background-color: white;
@@ -252,6 +252,19 @@ a {
     width: 100vw;
     z-index: 100;
     border-radius: 50px;
+  }
+
+  .NewsBody {
+    .NewsBox {
+      padding: 10px;
+      // background-color: $gray-1;
+      border-radius: 10px;
+      width: 18vw;
+      height: auto;
+      .NewsImage:hover {
+        cursor: pointer;
+      }
+    }
   }
 
 }

@@ -68,6 +68,8 @@ export default function TrainerBody() {
                     </Marker>
                 </MapContainer>
 
+                <Seperator />
+
                 <MyTitle content={title2} />
                 <MyContent content={text2} />
                 <MyContent content={<Text fs="italic">{times1}</Text>}/>
