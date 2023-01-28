@@ -1,4 +1,4 @@
-import {Container, Divider, SimpleGrid, Text} from "@mantine/core";
+import {Container, Divider, SimpleGrid, Space, Text} from "@mantine/core";
 import React from "react";
 
 export default function FooterBody() {
@@ -18,7 +18,7 @@ export default function FooterBody() {
         <div className={"Footer"}>
             <Divider my="sm" />
             <Container>
-                <SimpleGrid cols={3}>
+                <SimpleGrid cols={4}>
                     <Text className={"languageChooser"} onClick={handleGer}>Deutsch</Text>
                     <Text className={"languageChooser"} onClick={handleEng}>Englisch</Text>
                     <Text className={"languageChooser"} onClick={handleJap}>やまと</Text>

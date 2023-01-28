@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.scss';
 import {MantineProvider} from "@mantine/core";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Home from "./components/Pages/Home";
 import Trainer from "./components/Pages/Trainer";
 import Vorstand from "./components/Pages/Vorstand";
@@ -25,6 +25,10 @@ export default function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route path="/">
+                                <Route path="/" element={
+                                    <Navigate to="/de/home" />
+                                }>
+                                </Route>
                                 {/* GERMAN */}
                                 <Route index path="/de/home" element={
                                     <Home show={show} lang={"de"} toggle={toggle}/>
