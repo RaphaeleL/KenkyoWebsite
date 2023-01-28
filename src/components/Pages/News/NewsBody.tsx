@@ -1,7 +1,7 @@
 import FooterBody from "../Footer/FooterBody";
 import React from "react";
 import Seperator from "../Home/Seperator";
-import {Flex, Title, Text, Space} from "@mantine/core";
+import {Flex, Title, Text, Space, Container} from "@mantine/core";
 import FloatingElement from "../../FloatingElement/FloatingElement";
 import {news1, news2} from "./Content";
 
@@ -36,18 +36,26 @@ export default function NewsBody() {
     return (
         <div className={"NewsBody"}>
             <Seperator />
-
-            <Flex
-                mih={50}
-                gap="md"
-                justify="center"
-                align="center"
-                direction="row"
-                wrap="wrap"
-            >
-                <NewsBox news_id={news1} />
-                <NewsBox news_id={news2} />
-            </Flex>
+            <Container>
+                <Flex
+                    mih={50}
+                    gap="xl"
+                    justify="center"
+                    align="center"
+                    direction="row"
+                    wrap="wrap"
+                >
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                </Flex>
+            </Container>
             <FooterBody />
         </div>
     );
