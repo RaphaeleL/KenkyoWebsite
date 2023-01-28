@@ -3,7 +3,7 @@ import Success from "./Success";
 import React from "react";
 import FooterBody from "../Footer/FooterBody";
 
-export default function HomeBody(props: any) {
+export default function HomeBody() {
     return (
         <div className={"HomeBody"}>
             <Seperator />

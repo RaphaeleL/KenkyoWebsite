@@ -4,6 +4,17 @@ import React from "react";
 import VorstandBody from "./Vorstand/VorstandBody";
 
 export default function Vorstand(props: any) {
+    let current_lang = window.location.href.split("/")[3];
+    let title1 = "Vorstand";
+
+    if (current_lang === "en") {
+        title1 = "Board of Directors";
+    } else if (current_lang === "ja") {
+        title1 = "取締役会";
+    } else if (current_lang === "un") {
+        title1 = "Igazgatóság";
+    }
+
     return (
         <>
             <Header
@@ -14,9 +25,9 @@ export default function Vorstand(props: any) {
                 currentLang={props.currentLang}
                 setCurrentLang={props.setCurrentLang} />
             <LandingPage
-                subtitle={"Vorstand"}
+                subtitle={title1}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-5.jpeg"}/>
-            <VorstandBody lang={props.lang}/>
+            <VorstandBody />
         </>
     );
 }

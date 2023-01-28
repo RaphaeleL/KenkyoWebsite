@@ -4,8 +4,9 @@ import MyTitle from "../../Utils/MyTitle";
 import MyContent from "../../Utils/MyContent";
 import FooterBody from "../Footer/FooterBody";
 import React from "react";
+import Seperator from "../Home/Seperator";
 
-export default function TrainerBody(props: any) {
+export default function TrainerBody() {
     let current_lang = window.location.href.split("/")[3];
 
     let title1 = "Unser Dojo";
@@ -52,6 +53,7 @@ export default function TrainerBody(props: any) {
 
     return (
         <div className={"TrainerBody"}>
+            <Seperator />
             <Container>
                 <MyTitle content={title1} />
                 <MyContent content={text1} />

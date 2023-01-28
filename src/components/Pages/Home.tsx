@@ -4,13 +4,14 @@ import React from "react";
 import HomeBody from "./Home/HomeBody";
 
 export default function Home(props: any) {
+    let current_lang = window.location.href.split("/")[3];
     let title1 = "Karate Rheinzabern";
 
-    if (props.lang === "en") {
+    if (current_lang === "en") {
         title1 = "Karate Rheinzabern";
-    } else if (props.lang === "ja") {
+    } else if (current_lang === "ja") {
         title1 = "空手ラインツァーベルン";
-    } else if (props.lang === "un") {
+    } else if (current_lang === "un") {
         title1 = "Karate Club Rheinzabern";
     }
 
@@ -23,7 +24,7 @@ export default function Home(props: any) {
             <LandingPage
                 subtitle={title1}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg"}/>
-            <HomeBody lang={props.lang} />
+            <HomeBody />
         </div>
     );
 }
