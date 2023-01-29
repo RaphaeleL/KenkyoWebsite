@@ -1,4 +1,4 @@
-import {Divider, Grid, Space, Stack, Text, Title, Image} from "@mantine/core";
+import {Divider, Grid, Space, Stack, Text, Title} from "@mantine/core";
 import React from "react";
 import {footer} from "../../Content/FooterContent";
 import Copyright from "./Copyright";
@@ -55,9 +55,8 @@ export default function FooterBody() {
 
                 <Divider my="sm" />
                 <Space h={"xl"} />
-
-                <Grid>
-                    <Grid.Col md={6} lg={3}>
+                <Grid grow>
+                    <Grid.Col span="auto">
                         <Stack>
                             <Title order={4}>{title1}</Title>
                             <Text className={"languageChooser"} onClick={handleGer}>Deutsch</Text>
@@ -66,7 +65,7 @@ export default function FooterBody() {
                             <Text className={"languageChooser"} onClick={handleUng}>Magyar</Text>
                         </Stack>
                     </Grid.Col>
-                    <Grid.Col md={6} lg={3}>
+                    <Grid.Col span="auto">
                         <Stack>
                             <Title order={4}>{title2}</Title>
                             <Text td="line-through" c={"dimmed"}>{title3}</Text>
@@ -74,7 +73,7 @@ export default function FooterBody() {
                             <Text td="line-through" c={"dimmed"}>{title5}</Text>
                         </Stack>
                     </Grid.Col>
-                    <Grid.Col md={6} lg={3}>
+                    <Grid.Col span="auto">
                         <Stack>
                             <Title order={4}>{title6}</Title>
                             <TextToPage
@@ -92,7 +91,7 @@ export default function FooterBody() {
                             <Text td="line-through" c={"dimmed"}>{title9}</Text>
                         </Stack>
                     </Grid.Col>
-                    <Grid.Col md={6} lg={3}>
+                    <Grid.Col span="auto">
                         <Stack>
                             <Title order={4}>{title10}</Title>
                             <Text td="line-through" c={"dimmed"}>{title11}</Text>

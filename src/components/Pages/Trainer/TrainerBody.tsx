@@ -40,7 +40,7 @@ export default function TrainerBody() {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={[49.105648, 8.281833]}>
-                        <Popup>Dojo</Popup>
+                        <Popup>{dojo_title}</Popup>
                     </Marker>
                 </MapContainer>
 

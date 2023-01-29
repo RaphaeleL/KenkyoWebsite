@@ -15,6 +15,13 @@ $gray-1: #dedede;
 $red-1: #5b0204;
 $gray-2: rgba(245, 244, 244, 0.44);
 
+.demo {
+  width: 10vw;
+  height: 10vw;
+  background-color: red;
+  border: 1px solid black;
+}
+
 .Button:hover {
   cursor: pointer;
 }
