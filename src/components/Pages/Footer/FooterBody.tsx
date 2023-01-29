@@ -5,6 +5,8 @@ import Copyright from "./Copyright";
 import TextToPage from "../../FloatingElement/TextToPage";
 import Verbaende from "./Verbaende";
 import Sponsoren from "./Sponsoren";
+import Imprint from "./Imprint";
+import Privacy from "./Privacy";
 
 export default function FooterBody() {
 
@@ -68,8 +70,16 @@ export default function FooterBody() {
                     <Grid.Col span="auto">
                         <Stack>
                             <Title order={4}>{title2}</Title>
-                            <Text td="line-through" c={"dimmed"}>{title3}</Text>
-                            <Text td="line-through" c={"dimmed"}>{title4}</Text>
+                            <TextToPage
+                                size="xl"
+                                openingText={title3}
+                                title={<Title order={1}>{title3}</Title>}
+                                content={<Imprint />} />
+                            <TextToPage
+                                size="xl"
+                                openingText={title4 + " (wip)"}
+                                title={<Title order={1}>{title4}</Title>}
+                                content={<Privacy />} />
                             <Text td="line-through" c={"dimmed"}>{title5}</Text>
                         </Stack>
                     </Grid.Col>
