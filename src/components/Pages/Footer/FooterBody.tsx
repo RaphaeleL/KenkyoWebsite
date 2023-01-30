@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {Divider, Grid, Space, Stack, Text, Title} from "@mantine/core";
 import React from "react";
 import {footer} from "../../Content/FooterContent";
@@ -22,32 +23,6 @@ export default function FooterBody() {
     function handleUng() { handle("un") }
 
     let current_lang = window.location.href.split("/")[3] as String;
-    // @ts-ignore
-    let title1 = footer[current_lang][0];
-    // @ts-ignore
-    let title2 = footer[current_lang][1];
-    // @ts-ignore
-    let title3 = footer[current_lang][2];
-    // @ts-ignore
-    let title4 = footer[current_lang][3];
-    // @ts-ignore
-    let title5 = footer[current_lang][4];
-    // @ts-ignore
-    let title6 = footer[current_lang][5];
-    // @ts-ignore
-    let title7 = footer[current_lang][6];
-    // @ts-ignore
-    let title8 = footer[current_lang][7];
-    // @ts-ignore
-    let title9 = footer[current_lang][8];
-    // @ts-ignore
-    let title10 = footer[current_lang][9];
-    // @ts-ignore
-    let title11 = footer[current_lang][10];
-    // @ts-ignore
-    let title12 = footer[current_lang][11];
-    // @ts-ignore
-    let title13 = footer[current_lang][12];
 
     return (
         <>
@@ -60,7 +35,7 @@ export default function FooterBody() {
                 <Grid grow>
                     <Grid.Col span="auto">
                         <Stack>
-                            <Title order={4}>{title1}</Title>
+                            <Title order={4}>{footer[current_lang][0]}</Title>
                             <Text className={"languageChooser"} onClick={handleGer}>Deutsch</Text>
                             <Text className={"languageChooser"} onClick={handleEng}>Englisch</Text>
                             <Text className={"languageChooser"} onClick={handleJap}>やまと</Text>
@@ -69,44 +44,44 @@ export default function FooterBody() {
                     </Grid.Col>
                     <Grid.Col span="auto">
                         <Stack>
-                            <Title order={4}>{title2}</Title>
+                            <Title order={4}>{footer[current_lang][1]}</Title>
                             <TextToPage
                                 size="xl"
-                                openingText={title3}
-                                title={<Title order={1}>{title3}</Title>}
+                                openingText={footer[current_lang][2]}
+                                title={<Title order={1}>{footer[current_lang][2]}</Title>}
                                 content={<Imprint />} />
                             <TextToPage
                                 size="xl"
-                                openingText={title4 + " (wip)"}
-                                title={<Title order={1}>{title4}</Title>}
+                                openingText={footer[current_lang][3]}
+                                title={<Title order={1}>{footer[current_lang][3]}</Title>}
                                 content={<Privacy />} />
-                            <Text td="line-through" c={"dimmed"}>{title5}</Text>
+                            <Text td="line-through" c={"dimmed"}>{footer[current_lang][4]}</Text>
                         </Stack>
                     </Grid.Col>
                     <Grid.Col span="auto">
                         <Stack>
-                            <Title order={4}>{title6}</Title>
+                            <Title order={4}>{footer[current_lang][5]}</Title>
                             <TextToPage
                                 size="xl"
-                                openingText={title7}
-                                title={<Title order={1}>{title7}</Title>}
+                                openingText={footer[current_lang][6]}
+                                title={<Title order={1}>{footer[current_lang][6]}</Title>}
                                 content={<Verbaende />}
                             />
                             <TextToPage
                                 size="xl"
-                                openingText={title8}
-                                title={<Title order={1}>{title8}</Title>}
+                                openingText={footer[current_lang][7]}
+                                title={<Title order={1}>{footer[current_lang][7]}</Title>}
                                 content={<Sponsoren />}
                             />
-                            <Text td="line-through" c={"dimmed"}>{title9}</Text>
+                            <Text td="line-through" c={"dimmed"}>{footer[current_lang][8]}</Text>
                         </Stack>
                     </Grid.Col>
                     <Grid.Col span="auto">
                         <Stack>
-                            <Title order={4}>{title10}</Title>
-                            <Text td="line-through" c={"dimmed"}>{title11}</Text>
-                            <Text td="line-through" c={"dimmed"}>{title12}</Text>
-                            <Text td="line-through" c={"dimmed"}>{title13}</Text>
+                            <Title order={4}>{footer[current_lang][9]}</Title>
+                            <Text td="line-through" c={"dimmed"}>{footer[current_lang][10]}</Text>
+                            <Text td="line-through" c={"dimmed"}>{footer[current_lang][11]}</Text>
+                            <Text td="line-through" c={"dimmed"}>{footer[current_lang][12]}</Text>
                         </Stack>
                     </Grid.Col>
                 </Grid>

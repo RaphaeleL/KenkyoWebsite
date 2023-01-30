@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
 import React from "react";
@@ -6,8 +7,6 @@ import {items} from "../Content/MenuContent";
 
 export default function Vorstand(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
-    // @ts-ignore
-    let title1 = items[current_lang][2];
 
     return (
         <>
@@ -19,7 +18,7 @@ export default function Vorstand(props: any) {
                 currentLang={props.currentLang}
                 setCurrentLang={props.setCurrentLang} />
             <LandingPage
-                subtitle={title1}
+                subtitle={items[current_lang][2]}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-5.jpeg"}/>
             <VorstandBody />
         </>

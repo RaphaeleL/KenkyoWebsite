@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
 import {Container, Text} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
@@ -9,30 +10,13 @@ import {dojo, times} from "../../Content/TrainerContent";
 
 export default function TrainerBody() {
     let current_lang = window.location.href.split("/")[3] as String;
-    // @ts-ignore
-    let dojo_title = dojo[current_lang][0];
-    // @ts-ignore
-    let dojo_text = dojo[current_lang][1];
-
-    // @ts-ignore
-    let time_title = times[current_lang][0];
-    // @ts-ignore
-    let time_text = times[current_lang][1];
-    // @ts-ignore
-    let times1 = times[current_lang][2];
-    // @ts-ignore
-    let times2 = times[current_lang][3];
-    // @ts-ignore
-    let times3 = times[current_lang][4];
-    // @ts-ignore
-    let times4 = times[current_lang][5];
 
     return (
         <div className={"TrainerBody"}>
             <Seperator />
             <Container>
-                <MyTitle content={dojo_title} />
-                <MyContent content={dojo_text} />
+                <MyTitle content={dojo[current_lang][0]} />
+                <MyContent content={dojo[current_lang][1]} />
 
                 <MapContainer center={[49.105648, 8.281833]} zoom={18} scrollWheelZoom={false}>
                     <TileLayer
@@ -40,18 +24,18 @@ export default function TrainerBody() {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <Marker position={[49.105648, 8.281833]}>
-                        <Popup>{dojo_title}</Popup>
+                        <Popup>{dojo[current_lang][0]}</Popup>
                     </Marker>
                 </MapContainer>
 
                 <Seperator />
 
-                <MyTitle content={time_title} />
-                <MyContent content={time_text} />
-                <MyContent content={<Text fs="italic">{times1}</Text>}/>
-                <MyContent content={<Text fs="italic">{times2}</Text>}/>
-                <MyContent content={<Text fs="italic">{times3}</Text>}/>
-                <MyContent content={<Text td="line-through" fs="italic">{times4}</Text>}/>
+                <MyTitle content={times[current_lang][0]} />
+                <MyContent content={times[current_lang][1]} />
+                <MyContent content={<Text fs="italic">{times[current_lang][2]}</Text>}/>
+                <MyContent content={<Text fs="italic">{times[current_lang][3]}</Text>}/>
+                <MyContent content={<Text fs="italic">{times[current_lang][4]}</Text>}/>
+                <MyContent content={<Text td="line-through" fs="italic">{times[current_lang][5]}</Text>}/>
             </Container>
             <FooterBody />
         </div>

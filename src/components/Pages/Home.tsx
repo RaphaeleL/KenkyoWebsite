@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Header from "../Header/Header";
 import LandingPage from "../LandingPage/LandingPage";
 import React from "react";
@@ -6,8 +7,6 @@ import {items} from "../Content/MenuContent";
 
 export default function Home(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
-    // @ts-ignore
-    let title1 = items[current_lang][0];
 
     return (
         <div className={"Home"}>
@@ -16,7 +15,7 @@ export default function Home(props: any) {
                 lang={props.lang}
                 show={props.show} />
             <LandingPage
-                subtitle={title1}
+                subtitle={items[current_lang][0]}
                 imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg"}/>
             <HomeBody />
         </div>

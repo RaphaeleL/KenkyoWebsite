@@ -1,3 +1,4 @@
+// @ts-nocheck
 import FooterBody from "../Footer/FooterBody";
 import React from "react";
 import Seperator from "../Home/Seperator";
@@ -9,22 +10,14 @@ import MyContent from "../../Utils/MyContent";
 
 function NewsBox(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
-    // @ts-ignore
-    let title = props.news_id[current_lang][1];
-    // @ts-ignore
-    let text = props.news_id[current_lang][2];
-    // @ts-ignore
-    let url = props.news_id[current_lang][0];
-    // @ts-ignore
-    let full_content = props.news_id[current_lang][3];
 
     return (
         <div className={"NewsBox"}>
             <div style={{ width: 400, marginLeft: 'auto', marginRight: 'auto' }}>
-                <PictureToPicture label={title} pic={url} size={"xl"} full_content={full_content}/>
+                <PictureToPicture label={props.news_id[current_lang][1]} pic={props.news_id[current_lang][0]} size={"xl"} full_content={props.news_id[current_lang][3]}/>
                 <Space h={"md"} />
-                <MyTitle content={title} />
-                <MyContent content={text} />
+                <MyTitle content={props.news_id[current_lang][1]} />
+                <MyContent content={props.news_id[current_lang][2]} />
             </div>
             <Divider />
             <Space h={"xl"} />
