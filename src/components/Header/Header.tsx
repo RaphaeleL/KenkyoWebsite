@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import MenuItems from "./Menu/MenuItems";
 
-export default function Header(props: any) {
+export default function Header() {
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ export default function Header(props: any) {
 
     return (
         <div className={"DesktopHeader"} id={"DesktopHeader"}>
-            <MenuItems />
+            <MenuItems  />
         </div>
     );
 }

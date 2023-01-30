@@ -19,7 +19,6 @@ export default function WeiteresBody() {
             <Space h={"xl"} />
 
             <FooterBody />
-            <FooterBody />
         </div>
     );
 }
