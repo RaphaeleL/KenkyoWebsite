@@ -58,8 +58,12 @@ a {
 
     .DesktopHeader {
       width: 100vw;
-      backdrop-filter: blur(10px);
-      background-color: $gray-2;
+      /*backdrop-filter: blur(10px);
+      background-color: $gray-2;*/
+      background-color: $white-3;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       .Language:hover {
         cursor: pointer;
@@ -260,6 +264,7 @@ a {
   }
 
   .HomeBody, .TrainerBody, .VorstandBody, .WeiteresBody, .NewsBody {
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 100vh;
     position: absolute;
     background-color: $white-3;
