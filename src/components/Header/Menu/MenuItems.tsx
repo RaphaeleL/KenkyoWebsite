@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from "react";
-import {items} from "../../../Content/MenuContent";
+import {items} from "../../Content/MenuContent";
 import {Text} from "@mantine/core";
 
 export default function MenuItems() {

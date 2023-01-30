@@ -39,112 +39,54 @@ a {
 .App {
   text-align: center;
 
-  .HeaderMobile {
+  .Header-fade-in {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+  .Header-fade-out {
+    opacity: 0;
+    transition: opacity 500ms ease-out;
+  }
+
+  .DesktopHeader {
     z-index: 101;
     position: fixed;
+    min-height: 7vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*backdrop-filter: blur(10px);
+    background-color: $gray-2;*/
+    background-color: $white-3;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    .MobileLogo {
-
+    .Language:hover {
+      cursor: pointer;
     }
 
-    .Logo {
-      position: absolute;
-      top: 5vh;
-      left: 0;
-      width: 250px;
-      margin: auto;
-      z-index: 114;
+    .LogoName {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .DesktopHeader {
-      width: 100vw;
-      /*backdrop-filter: blur(10px);
-      background-color: $gray-2;*/
-      background-color: $white-3;
-      border-bottom-right-radius: 50px;
-      border-bottom-left-radius: 50px;
-      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-      .Language:hover {
-        cursor: pointer;
-      }
-
-      .LogoName {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        li {
-          float: right;
-        }
-      }
-    }
-
-    .Header-fade-in {
-      opacity: 1;
-      transition: opacity 500ms ease-in;
-    }
-
-    .Header-fade-out {
-      opacity: 0;
-      transition: opacity 500ms ease-out;
-    }
-
-    .OpenMenu {
-      color: black;
-      top: 0;
-      right: 0;
-      z-index: 5;
-    }
-
-    .Menu {
-      background-color: white;
-      width: 100vw;
-      height: 100vh;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
 
-      .toggle {
-        position: absolute;
-        z-index: 5;
-        top: 0;
-        left: 0;
-      }
-
-      .toggle:hover {
-        cursor: pointer;
-      }
-
-      ul {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-
-        li {
-
-          a {
-            display: block;
-            color: $blur-black-1;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 4vw;
-          }
-        }
+      li {
+        float: right;
       }
     }
   }
+
 
   .LandingPage {
     width: 100vw;
@@ -155,6 +97,13 @@ a {
     justify-content: center;
     z-index: 10;
     position: fixed;
+
+    .Logo {
+      position: absolute;
+      bottom: 20vh;
+      right: 0;
+      width: clamp(200px, 10vw, 2400px);
+    }
 
     .Carousel {
       width: 100vw;

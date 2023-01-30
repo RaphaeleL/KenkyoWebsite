@@ -1,6 +1,7 @@
 import {SlArrowDown} from "react-icons/sl";
 import ImageView from "./ImageView";
 import React from "react";
+import Logo from "../Header/Logo";
 
 export default function LandingPage(props: any) {
     return (
@@ -15,6 +16,7 @@ export default function LandingPage(props: any) {
                     {props.subtitle}
                 </div>
             </div>
+            <Logo />
 
             <div  className={"scrollHint"} >
                 <SlArrowDown size={40}/>
