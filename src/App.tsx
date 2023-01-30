@@ -22,7 +22,7 @@ export default function App() {
             withNormalizeCSS
         >
             <NotificationsProvider>
-                <div className="App">
+                <div className="App" id="App">
                     <BrowserRouter>
                         <Routes>
                             <Route path="/">

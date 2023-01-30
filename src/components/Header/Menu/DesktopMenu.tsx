@@ -29,23 +29,25 @@ export default function DesktopMenu(props: any) {
     }, [offset]);
 
     return (
-        <div className={"DesktopHeader"} id={"DesktopHeader"}>
-            <Flex
-                mih={50}
-                gap="md"
-                justify="center"
-                align="center"
-                direction="row"
-                wrap="wrap"
-            >
-                <SimpleGrid cols={2} >
+        <div>
+            <Logo />
+            <div className={"DesktopHeader"} id={"DesktopHeader"}>
+                <Flex
+                    mih={50}
+                    gap="md"
+                    justify="center"
+                    align="center"
+                    direction="row"
+                    wrap="wrap"
+                >
                     <SimpleGrid cols={2} >
-                        <Logo />
-                        <LogoName />
+                        <SimpleGrid cols={2} >
+                            <LogoName />
+                        </SimpleGrid>
+                        <MenuItems />
                     </SimpleGrid>
-                    <MenuItems />
-                </SimpleGrid>
-            </Flex>
+                </Flex>
+            </div>
         </div>
     );
 }

@@ -59,6 +59,19 @@ a {
     z-index: 101;
     position: fixed;
 
+    .MobileLogo {
+
+    }
+
+    .Logo {
+      position: absolute;
+      top: 5vh;
+      left: 0;
+      width: 250px;
+      margin: auto;
+      z-index: 114;
+    }
+
     .DesktopHeader {
       width: 100vw;
       backdrop-filter: blur(10px);
@@ -68,7 +81,7 @@ a {
         cursor: pointer;
       }
 
-      .Logo, .LogoName {
+      .LogoName {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -214,8 +227,8 @@ a {
         color: $blur-black-1;
         z-index: 1;
         font-size: 3vw;
-        font-family: o-wee-ental;
-        src: url("./assets/o-wee-ental.ttf");
+        //font-family: o-wee-ental;
+        //src: url("./assets/o-wee-ental.ttf");
       }
     }
 
