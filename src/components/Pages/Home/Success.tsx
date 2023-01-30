@@ -6,12 +6,16 @@ import {BsPersonCheck} from "@react-icons/all-files/bs/BsPersonCheck";
 import {IoTrophyOutline} from "@react-icons/all-files/io5/IoTrophyOutline";
 import {succ} from "../../Content/HomeContent";
 import {IoSchoolOutline} from "@react-icons/all-files/io5/IoSchoolOutline";
+import Seperator from "./Seperator";
+import React from "react";
 
 export default function Success() {
     let current_lang = window.location.href.split("/")[3] as String;
 
     return (
-        <Container>
+        <>
+            <Seperator/>
+            <Container>
                 <Flex
                     mih={50}
                     gap="xl"
@@ -25,6 +29,8 @@ export default function Success() {
                     <Card logo={<IoTrophyOutline size={50}/>} title={succ[current_lang][3]} count={"2"}/>
                     <Card logo={<IoSchoolOutline size={50}/>} title={succ[current_lang][1]} count={"1"}/>
                 </Flex>
-        </Container>
+            </Container>
+            <Seperator/>
+        </>
     );
 }

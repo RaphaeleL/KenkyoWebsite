@@ -1,5 +1,5 @@
 // @ts-nocheck
-import {Space, Title} from "@mantine/core";
+import {Title} from "@mantine/core";
 import React from "react";
 
 export default function MyTitle(props: any) {
@@ -10,7 +10,6 @@ export default function MyTitle(props: any) {
     return (
         <div>
             <Title order={order}>{props.content}</Title>
-            <Space h={"xl"} />
         </div>
     );
 }

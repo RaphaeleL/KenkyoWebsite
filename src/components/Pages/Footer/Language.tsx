@@ -1,7 +1,6 @@
 // @ts-nocheck
-import {Flex, Space, Text, Title} from "@mantine/core";
+import {Image} from "@mantine/core";
 import React from "react";
-import {footer} from "../../Content/FooterContent";
 
 export default function Language() {
 
@@ -17,10 +16,35 @@ export default function Language() {
     function handleEng() { handle("en") }
     function handleJap() { handle("ja") }
     function handleUng() { handle("un") }
-    let current_lang = window.location.href.split("/")[3] as String;
 
     return (
         <>
+            <div onClick={handleJap} style={{cursor: "pointer", width: 50, position: "fixed", bottom: 0, margin: 10}}>
+                <Image
+                    radius={"md"}
+                    src={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/JAP.png"}
+                />
+            </div>
+            <div onClick={handleUng} style={{cursor: "pointer", width: 50, position: "fixed", bottom: 40, margin: 10}}>
+                <Image
+                    radius={"md"}
+                    src={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/UNG.png"}
+                />
+            </div>
+            <div onClick={handleEng} style={{cursor: "pointer", width: 50, position: "fixed", bottom: 80, margin: 10}}>
+                <Image
+                    radius={"md"}
+                    src={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/ENG.png"}
+                />
+            </div>
+            <div onClick={handleGer} style={{cursor: "pointer", width: 50, position: "fixed", bottom: 120, margin: 10}}>
+                <Image
+                    radius={"md"}
+                    src={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/GER.png"}
+                />
+            </div>
+        </>
+        /*<>
             <Space h={"xl"} />
             <Title order={4}>{footer[current_lang][0]}</Title>
             <Flex
@@ -36,6 +60,6 @@ export default function Language() {
                 <Text className={"languageChooser"} onClick={handleJap}>やまと</Text>
                 <Text className={"languageChooser"} onClick={handleUng}>Magyar</Text>
             </Flex>
-        </>
+        </>*/
     );
 }

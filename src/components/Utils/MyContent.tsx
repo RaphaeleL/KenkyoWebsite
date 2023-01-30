@@ -14,7 +14,9 @@ export default function MyContent(props: any) {
                     {props.content}
                 </Text>
             )}
-            <Space h="md" />
+            {!props.no_space && (
+                <Space h="md" />
+            )}
         </div>
     );
 }

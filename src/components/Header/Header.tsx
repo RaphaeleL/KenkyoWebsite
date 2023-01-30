@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import MenuItems from "./Menu/MenuItems";
+import MenuItems from "./MenuItems";
 
 export default function Header() {
     const [offset, setOffset] = useState(0);

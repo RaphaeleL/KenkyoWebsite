@@ -1,5 +1,5 @@
 // @ts-nocheck
-import {Divider, Flex, Space, Stack, Text, Title} from "@mantine/core";
+import {Flex, Stack, Text, Title} from "@mantine/core";
 import React from "react";
 import {footer} from "../../Content/FooterContent";
 import Copyright from "./Copyright";
@@ -8,21 +8,20 @@ import Verbaende from "./Verbaende";
 import Sponsoren from "./Sponsoren";
 import Imprint from "./Imprint";
 import Privacy from "./Privacy";
-import Language from "./Language";
+import Seperator from "../Home/Seperator";
 
 export default function FooterBody() {
     let current_lang = window.location.href.split("/")[3] as String;
 
     return (
         <div className={"Footer"}>
-            <Divider my="sm" />
-            <Space h={"xl"} />
+            <Seperator />
 
             <Flex
                 mih={50}
                 gap="xl"
                 justify="center"
-                align="center"
+                align="flex-start"
                 direction="row"
                 wrap="wrap"
             >
@@ -38,7 +37,7 @@ export default function FooterBody() {
                         openingText={footer[current_lang][3]}
                         title={<Title order={1}>{footer[current_lang][3]}</Title>}
                         content={<Privacy />} />
-                    <Text td="line-through" c={"dimmed"}>{footer[current_lang][4]}</Text>
+                    <Text c={"dimmed"}>{footer[current_lang][4]}</Text>
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][5]}</Title>
@@ -54,16 +53,28 @@ export default function FooterBody() {
                         title={<Title order={1}>{footer[current_lang][7]}</Title>}
                         content={<Sponsoren />}
                     />
-                    <Text td="line-through" c={"dimmed"}>{footer[current_lang][8]}</Text>
+                    <Text c={"dimmed"}>{footer[current_lang][8]}</Text>
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][9]}</Title>
-                    <Text td="line-through" c={"dimmed"}>{footer[current_lang][10]}</Text>
-                    <Text td="line-through" c={"dimmed"}>{footer[current_lang][11]}</Text>
-                    <Text td="line-through" c={"dimmed"}>{footer[current_lang][12]}</Text>
+                    <Text c={"dimmed"}>{footer[current_lang][10]}</Text>
+                    <Text c={"dimmed"}>{footer[current_lang][11]}</Text>
+                    <Text c={"dimmed"}>{footer[current_lang][12]}</Text>
+                </Stack>
+                <Stack>
+                    <Title order={4}>Rund ums Training</Title>
+                    <Text c={"dimmed"}>Prüfungsprogramm</Text>
+                    <Text c={"dimmed"}>Verhaltensregeln</Text>
+                    <Text c={"dimmed"}>Geschichte</Text>
+                    {/*<Text c={"dimmed"}>Begrifflichkeiten</Text>*/}
+                </Stack>
+                <Stack>
+                    <Title order={4}>Downloads</Title>
+                    <Text c={"dimmed"}>Anmeldung</Text>
+                    <Text c={"dimmed"}>Kündigungsvorlage</Text>
+                    <Text c={"dimmed"}>Datenschutzformular</Text>
                 </Stack>
             </Flex>
-            <Language />
             <Copyright />
         </div>
     );

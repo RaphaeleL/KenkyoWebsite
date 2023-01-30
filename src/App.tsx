@@ -1,20 +1,16 @@
-// @ts-nocheck
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {MantineProvider} from "@mantine/core";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {NotificationsProvider, showNotification} from "@mantine/notifications";
-import Header from "./components/Header/Header";
-import HomeBody from "./components/Pages/Home/HomeBody";
-import TrainerBody from "./components/Pages/Trainer/TrainerBody";
-import VorstandBody from "./components/Pages/Vorstand/VorstandBody";
-import WeiteresBody from "./components/Pages/Weiteres/WeiteresBody";
-import NewsBody from "./components/Pages/News/NewsBody";
-import LandingPage from "./components/LandingPage/LandingPage";
-import {useSetState} from "@mantine/hooks";
+import Home from "./components/Pages/Home/Home";
+import Training from "./components/Pages/Training/Training";
+import UeberUns from "./components/Pages/UeberUns/UeberUns";
+import News from "./components/Pages/News/News";
+import Termine from "./components/Pages/Termine/Termine";
 
 export default function App() {
-    const [show, setShow] = useSetState(false);
+    const [show, setShow] = useState(false);
 
     useEffect( () =>{
         let name = "";
@@ -44,7 +40,7 @@ export default function App() {
                 message: text,
             });
         }
-    }, [show]);
+    }, [show, setShow]);
 
     return (
         <MantineProvider
@@ -53,18 +49,34 @@ export default function App() {
         >
             <NotificationsProvider>
                 <div className="App" id="App">
-                    <Header />
-                    <LandingPage />
                     <BrowserRouter>
                         <Routes>
                             <Route path="/">
-                                <Route path="/" element={<Navigate to="/de/home" />}>
-                                </Route>
-                                <Route index path={"/" + window.location.href.split("/")[3] as String + "/home"} element={<HomeBody />} />
-                                <Route index path={"/" + window.location.href.split("/")[3] as String + "/training"} element={<TrainerBody />} />
-                                <Route index path={"/" + window.location.href.split("/")[3] as String + "/vorstand"} element={<VorstandBody />} />
-                                <Route index path={"/" + window.location.href.split("/")[3] as String + "/weiteres"} element={<WeiteresBody />} />
-                                <Route index path={"/" + window.location.href.split("/")[3] as String + "/news"} element={<NewsBody />} />
+                                <Route path="/" element={<Navigate to="/de/home" />}></Route>
+                                {/* GERMAN */}
+                                <Route index path="/de/home" element={<Home />} />
+                                <Route index path="/de/training" element={<Training />} />
+                                <Route index path="/de/ueber-uns" element={<UeberUns />} />
+                                <Route index path="/de/termine" element={<Termine />} />
+                                <Route index path="/de/news" element={<News />} />
+                                {/* ENGLISCH */}
+                                <Route index path="/en/home" element={<Home />} />
+                                <Route index path="/en/training" element={<Training />} />
+                                <Route index path="/en/ueber-uns" element={<UeberUns />} />
+                                <Route index path="/en/termine" element={<Termine />} />
+                                <Route index path="/en/news" element={<News />} />
+                                {/* JAPANESE */}
+                                <Route index path="/ja/home" element={<Home />} />
+                                <Route index path="/ja/training" element={<Training />} />
+                                <Route index path="/ja/ueber-uns" element={<UeberUns />} />
+                                <Route index path="/ja/termine" element={<Termine />} />
+                                <Route index path="/ja/news" element={<News />} />
+                                {/* HUNGARY */}
+                                <Route index path="/un/home" element={<Home />} />
+                                <Route index path="/un/training" element={<Training />} />
+                                <Route index path="/un/ueber-uns" element={<UeberUns />} />
+                                <Route index path="/un/termine" element={<Termine />} />
+                                <Route index path="/un/news" element={<News />} />
                             </Route>
                         </Routes>
                     </BrowserRouter>

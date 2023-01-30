@@ -2,18 +2,22 @@ export const dojo = {
     "de": [
         "Unser Dojo",
         "Wir freuen uns darauf, Sie in unserer Karate-Sparte begrüßen zu dürfen. Unsere Sporthalle befindet sich in einer günstigen Lage und ist leicht zu erreichen. Bitte zögern Sie nicht uns zu kontaktieren, falls Sie Hilfe bei der Anfahrt benötigen.",
+        "Jockgrimer Str. 100, 76764 Rheinzabern (GER)",
     ],
     "en": [
         "Our Dojo",
         "We look forward to welcoming you to our karate division. Our gym is conveniently located and easy to get to. Please do not hesitate to contact us if you need any help with directions.",
+        "Jockgrimer Str. 100, 76764 Rheinzabern (GER)",
     ],
     "ja": [
         "私たちの道場",
         "空手部へのご参加をお待ちしております。 私たちのスポーツホールは、便利な場所にあり、簡単にアクセスできます。案内が必要な場合は、ご遠慮なくお問い合わせください。",
+        "Jockgrimer Str. 100, 76764 Rheinzabern (GER)",
     ],
     "un": [
         "A mi Dojo-nk",
         "Szeretettel várjuk Önt karate részlegünkben. Edzőtermünk kényelmes helyen található és könnyen megközelíthető. Kérjük, ne habozzon kapcsolatba lépni velünk, ha segítségre van szüksége az útbaigazítással kapcsolatban.",
+        "Jockgrimer Str. 100, 76764 Rheinzabern (GER)",
     ],
 }
 

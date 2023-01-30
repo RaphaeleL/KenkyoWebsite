@@ -9,7 +9,7 @@ export const succ = {
     "de": [
         "Dan",
         "Prüfer",
-        "Trainer",
+        "Training",
         "Champions",
         "Alles im Universum atmet hart und weich",
         "Chōjun Miyagi",
@@ -17,7 +17,7 @@ export const succ = {
     "en": [
         "Black Belt",
         "Exmanier",
-        "Trainer",
+        "Training",
         "Champions",
         "Everything in the universe breathes hard and soft",
         "Chōjun Miyagi",

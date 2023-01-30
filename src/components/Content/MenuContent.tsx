@@ -2,8 +2,8 @@ export const items = {
     "de": [
         "Home",
         "Training",
-        "Vorstand",
-        "Weiteres",
+        "Über uns",
+        "Termine",
         "News",
     ],
     "en": [
