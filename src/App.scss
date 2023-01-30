@@ -1,5 +1,4 @@
-* {
-}
+* {}
 
 body {
   margin: 0;
@@ -98,14 +97,8 @@ a {
 
     .Logo {
       position: absolute;
-      width: clamp(30vw, 50vw, 70vw);
-      /*transition: box-shadow 500ms ease-in-out;*/
+      width: clamp(40vw, 55vw, 60vw);
     }
-
-  /*  .Logo:hover {
-      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      transition: box-shadow 500ms ease-in-out;
-    }*/
 
     .BackgroundImage {
       background-color: white;
@@ -116,27 +109,6 @@ a {
       width: 100vw;
       position: absolute;
       z-index: -1;
-    }
-
-    .TextContainer {
-      position: absolute;
-      top: 15vh;
-
-      .Title {
-        color: $blur-black-1;
-        z-index: 1;
-        font-size: 8vw;
-        letter-spacing: 20px;
-        /*font-family: o-wee-ental;
-        src: url("./assets/o-wee-ental.ttf");*/
-      }
-
-      .Subtitle {
-        letter-spacing: 15px;
-        color: $blur-black-1;
-        z-index: 1;
-        font-size: 3vw;
-      }
     }
 
     .scrollHint {

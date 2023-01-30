@@ -9,15 +9,6 @@ export default function LandingPage(props: any) {
                 backgroundImage: `url(${props.imgurl})`
             }} />
 
-            <div className={"TextContainer"}>
-                {/*<div className={"Title"}>
-                    Kenkyo
-                </div>
-                <div className={"Subtitle"}>
-                    {props.subtitle}
-                </div>*/}
-            </div>
-
             <Logo />
 
             <div  className={"scrollHint"} >
