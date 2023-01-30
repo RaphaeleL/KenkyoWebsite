@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {MantineProvider} from "@mantine/core";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
@@ -6,7 +6,7 @@ import Home from "./components/Pages/Home";
 import Trainer from "./components/Pages/Trainer";
 import Vorstand from "./components/Pages/Vorstand";
 import Weiteres from "./components/Pages/Weiteres";
-import {NotificationsProvider} from "@mantine/notifications";
+import {NotificationsProvider, showNotification} from "@mantine/notifications";
 import News from "./components/Pages/News";
 
 export default function App() {
@@ -15,6 +15,37 @@ export default function App() {
     function toggle() {
         setShow(!show);
     }
+
+    useEffect( () =>{
+        let name = "";
+        let title = "";
+        let text = "";
+        let show = false;
+        if (window.location.href.split("/")[3] === "ja") {
+            show = true;
+            name = "jap-banner"
+            title = "翻訳エラー";
+            text = "翻訳に一部誤りがある可能性があります。不正確な情報がある場合は、申し訳ございません。誤記を発見された場合は、ご遠慮なく弊社までご連絡ください。";
+        } else if (window.location.href.split("/")[3] === "un") {
+            show = true;
+            name = "hun-banner"
+            title = "Fordítási hiba";
+            text = "A fordítás részben hibás lehet. Elnézést kérünk az esetleges pontatlanságokért. Ha bármilyen hibát észlel, kérjük, ne habozzon kapcsolatba lépni velünk.";
+        }
+        if (show) {
+            show = false;
+            showNotification({
+                className: name,
+                id: name,
+                title: title,
+                disallowClose: false,
+                color: 'red',
+                loading: false,
+                autoClose: false,
+                message: text,
+            });
+        }
+    }, []);
 
     return (
         <MantineProvider
