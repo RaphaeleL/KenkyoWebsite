@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {MantineProvider} from "@mantine/core";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";

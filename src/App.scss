@@ -5,6 +5,12 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  height: auto !important;
+  width: auto !important;
+
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 $white-1: #ccc8c8;
@@ -87,7 +93,6 @@ a {
     }
   }
 
-
   .LandingPage {
     width: 100vw;
     height: 100vh;
@@ -100,15 +105,9 @@ a {
 
     .Logo {
       position: absolute;
-      bottom: 20vh;
-      right: 0;
-      width: clamp(200px, 10vw, 2400px);
-    }
-
-    .Carousel {
-      width: 100vw;
-      height: 100vh;
-      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: clamp(275px, 30vw, 440px);
     }
 
     .BackgroundImage {
@@ -119,29 +118,6 @@ a {
       height: 100vh;
       width: 100vw;
       position: absolute;
-      z-index: -1;
-    }
-
-    .BackgroundImageCarousel {
-      height: 100vh;
-      width: 100vw;
-      position: absolute;
-      z-index: -1;
-
-      .images {
-        height: 100vh;
-        width: 100vw;
-      }
-    }
-
-    .BackgroundImageBlur {
-      top: 0;
-      left: 0;
-      content: "";
-      height: 100vh;
-      width: 100vw;
-      position: absolute;
-      background-color: $blur-black-1;
       z-index: -1;
     }
 
@@ -163,8 +139,6 @@ a {
         color: $blur-black-1;
         z-index: 1;
         font-size: 3vw;
-        //font-family: o-wee-ental;
-        //src: url("./assets/o-wee-ental.ttf");
       }
     }
 
@@ -180,8 +154,6 @@ a {
   }
 
   .HomeBody {
-    .LandingQuote {
-    }
 
     .Success {
       background-color: $gray-2;
