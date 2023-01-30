@@ -6,8 +6,10 @@ export default function Language() {
     function handle(lang: any) {
         let url = window.location.href;
         let current_lang = url.split("/")[3];
-        let new_url = url.replace(current_lang, lang)
-        window.location.replace(new_url);
+        if (current_lang !== lang) {
+            let new_url = url.replace(current_lang, lang)
+            window.location.replace(new_url);
+        }
     }
     function handleGer() { handle("de") }
     function handleEng() { handle("en") }
