@@ -21,24 +21,10 @@ export default function Success() {
                     wrap="wrap"
                 >
                     <Card logo={<GiBlackBelt size={50}/>} title={succ[current_lang][0]} count={"4"}/>
-                    <Card logo={<BsPersonCheck size={50}/>} title={succ[current_lang][1]} count={"6"}/>
-                    <Card logo={<IoTrophyOutline size={50}/>} title={succ[current_lang][2]} count={"2"}/>
-                    <Card logo={<IoSchoolOutline size={50}/>} title={succ[current_lang][3]} count={"1"}/>
+                    <Card logo={<BsPersonCheck size={50}/>} title={succ[current_lang][2]} count={"6"}/>
+                    <Card logo={<IoTrophyOutline size={50}/>} title={succ[current_lang][3]} count={"2"}/>
+                    <Card logo={<IoSchoolOutline size={50}/>} title={succ[current_lang][1]} count={"1"}/>
                 </Flex>
         </Container>
-        /*<Grid grow className={"Success"}>
-            <Grid.Col span="auto" className={"SuccessItem"}>
-                <Card logo={<GiBlackBelt size={50}/>} title={succ[current_lang][0]} count={"4"}/>
-            </Grid.Col>
-            <Grid.Col span="auto" className={"SuccessItem"}>
-                <Card logo={<BsPersonCheck size={50}/>} title={succ[current_lang][1]} count={"6"}/>
-            </Grid.Col>
-            <Grid.Col span="auto" className={"SuccessItem"}>
-                <Card logo={<IoTrophyOutline size={50}/>} title={succ[current_lang][2]} count={"2"}/>
-            </Grid.Col>
-            <Grid.Col span="auto" className={"SuccessItem"}>
-                <Card logo={<IoSchoolOutline size={50}/>} title={succ[current_lang][3]} count={"1"}/>
-            </Grid.Col>
-        </Grid>*/
     );
 }

@@ -26,7 +26,7 @@ a {
   display: block;
   color: $blur-black-1;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
 }
 
@@ -55,6 +55,8 @@ a {
   .DesktopHeader {
     z-index: 101;
     position: fixed;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     width: 100vw;
     background-color: $white-3;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -96,10 +98,14 @@ a {
 
     .Logo {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: clamp(275px, 30vw, 440px);
+      width: clamp(30vw, 50vw, 70vw);
+      /*transition: box-shadow 500ms ease-in-out;*/
     }
+
+  /*  .Logo:hover {
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: box-shadow 500ms ease-in-out;
+    }*/
 
     .BackgroundImage {
       background-color: white;
@@ -121,8 +127,8 @@ a {
         z-index: 1;
         font-size: 8vw;
         letter-spacing: 20px;
-        font-family: o-wee-ental;
-        src: url("./assets/o-wee-ental.ttf");
+        /*font-family: o-wee-ental;
+        src: url("./assets/o-wee-ental.ttf");*/
       }
 
       .Subtitle {

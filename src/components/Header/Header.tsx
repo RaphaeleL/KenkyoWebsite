@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {Flex} from "@mantine/core";
 import MenuItems from "./Menu/MenuItems";
 
 export default function Header(props: any) {
@@ -28,16 +27,7 @@ export default function Header(props: any) {
 
     return (
         <div className={"DesktopHeader"} id={"DesktopHeader"}>
-            <Flex
-                mih={50}
-                gap="md"
-                justify="center"
-                align="center"
-                direction="row"
-                wrap="wrap"
-            >
-                <MenuItems />
-            </Flex>
+            <MenuItems />
         </div>
     );
 }

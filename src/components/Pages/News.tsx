@@ -16,7 +16,7 @@ export default function News(props: any) {
                 show={props.show} />
             <LandingPage
                 subtitle={items[current_lang][4]}
-                imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg"}/>
+                imgurl={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-7.jpeg"}/>
             <NewsBody />
         </>
     );

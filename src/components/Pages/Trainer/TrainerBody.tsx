@@ -1,18 +1,23 @@
 // @ts-nocheck
 import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
-import {Container, Text} from "@mantine/core";
+import {Container, Divider, Space, Text} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
 import MyContent from "../../Utils/MyContent";
 import FooterBody from "../Footer/FooterBody";
 import React from "react";
 import Seperator from "../Home/Seperator";
 import {dojo, times} from "../../Content/TrainerContent";
+import {items} from "../../Content/MenuContent";
 
 export default function TrainerBody() {
     let current_lang = window.location.href.split("/")[3] as String;
 
     return (
         <div className={"TrainerBody"}>
+            <Space h={"xl"} />
+            <MyTitle order={1} content={items[current_lang][1]} />
+            <Divider my="sm" />
+
             <Seperator />
             <Container>
                 <MyTitle content={dojo[current_lang][0]} />

@@ -10,13 +10,14 @@ export default function LandingPage(props: any) {
             }} />
 
             <div className={"TextContainer"}>
-                <div className={"Title"}>
+                {/*<div className={"Title"}>
                     Kenkyo
                 </div>
                 <div className={"Subtitle"}>
                     {props.subtitle}
-                </div>
+                </div>*/}
             </div>
+
             <Logo />
 
             <div  className={"scrollHint"} >

@@ -7,6 +7,7 @@ import PictureToPicture from "../../FloatingElement/PictureToPicture";
 import {news1, news2} from "../../Content/NewsContent";
 import MyTitle from "../../Utils/MyTitle";
 import MyContent from "../../Utils/MyContent";
+import {items} from "../../Content/MenuContent";
 
 function NewsBox(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -26,9 +27,16 @@ function NewsBox(props: any) {
 }
 
 export default function NewsBody() {
+    let current_lang = window.location.href.split("/")[3] as String;
 
     return (
         <div className={"NewsBody"}>
+            <Space h={"xl"} />
+            <MyTitle order={1} content={items[current_lang][3]} />
+            <Divider my="sm" />
+
+            <Seperator />
+
             <Seperator />
                 <Flex
                     mih={50}

@@ -7,7 +7,7 @@ export const page = {
 
 export const succ = {
     "de": [
-        "Schwarze Gürtel",
+        "Dan",
         "Prüfer",
         "Trainer",
         "Champions",
