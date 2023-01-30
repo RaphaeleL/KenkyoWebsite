@@ -15,24 +15,8 @@ $gray-1: #dedede;
 $red-1: #5b0204;
 $gray-2: rgba(245, 244, 244, 0.44);
 
-.demo {
-  width: 10vw;
-  height: 10vw;
-  background-color: red;
-  border: 1px solid black;
-}
-
 .Button:hover {
   cursor: pointer;
-}
-
-.Footer {
-  width: 100vw;
-  margin: 2vw;
-
-  .languageChooser:hover {
-    cursor: pointer;
-  }
 }
 
 a {
@@ -114,7 +98,6 @@ a {
 
     .OpenMenu {
       color: black;
-      postion: fixed;
       top: 0;
       right: 0;
       z-index: 5;
@@ -244,6 +227,8 @@ a {
   }
 
   .HomeBody {
+    .LandingQuote {
+    }
 
     .Success {
       background-color: $gray-2;
@@ -283,6 +268,15 @@ a {
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
   }
+
+  .Footer {
+    width: 100vw;
+
+    .languageChooser:hover {
+      cursor: pointer;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 900px) {
