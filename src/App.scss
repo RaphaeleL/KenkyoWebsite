@@ -1,3 +1,6 @@
+* {
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,12 +8,6 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  height: auto !important;
-  width: auto !important;
-
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 $white-1: #ccc8c8;
@@ -58,13 +55,7 @@ a {
   .DesktopHeader {
     z-index: 101;
     position: fixed;
-    min-height: 7vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*backdrop-filter: blur(10px);
-    background-color: $gray-2;*/
     background-color: $white-3;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
