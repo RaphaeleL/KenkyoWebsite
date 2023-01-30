@@ -146,9 +146,20 @@ a {
   }
 
   .NewsBody {
+
     .NewsBox {
-      .NewsImage:hover {
-        cursor:pointer;
+
+      .NewsImage {
+        border-radius: 25px;
+        display: block;
+        overflow: hidden;
+        transform: scale(1);
+      }
+
+      .NewsImage:hover img {
+        cursor: pointer;
+        transform: scale(1.025);
+        transition: transform 150ms ease-in-out;
       }
     }
   }
