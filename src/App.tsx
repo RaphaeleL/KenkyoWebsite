@@ -95,40 +95,6 @@ export default function App() {
                                     <News show={show} lang={"un"} toggle={toggle}/>
                                 } />
                             </Route>
-                                {/*<Route path="/training" element={
-                                    <Trainer
-                                        lang={lang}
-                                        show={show}
-                                        toggle={toggle}
-                                        toggleLang={toggleLang}
-                                        currentLangString={currentLangString}
-                                        currentLang={currentLang}
-                                        setCurrentLang={setCurrentLang} />
-                                } />
-                                <Route path="/vorstand" element={
-                                    <Vorstand
-                                        lang={lang}
-                                        show={show}
-                                        toggle={toggle}
-                                        toggleLang={toggleLang}
-                                        currentLangString={currentLangString}
-                                        currentLang={currentLang}
-                                        setCurrentLang={setCurrentLang}/>
-                                } />
-                                <Route path="/weiteres" element={
-                                    <Weiteres
-                                        lang={lang}
-                                        show={show}
-                                        toggle={toggle}
-                                        toggleLang={toggleLang}
-                                        currentLangString={currentLangString}
-                                        currentLang={currentLang}
-                                        setCurrentLang={setCurrentLang} />
-                                } />
-                                <Route path="*" element={
-                                    <NoPage />
-                                } />
-                            </Route>*/}
                         </Routes>
                     </BrowserRouter>
                 </div>
