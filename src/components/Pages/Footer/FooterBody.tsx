@@ -10,6 +10,11 @@ import Imprint from "./SubPages/Imprint";
 import Privacy from "./SubPages/Privacy";
 import Seperator from "../Home/Seperator";
 import Satzung from "./SubPages/Satzung";
+import Begrifflichkeiten from "./SubPages/Begrifflichkeiten";
+import Pruefungsordnung from "./SubPages/Pruefungsordnung";
+import Wettkampfregeln from "./SubPages/Wettkampfregeln";
+import Kontakt from "./SubPages/Kontakt";
+import History from "./SubPages/History/History";
 
 export default function FooterBody() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -38,7 +43,11 @@ export default function FooterBody() {
                         openingText={footer[current_lang][3]}
                         title={<Title order={1}>{footer[current_lang][3]}</Title>}
                         content={<Privacy />} />
-                    <Text c={"dimmed"}>{footer[current_lang][4]}</Text>
+                    <TextToPage
+                        size="xl"
+                        openingText={footer[current_lang][4]}
+                        title={<Title order={1}>{footer[current_lang][4]}</Title>}
+                        content={<Kontakt />} />
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][5]}</Title>
@@ -54,25 +63,43 @@ export default function FooterBody() {
                         title={<Title order={1}>{footer[current_lang][7]}</Title>}
                         content={<Sponsoren />}
                     />
-                    <Text c={"dimmed"}><Satzung title={footer[current_lang][8]} /></Text>
                 </Stack>
                 <Stack>
                     <Title order={4}>Rund ums Training</Title>
-                    <Text c={"dimmed"}>Begrifflichkeiten</Text>
+                    <TextToPage
+                        size="xl"
+                        openingText={"Begrifflichkeiten"}
+                        title={<Title order={1}>Begrifflichkeiten</Title>}
+                        content={<Begrifflichkeiten />}
+                    />
                     <Text c={"dimmed"}>Verhaltensregeln</Text>
-                    <Text c={"dimmed"}>Geschichte</Text>
-                </Stack>
-                <Stack>
-                    <Title order={4}>Außerhalb vom Training</Title>
-                    <Text c={"dimmed"}>Prüfungsprogramm KYU</Text>
-                    <Text c={"dimmed"}>Prüfungsprogramm DAN</Text>
-                    <Text c={"dimmed"}>Wettkampfregeln</Text>
+                    <TextToPage
+                        size="xl"
+                        openingText={"Geschichte"}
+                        title={<Title order={1}>Geschichte</Title>}
+                        content={<History />} />
                 </Stack>
                 <Stack>
                     <Title order={4}>Downloads</Title>
-                    <Text c={"dimmed"}>Anmeldungeformular</Text>
-                    <Text c={"dimmed"}>Kündigungsvorlage</Text>
-                    <Text c={"dimmed"}>Datenschutzformular</Text>
+                    <Flex
+                        mih={50}
+                        gap="md"
+                        justify="center"
+                        align="flex-start"
+                        direction="row"
+                        wrap="wrap"
+                    >
+                        <Stack>
+                            <Text c={"dimmed"}>Anmeldeformular</Text>
+                            <Text c={"dimmed"}>Kündigungsvorlage</Text>
+                            <Text c={"dimmed"}>Datenschutzformular</Text>
+                        </Stack>
+                        <Stack>
+                            <Pruefungsordnung title={"Prüfungsordnung"} />
+                            <Wettkampfregeln title={"Wettkampfregeln"} />
+                            <Satzung title={footer[current_lang][8]} />
+                        </Stack>
+                    </Flex>
                 </Stack>
             </Flex>
             <Copyright />

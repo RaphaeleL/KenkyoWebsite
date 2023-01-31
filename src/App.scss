@@ -17,6 +17,10 @@ $gray-1: #dedede;
 $red-1: #5b0204;
 $gray-2: rgba(245, 244, 244, 0.44);
 
+.click:hover {
+  cursor: pointer;
+}
+
 .Button:hover {
   cursor: pointer;
 }
