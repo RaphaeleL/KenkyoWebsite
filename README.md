@@ -7,9 +7,9 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 ## TODO
 
 - [ ] Übersetzungen
-  - [ ] Footer
-  - [ ] Kontakt
-  - [ ] Begrifflichkeiten
+  - [x] Footer
+  - [x] Kontakt
+  - [x] Begrifflichkeiten
   - [ ] Geschichte
 - [ ] Kontoverbindung angeben für Sponsoren, ...
 - [x] Wettkampfregeln als PDF

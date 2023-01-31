@@ -65,22 +65,22 @@ export default function FooterBody() {
                     />
                 </Stack>
                 <Stack>
-                    <Title order={4}>Rund ums Training</Title>
+                    <Title order={4}>{footer[current_lang][18]}</Title>
                     <TextToPage
                         size="xl"
-                        openingText={"Begrifflichkeiten"}
-                        title={<Title order={1}>Begrifflichkeiten</Title>}
+                        openingText={footer[current_lang][9]}
+                        title={<Title order={1}>{footer[current_lang][9]}</Title>}
                         content={<Begrifflichkeiten />}
                     />
-                    <Text c={"dimmed"}>Verhaltensregeln</Text>
+                    <Text c={"dimmed"}>{footer[current_lang][10]}</Text>
                     <TextToPage
                         size="xl"
-                        openingText={"Geschichte"}
-                        title={<Title order={1}>Geschichte</Title>}
+                        openingText={footer[current_lang][11]}
+                        title={<Title order={1}>{footer[current_lang][11]}</Title>}
                         content={<History />} />
                 </Stack>
                 <Stack>
-                    <Title order={4}>Downloads</Title>
+                    <Title order={4}>{footer[current_lang][16]}</Title>
                     <Flex
                         mih={50}
                         gap="md"
@@ -90,13 +90,13 @@ export default function FooterBody() {
                         wrap="wrap"
                     >
                         <Stack>
-                            <Text c={"dimmed"}>Anmeldeformular</Text>
-                            <Text c={"dimmed"}>Kündigungsvorlage</Text>
-                            <Text c={"dimmed"}>Datenschutzformular</Text>
+                            <Text c={"dimmed"}>{footer[current_lang][12]}</Text>
+                            <Text c={"dimmed"}>{footer[current_lang][13]}</Text>
+                            <Text c={"dimmed"}>{footer[current_lang][14]}</Text>
                         </Stack>
                         <Stack>
-                            <Pruefungsordnung title={"Prüfungsordnung"} />
-                            <Wettkampfregeln title={"Wettkampfregeln"} />
+                            <Pruefungsordnung title={footer[current_lang][15]} />
+                            <Wettkampfregeln title={footer[current_lang][17]} />
                             <Satzung title={footer[current_lang][8]} />
                         </Stack>
                     </Flex>

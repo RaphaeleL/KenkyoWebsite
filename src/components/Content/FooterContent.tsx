@@ -9,6 +9,17 @@ export const footer = {
         "Verbandsmitgliedschaften",
         "Sponsoren und Spenden",
         "Vereinssatzung",
+        "Begrifflichkeiten",
+        "Verhaltensregeln",
+        "Geschichte",
+        "Anmeldeformular",
+        "Kündigungsvorlage",
+        "Datenschutzsformular",
+        "Prüfungsordnung",
+        "Downloads",
+        "Wettkampfregeln",
+        "Rund ums Training",
+
     ],
     "en": [
         "Language Selection",
@@ -20,6 +31,16 @@ export const footer = {
         "Association Memberships",
         "Sponsors and Donations",
         "Association statutes",
+        "Conceptualizations",
+        "Rules of Conduct",
+        "History",
+        "Application Form",
+        "Cancellation Template",
+        "Privacy Form",
+        "Examination Regulations",
+        "Downloads",
+        "Competition Rules",
+        "All about training",
     ],
     "ja": [
         "言語選択",
@@ -31,6 +52,16 @@ export const footer = {
         '協会会員 "であること',
         'スポンサーシップ "と "寄付 "について',
         "協会規約",
+        "用語集",
+        "行動規範 ",
+        "沿革",
+        "応募用紙 ",
+        "キャンセルフォーム ",
+        "データ保護フォーム ",
+        "審査規程 ",
+        "ダウンロード ",
+        "コンペティションルール ",
+        "トレーニングの周辺",
     ],
     "un": [
         "Nyelvválasztás",
@@ -42,6 +73,16 @@ export const footer = {
         "Egyesületi tagság",
         "Szponzorok és adományok",
         "Egyesület alapszabálya",
+        "Terminológia",
+        "Magatartási szabályok",
+        "Történelem",
+        "Jelentkezési lap",
+        "Lemondási űrlap",
+        "Adatvédelmi űrlap",
+        "Vizsgaszabályzat",
+        "Letöltések",
+        "Versenyszabályok",
+        "A képzés körül",
     ],
 }
 
@@ -422,4 +463,74 @@ export const privacy = {
         "Online jelenlét a közösségi médiában",
         "Online jelenlétet tartunk fenn a közösségi hálózatokon és platformokon annak érdekében, hogy az ott aktív ügyfelekkel, érdeklődőkkel és felhasználókkal kommunikálni tudjunk, és ott tájékoztassuk őket szolgáltatásainkról. Az adott hálózatok, platformok felhívásakor a feltételek illetve az adatvédelmi nyilatkozatunkban meghatározott üzemeltetőik feltételei és adatkezelési irányelvei érvényesek, a felhasználók adatait akkor kezeljük, ha közösségi oldalakon és platformokon kommunikálnak velünk, például posztokat írnak online jelenlétünkre vagy üzenetet küldenek nekünk. ",
     ],
+}
+
+export const contact = {
+    "de": [
+        "Bei Fragen, Anregungen oder Fehler der Webseite meldet euch gerne bei uns!"
+    ],
+    "en": [
+        "If you have any questions, suggestions or website errors, please feel free to contact us!"
+    ],
+    "ja": [
+        "ご質問、ご提案、ウェブサイトのエラーなどございましたら、お気軽にご連絡ください！"
+    ],
+    "un": [
+        "Ha bármilyen kérdése, javaslata vagy a weboldal hibája van, kérjük, forduljon hozzánk bizalommal!"
+    ]
+}
+
+export const begrifflichkeiten = {
+    "de": [
+        "Grußformeln im Karatetraining",
+        "Zu Beginn und zu Ende jedes Trainings gibt es ein Begrüßungsritual. Hier noch mal für alle, die sich die Formeln nicht merken können oder noch nie richtig verstanden haben was da vorne gesagt wird",
+        "Innerhalb des Trainings werden viele Japanische Begrifflichkeiten verwendet, entsprechend wir auf Japanisch gezählt.",
+        "Aufstellung",
+        "Abknien",
+        "Augen Schließen",
+        "Gruß nach vorne",
+        "Gruß zum Trainer",
+        "Gegenseitiges Grüßen",
+        "Bitte vor dem Training",
+        "Danke nach dem Training",
+    ],
+    "en": [
+        "Greetings in Karate Training",
+        "At the beginning and end of each training session there is a greeting ritual. Here again for all who can not remember the formulas or have never really understood what is said in front",
+        "Within the training many Japanese terms are used, accordingly we count in Japanese",
+        "Line up",
+        "Kneel down",
+        "Close your eyes",
+        "Salute to the front",
+        "Salute to the coach",
+        "Greet each other",
+        "Please before training",
+        "Thank you after training",
+    ],
+    "ja": [
+        "空手稽古のご挨拶 ",
+        "「トレーニングの最初と最後には、必ず挨拶の儀式があるんです。数式を覚えられない人、表で言われていることがよくわからない人、すべての人のためにもう一度ここに」。",
+        "「研修の中では日本語の用語が多く使われるので、日本語でカウントしています」。",
+        "ラインアップ ",
+        "ひざまづけ ",
+        "目を閉じて ",
+        "最前線への敬礼",
+        "コーチへの敬礼",
+        "あいさつを交わす ",
+        "トレーニング前にお願いします",
+        "トレーニング後のお礼 ",
+    ],
+    "un": [
+        "Üdvözlet a karate edzésben",
+        "Minden edzés elején és végén van egy üdvözlő rituálé. Itt megint csak azoknak, akik nem emlékeznek a képletekre, vagy soha nem értették igazán, hogy mit mondanak elöl",
+        "A képzésen belül sok japán kifejezést használnak, ennek megfelelően japánul számolunk.",
+        "Sorakozó",
+        "Térdelj le",
+        "Csukd be a szemed",
+        "Tisztelgés a fronton",
+        "Tisztelgés az edző előtt",
+        "Üdvözöljétek egymást",
+        "Kérem, edzés előtt",
+        "Köszönöm az edzés után",
+    ]
 }

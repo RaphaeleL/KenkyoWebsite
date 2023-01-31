@@ -1,22 +1,25 @@
+// @ts-nocheck
 import {Container, Space, Table, Title} from "@mantine/core";
 import MyContent from "../../../Utils/MyContent";
+import {begrifflichkeiten, footer} from "../../../Content/FooterContent";
 
 export default function Begrifflichkeiten() {
+    let current_lang = window.location.href.split("/")[3] as String;
 
     let grusformeln = [
-        { japan: "musubi-dachi",        deutsch: "Aufstellung",                     hinweis: "-" },
-        { japan: "seiza",               deutsch: "Abknien",                         hinweis: "-" },
-        { japan: "mokesu",              deutsch: "Augen schließen",                 hinweis: "Auf das Training/Ende vorbereiten; " },
+        { japan: "musubi-dachi",        deutsch: begrifflichkeiten[current_lang][3],                     hinweis: "-" },
+        { japan: "seiza",               deutsch: begrifflichkeiten[current_lang][4],                         hinweis: "-" },
+        { japan: "mokesu",              deutsch: begrifflichkeiten[current_lang][5],                 hinweis: "Auf das Training/Ende vorbereiten; " },
 
-        { japan: "shomen-ni .... rei",  deutsch: "Gruß nach vorne",                 hinweis: "-" },
+        { japan: "shomen-ni .... rei",  deutsch: begrifflichkeiten[current_lang][6],                 hinweis: "-" },
 
-        { japan: "sempai-ni ... rei",   deutsch: "Gruß zum Trainer",                hinweis: "3.-1. Kyu" },
-        { japan: "sensei-ni .... rei",  deutsch: "Gruß zum Trainer",                hinweis: "ab 1. Dan" },
+        { japan: "sempai-ni ... rei",   deutsch: begrifflichkeiten[current_lang][7],                hinweis: "3.-1. Kyu" },
+        { japan: "sensei-ni .... rei",  deutsch: begrifflichkeiten[current_lang][8],                hinweis: "ab 1. Dan" },
 
-        { japan: "-o-tagai-ni .... rei",deutsch: "Gegenseitiges Grüßen",            hinweis: "-" },
+        { japan: "-o-tagai-ni .... rei",deutsch: begrifflichkeiten[current_lang][9],            hinweis: "-" },
 
-        { japan: "onegai shimasu",      deutsch: "allg. Bitte vor dem Training",    hinweis: "Wird auf den Trainergruß gewantwortet" },
-        { japan: "arigato gozaimashita",deutsch: "allg. Danke nach dem Training",   hinweis: "Wird auf den Trainergruß gewantwortet" },
+        { japan: "onegai shimasu",      deutsch: begrifflichkeiten[current_lang][10],    hinweis: "Wird auf den Trainergruß gewantwortet" },
+        { japan: "arigato gozaimashita",deutsch: begrifflichkeiten[current_lang][11],   hinweis: "Wird auf den Trainergruß gewantwortet" },
     ];
 
     let zahlen = [
@@ -36,7 +39,7 @@ export default function Begrifflichkeiten() {
         <tr>
             <td>{grusformel.japan}</td>
             <td>{grusformel.deutsch}</td>
-            <td>{grusformel.hinweis}</td>
+            {/*<td>{grusformel.hinweis}</td>*/}
         </tr>
     ));
 
@@ -44,33 +47,33 @@ export default function Begrifflichkeiten() {
         <tr>
             <td>{zahl.japan}</td>
             <td>{zahl.deutsch}</td>
-            <td>{zahl.hinweis}</td>
+            {/*<td>{zahl.hinweis}</td>*/}
         </tr>
     ));
 
     return(
         <Container>
-            <Title order={1}>Grußformeln im Karatetraining</Title>
+            <Title order={1}>{begrifflichkeiten[current_lang][0]}</Title>
             <Space h={"xs"} />
-            <MyContent content={"Zu Beginn und zu Ende jedes Trainings gibt es ein Begrüßungsritual. Hier noch mal für alle, die sich die Formeln nicht merken können oder noch nie richtig verstanden haben was da vorne gesagt wird"} />
+            <MyContent content={begrifflichkeiten[current_lang][1]} />
             <Table highlightOnHover>
                 <thead>
                 <tr>
-                    <th>Japanisch</th>
-                    <th>Deutsch</th>
-                    <th>Hinweiß</th>
+                    <th>Karate</th>
+                    <th>{current_lang}</th>
+                    {/*<th>Hinweiß</th>*/}
                 </tr>
                 </thead>
                 <tbody>{grusformelRow}</tbody>
             </Table>
             <Space h={"xs"} />
-            <MyContent content={"Innerhalb des Trainings werden viele Japanische Begrifflichkeiten verwendet, entsprechend wir auf Japanisch gezählt."} />
+            <MyContent content={begrifflichkeiten[current_lang][2]} />
             <Table highlightOnHover>
                 <thead>
                 <tr>
-                    <th>Japanisch</th>
-                    <th>Deutsch</th>
-                    <th>Aussprache</th>
+                    <th>Karate</th>
+                    <th>{current_lang}</th>
+                    {/*<th>Aussprache</th>*/}
                 </tr>
                 </thead>
                 <tbody>{zahlenRow}</tbody>

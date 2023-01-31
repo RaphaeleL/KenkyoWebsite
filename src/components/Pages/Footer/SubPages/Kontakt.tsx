@@ -1,10 +1,13 @@
+// @ts-nocheck
 import {Flex} from "@mantine/core";
 import Seperator from "../../Home/Seperator";
+import {contact} from "../../../Content/FooterContent";
 
 export default function Kontakt() {
+    let current_lang = window.location.href.split("/")[3] as String;
     return (
         <>
-            Bei Fragen, Anregungen oder Fehler der Webseite meldet euch gerne bei uns!
+            {contact[current_lang][0]}
             <Seperator />
             <Flex
                 mih={50}

@@ -10,25 +10,25 @@ import News from "./components/Pages/News/News";
 import Termine from "./components/Pages/Termine/Termine";
 
 export default function App() {
-    const [show, setShow] = useState(false);
 
     useEffect( () =>{
         let name = "";
         let title = "";
         let text = "";
+        let show = false;
         if (window.location.href.split("/")[3] === "ja") {
-            setShow(true);
+            show = true;
             name = "jap-banner"
             title = "翻訳エラー";
             text = "翻訳に一部誤りがある可能性があります。不正確な情報がある場合は、申し訳ございません。誤記を発見された場合は、ご遠慮なく弊社までご連絡ください。";
         } else if (window.location.href.split("/")[3] === "un") {
-            setShow(true);
+            show = true;
             name = "hun-banner"
             title = "Fordítási hiba";
             text = "A fordítás részben hibás lehet. Elnézést kérünk az esetleges pontatlanságokért. Ha bármilyen hibát észlel, kérjük, ne habozzon kapcsolatba lépni velünk.";
         }
         if (show) {
-            setShow(false);
+            //show = false;
             showNotification({
                 className: name,
                 id: name,
@@ -40,7 +40,7 @@ export default function App() {
                 message: text,
             });
         }
-    }, [show, setShow]);
+    }, []);
 
     return (
         <MantineProvider
