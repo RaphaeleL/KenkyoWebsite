@@ -2,6 +2,8 @@
 import {Container, Space, Table, Title} from "@mantine/core";
 import MyContent from "../../../Utils/MyContent";
 import {begrifflichkeiten, footer} from "../../../Content/FooterContent";
+import React from "react";
+import TextToPage from "../../../FloatingElement/TextToPage";
 
 export default function Begrifflichkeiten() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -52,6 +54,11 @@ export default function Begrifflichkeiten() {
     ));
 
     return(
+        <TextToPage
+            size="xl"
+            openingText={footer[current_lang][9]}
+            title={<Title order={1}>{footer[current_lang][9]}</Title>}
+            content={
         <Container>
             <Title order={1}>{begrifflichkeiten[current_lang][0]}</Title>
             <Space h={"xs"} />
@@ -79,5 +86,6 @@ export default function Begrifflichkeiten() {
                 <tbody>{zahlenRow}</tbody>
             </Table>
         </Container>
+            }/>
     );
 }

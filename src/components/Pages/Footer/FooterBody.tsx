@@ -33,51 +33,20 @@ export default function FooterBody() {
             >
                 <Stack>
                     <Title order={4}>{footer[current_lang][1]}</Title>
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][2]}
-                        title={<Title order={1}>{footer[current_lang][2]}</Title>}
-                        content={<Imprint />} />
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][3]}
-                        title={<Title order={1}>{footer[current_lang][3]}</Title>}
-                        content={<Privacy />} />
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][4]}
-                        title={<Title order={1}>{footer[current_lang][4]}</Title>}
-                        content={<Kontakt />} />
+                    <Imprint />
+                    <Privacy />
+                    <Kontakt />
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][5]}</Title>
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][6]}
-                        title={<Title order={1}>{footer[current_lang][6]}</Title>}
-                        content={<Verbaende />}
-                    />
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][7]}
-                        title={<Title order={1}>{footer[current_lang][7]}</Title>}
-                        content={<Sponsoren />}
-                    />
+                    <Verbaende />
+                    <Sponsoren />
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][18]}</Title>
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][9]}
-                        title={<Title order={1}>{footer[current_lang][9]}</Title>}
-                        content={<Begrifflichkeiten />}
-                    />
+                    <Begrifflichkeiten />
+                    <History />
                     <Text c={"dimmed"}>{footer[current_lang][10]}</Text>
-                    <TextToPage
-                        size="xl"
-                        openingText={footer[current_lang][11]}
-                        title={<Title order={1}>{footer[current_lang][11]}</Title>}
-                        content={<History />} />
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][16]}</Title>
