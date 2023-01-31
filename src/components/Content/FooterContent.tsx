@@ -534,3 +534,108 @@ export const begrifflichkeiten = {
         "Köszönöm az edzés után",
     ]
 }
+
+export const timeline = {
+    "de": [
+        "In der Zeit der Drei Königreiche (Sanzan Jidai) kämpften drei Feudalfürsten (Anji) um die Macht in Okinawa, wobei die üblichen militärischen Mittel, Maßnahmen, Taktiken und Strategien zum Einsatz kamen.",
+        "Sakugawa Kanga war der bekannteste und wichtigste Meister des frühen okinawanischen Tōde, einem Vorläufer des modernen Karate.",
+        "Er war Schüler von Sakugawa Kanga. Matsumura Sōkon wurde in Yamagawa, Shuri im Königreich Ryūkyū (heute: Yamagawa, Shuri, Naha, Präfektur Okinawa) geboren. Sein erster Karatelehrer war Sakukawa Kanga, der ihn fünf Jahre lang – bis zu seinem Tod – unterrichtete. Bevor Matsumura selbst in Shuri starb, unterrichtete er Karateka, wie z. B. Ankō Asato, Ankō Itosu, Motobu Chōyū, Motobu Chōki, Kentsu Yabu, Nabe Matsumura, Chōtoku Kyan, Kiyuna Pechin, Ryosei Kuwae und Sakihara Pechin, die es später zu Bekanntheit gebracht haben.",
+        "Er war Schüler von Matsumura Sōkon. Zu seiner Zeit wurde Higaonna Sensei zusammen mit Itosu Anko als 'der führende Karate-Ka in Okinawa' angesehen. Er starb im Oktober 1910, im Alter von 62 Jahren, in Anwesenheit von Miyagi Chojun. Viele der Schüler von Higaonna Sensei entwickelten ihre eigenen Stile, die auf seinen Lehren basierten. Sein Vermächtnis wird durch die Errungenschaften dieser Schüler und derer, die ihnen später folgten, fortgesetzt. Die bekanntesten von ihnen waren Miyagi Chojun.",
+        "Er war Schüler von Matsumura Sōkon. Itosu Ankō war Großmeister des Karate und einer der wichtigsten Karate-Meister der vergangenen 100 Jahre und Lehrer der meisten späteren Stilgrnder, wie z. B. Chibana Choshin (Shorin-Ryū), Mabuni Kenwa (Shitō-Ryū) oder Funakoshi Gichin (Shōtōkan-Ryū). Itosu reformierte das Karate Okinawas und machte aus der einstigen geheimen Kampfkunst ein System, das zum Zwecke der körperlichen Ertüchtigung und geistigen Erziehung (im Sinne des Dō) sogar an Schulen gelehrt werden konnte.",
+        "Das Dokument Bubishi gilt als Beweis für die Übertragung des chinesischen Boxens nach Okinawa. Es ist das einzig bekannte Dokument dieser Art und diesen Umfangs, und es handelt von chinesischen Box-Stilen, aus denen die Kata des Gōju-ryū stammten (Weißer Kranich und Arhat-Boxen)",
+
+        "Unter anderem durch Miyagis Wirken wurde das Gōjū-Ryū der erste Karate-Stil, der offiziell vom Dainippon Butokukai 大日本武徳会 1933 anerkannt und registriert wurde.",
+        "Chōjun Miyagi schrieb ein Überblick über das Karate-do: 'Eine Stilrichtung des Kungfu wurde 1828 von Fuzhou nach Okinawa gebracht und diente als Quelle und Inspiration für das Gōjū-ryū Karate Kempō'. Bis heute ist nicht klar, wen oder was er damit meinte.",
+        "Yamaguchi Gōgen war ein bekannter Meister des Karate. Yamaguchi lernte früh Jūdō und Kendō und gelangte über einen japanischen Zimmermann zum Karate, der ihn heimlich trainierte. Um 1932 wurde er Schüler von Chōjun Miyagi, der die Stilrichtung Gōjū-Ryū begründete. Yamaguchi galt ab 1952 als offizieller Nachfolger von Miyagi. Wegen seiner geschmeidigen Bewegungen erhielt er den Spitznamen die Katze.",
+        "1954 unternahm Fritz Nöpel nach seiner Berufsausbildung zum Bergmann eine Fahrradreise durch Asien mit dem Ziel, die Olympischen Sommerspiele 1956 in Melbourne, Australien, zu besuchen. Auf Java kam er das erste Mal mit Karate in Kontakt. Den ersten intensiven Karateunterricht nahm er in Taiwan. Fritz Nöpel ist der Wegbereiter des Gōjū-Ryū-Karate in Deutschland. Er war Träger des 10. Dan und des Ehrentitels Hanshi und damit höchstgraduierter Dan-Träger im Deutschen Karate Verband.",
+        "Am 06.01.2023 gründeten 7 Kampfsportbegeisterte den Karateverein Kenkyo.",
+    ],
+    "en": [
+        "During the Three Kingdoms (Sanzan Jidai) period, three feudal lords (anji) fought for power in Okinawa, using standard military means, measures, tactics, and strategies.",
+        "Sakugawa Kanga was the best known and most important master of early Okinawan Tōde, a precursor to modern karate.",
+        "He was a student of Sakugawa Kanga. Matsumura Sōkon was born in Yamagawa, Shuri in the Ryūkyū Kingdom (now Yamagawa, Shuri, Naha, Okinawa Prefecture). His first karate teacher was Sakukawa Kanga, who taught him for five years - until his death. Before Matsumura himself died in Shuri, he taught karateka such as Ankō Asato, Ankō Itosu, Motobu Chōyū, Motobu Chōki, Kentsu Yabu, Nabe Matsumura, Chōtoku Kyan, Kiyuna Pechin, Ryosei Kuwae, and Sakihara Pechin, who later made it to prominence.",
+        "He was a student of Matsumura Sōkon. In his time, Higaonna Sensei was considered 'the leading karate-ka in Okinawa' along with Itosu Anko. He died in October 1910, at the age of 62, in the presence of Miyagi Chojun. Many of Higaonna Sensei's students developed their own styles based on his teachings. His legacy continues through the achievements of these students and those who followed them later. The best known of these were Miyagi Chojun.",
+        "He was a student of Matsumura Sōkon. Itosu Ankō was a grandmaster of karate and one of the most important karate masters of the past 100 years and teacher of most of the later style founders, such as Chibana Choshin (Shorin-Ryū), Mabuni Kenwa (Shitō-Ryū) or Funakoshi Gichin (Shōtōkan-Ryū). Itosu reformed Okinawan karate and turned the former secret martial art into a system that could even be taught in schools for the purpose of physical training and spiritual education (in the Dō sense).",
+        "The Bubishi document is considered evidence of the transmission of Chinese boxing to Okinawa. It is the only known document of this type and scope, and it deals with Chinese boxing styles from which the kata of the Gōju-ryū originated (white crane and arhat boxing).",
+        "Due in part to Miyagi's work, the Gōjū-Ryū became the first karate style to be officially recognized and registered by the Dainippon Butokukai 大日本武徳会 in 1933.",
+        "Chōjun Miyagi wrote an overview of karate-do: 'A style of kungfu was brought to Okinawa from Fuzhou in 1828 and served as the source and inspiration for the Gōjū-ryū Karate Kempō'. To this day, it is not clear who or what he was referring to.",
+        "Yamaguchi Gōgen was a well-known master of karate. Yamaguchi learned Jūdō and Kendō at an early age and came to karate through a Japanese carpenter who trained him in secret. Around 1932, he became a student of Chōjun Miyagi, who founded the Gōjū-Ryū style. Yamaguchi was considered Miyagi's official successor from 1952. Because of his smooth movements, he was nicknamed the Cat.",
+        "In 1954, after completing his vocational training as a miner, Fritz Nöpel undertook a bicycle tour of Asia with the goal of attending the 1956 Summer Olympics in Melbourne, Australia. On Java he came into contact with karate for the first time. He took his first intensive karate lessons in Taiwan. Fritz Nöpel is the pioneer of Gōjū-Ryū-Karate in Germany. He was a holder of the 10th Dan and the honorary title of Hanshi, making him the highest-graded Dan holder in the German Karate Association.",
+        "On 06.01.2023 7 martial arts enthusiasts founded the karate club Kenkyo.",
+
+    ],
+    "ja": [
+        "「三国志の時代、沖縄では3人の大名（按司）が、通常の軍事手段、方策、戦術、戦略を駆使して政権を争った」。",
+        "佐久川寛我は、近代空手の先駆けである初期の沖縄唐手の最も有名で最も重要な師匠である",
+        '佐久川寒河江 "の門下生だった。松村宗門は、琉球王国首里山川（現・沖縄県那覇市首里山川）に生まれた。最初の空手の師匠は作川寛雅で、彼が亡くなるまでの5年間、空手の指導を受けた。松村自身が首里で亡くなる前に、安里安恒、糸洲安恒、本部長勇、本部長基、藪顕通、鍋松村、長徳喜安、喜友名ペチン、桑江良成、崎原ペチンといった、後に台頭した空手家たちを指導している。',
+        '松村宗門 "の弟子である。比嘉女先生は、当時、糸洲安恒と並んで「沖縄を代表する空手家」と言われていた。1910年10月、宮城長順のもとで62歳の生涯を閉じた。 比嘉女先生の教えをもとに、多くの弟子が独自の流派を確立していった。彼の遺産は、これらの学生や後に続く人々の業績を通じて続いています。その代表格が「宮城長純」である。',
+        '松村宗門 "の弟子である。糸洲安恒は、過去100年間の最も重要な空手家の一人であり、知花長新（少林流）、馬渕健和（四刀流）、船越義珍（四刀流）など、後の流祖たちの師となった人物である。糸洲は沖縄の空手を改革し、かつての秘伝の武術を、身体鍛錬と精神教育（道教）のために学校でも教えることができる体系にしたのです」。',
+        '菱文 "は、中国のボクシングが沖縄に伝わった証拠とされている。このような種類と範囲の文書は唯一知られており、剛柔流の型の起源となった中国のボクシングスタイル（白鶴拳と羅漢拳）を扱っている」。',
+
+        "「宮城の働きもあって、剛柔流は1933年に大日本武徳会に初めて公認・登録された空手流派となったのです。",
+        "宮城長順は空手道の概要について、「1828年に福州から沖縄にもたらされた一流の拳法が、剛柔流空手拳法の源流とインスピレーションとなった」と記している。誰が、何を言っているのか、今でもはっきりしない」。",
+        "山口剛玄は空手の名手として知られた人物である。山口は幼い頃から柔道と剣道を習い、日本人大工に密かに教えを受けたのが空手との出会いだった。1932年頃、郷中流を創始した宮城長駿に師事する。山口は、1952年から宮城の正式な後継者と見なされるようになった。その滑らかな動きから、猫というあだ名がついた」。",
+        "「1954年、鉱山労働者としての職業訓練を終えたフリッツ・ネーペルは、1956年にオーストラリアのメルボルンで開催される夏季オリンピックへの参加を目指し、自転車でアジアを巡る旅に出た。ジャワ島で空手と出会ったのである。台湾で初めて空手の集中講義を受けた。フリッツ・ネーペルは、ドイツにおける剛柔流空手のパイオニアである。第10段と範士の名誉称号を持ち、ドイツ空手連盟の最高段位保持者となった。",
+        "2023.01.06、武道愛好家7名が空手道部「拳闘」を創設。",
+
+],
+    "un": [
+
+        "A Három Királyság (Sanzan Jidai) időszakában három hűbérúr (anji) harcolt a hatalomért Okinawán, a szokásos katonai eszközök, intézkedések, taktikák és stratégiák alkalmazásával",
+        "Sakugawa Kanga volt a legismertebb és legfontosabb mestere a korai Okinawa Tōde-nak, a modern karate előfutárának.",
+        "Sakugawa Kanga tanítványa volt. Matsumura Sōkon a Ryūkyū Királyságban (ma: Yamagawa, Shuri, Naha, Okinawa prefektúra) született Yamagawa, Shuri városában. Első karatetanára Sakukawa Kanga volt, aki öt évig - haláláig - tanította őt. Mielőtt Matsumura maga is meghalt Shuriban, olyan karatekákat tanított, mint Ankō Asato, Ankō Itosu, Motobu Chōyū, Motobu Chōki, Kentsu Yabu, Nabe Matsumura, Chōtoku Kyan, Kiyuna Pechin, Ryosei Kuwae és Sakihara Pechin, akik később kiemelkedtek",
+        "Matsumura Sōkon tanítványa volt. A maga idejében Higaonna Sensei-t Itosu Anko mellett 'Okinawa vezető karate-ka-jának' tartották. 1910 októberében, 62 éves korában halt meg Miyagi Chojun jelenlétében. Higaonna Sensei számos tanítványa az ő tanításai alapján fejlesztette ki saját stílusát. Öröksége ezeknek a diákoknak és az őket később követőknek az eredményein keresztül folytatódik. A legismertebbek közülük Miyagi Chojun volt.",
+        "Matsumura Sōkon tanítványa volt. Itosu Ankō a karate nagymestere volt, az elmúlt 100 év egyik legfontosabb karate mestere és a legtöbb későbbi stílusalapító tanára, mint például Chibana Choshin (Shorin-Ryū), Mabuni Kenwa (Shitō-Ryū) vagy Funakoshi Gichin (Shōtōkan-Ryū). Itosu megreformálta az okinawai karatét, és a korábbi titkos harcművészetet olyan rendszerré alakította át, amelyet akár iskolákban is lehetett tanítani fizikai edzés és szellemi nevelés céljából (a Dō értelmében).",
+        "A Bubishi-dokumentumot bizonyítéknak tekintik a kínai boksz Okinawára való átvitelére. Ez az egyetlen ismert ilyen típusú és terjedelmű dokumentum, és a kínai ökölvívó stílusokkal foglalkozik, amelyekből a Gōju-ryū kata (fehér daru és arhat ökölvívás) származik.",
+
+
+        "Részben Miyagi munkájának köszönhetően a Gōjū-Ryū lett az első karate stílus, amelyet a Dainippon Butokukai 大日本武徳会 hivatalosan elismert és bejegyzett 1933-ban.",
+        'Chōjun Miyagi a karate-do áttekintését írta: "A kungfu egy stílusát 1828-ban hozták Fuzhou-ból Okinawára, és ez szolgált a Gōjū-ryū Karate Kempō forrásául és inspirációjául". A mai napig nem világos, hogy kire vagy mire utalt.',
+        "Yamaguchi Gōgen a karate jól ismert mestere volt. Yamaguchi korán megtanulta a Jūdōt és a Kendōt, és egy japán asztalos révén jutott el a karatéhoz, aki titokban képezte ki. 1932 körül Chōjun Miyagi tanítványa lett, aki a Gōjū-Ryū stílust alapította. Yamaguchit 1952-től Miyagi hivatalos utódjának tekintették. Finom mozgása miatt a Macska becenevet kapta.",
+        "Fritz Nöpel 1954-ben, bányász szakmunkásképzése után kerékpáros Ázsia-túrára indult azzal a céllal, hogy részt vegyen az 1956-os nyári olimpián az ausztráliai Melbourne-ben. Javán került először kapcsolatba a karatéval. Az első intenzív karateórákat Tajvanon vette. Fritz Nöpel a Gōjū-Ryū karate úttörője Németországban. A 10. dan és a Hanshi tiszteletbeli cím birtokosa volt, így ő volt a Német Karate Szövetség legmagasabb dan fokozatú birtokosa.",
+        "2023.01.06-án 7 harcművészet-rajongó megalapította a Kenkyo karate klubot.",
+    ]
+}
+
+export const gojuryu = {
+    "de": [
+        "Karate Geschichte Übersicht",
+        "Gōjū-Ryū ist ein Karate-Stil mit lang zurückreichender Tradition, der besonders viele Elemente des ursprünglichen chinesischen Boxens des 17. bis 19. Jahrhunderts enthält. Der Name Gōjū-Ryū wurde von Chōjun Miyagi (1888–1953) gewählt. Miyagi bezog sich bei der Auswahl des Stilnamens auf das lange Zeit geheim gehaltene Bubishi, in dem eine der „Acht Regeln des Faustkampfes“ (拳法之大要八句 kenpō no taiyō hakku) da lautet: „Alles im Universum atmet hart und weich“ (法剛柔呑吐 hō gōjū donto).",
+        "Im Bugei Ryūha Daijiten, der Enzyklopädie der Kriegskunststile von Kyoshi Watatani und Yamada Tadashi (Tokio, 1978) wird Gōjū-Ryū unter anderem wie folgt charakterisiert: 古式の技であるという. (Koshiki no waza dearu toiu.) Das bedeutet: (Gōjū-Ryū wird) „Auch Koshiki no Waza genannt.“ Koshiki no Waza sind „antike Techniken“, „Techniken der alten Schule“, oder „antike Riten“. Dementsprechend handelt es sich beim Gōjū-Ryū um die Überlieferung traditioneller Kampfmethoden. Gōjū-Ryū Karate entwickelte sich aus der Erforschung und Systematisierung effektiver unbewaffneter Kampfbewegungen auf Okinawa. Die Entwicklung des Gōjū-Ryū Karate ist mit der Geschichte von China, Ryūkyū und Japan verbunden.",
+    ],
+    "en": [
+        "Karate History Overview",
+        "Gōjū-Ryū is a style of karate with a long tradition, particularly incorporating many elements of the original Chinese boxing of the 17th to 19th centuries. The name Gōjū-Ryū was chosen by Chōjun Miyagi (1888-1953). In choosing the style name, Miyagi referred to the long-secret Bubishi, in which one of the `Eight Rules of Pugilism` (拳法之大要八句 kenpō no taiyō hakku) reads, `Everything in the universe breathes hard and soft' (法剛柔呑吐 hō gōjū donto).",
+        'In the Bugei Ryūha Daijiten, the Encyclopedia of Martial Art Styles by Kyoshi Watatani and Yamada Tadashi (Tokyo, 1978), Gōjū-Ryū is characterized as follows, among others: 古式の技であるという. (Koshiki no waza dearu toiu.) This means (Gōjū-Ryū is) "Also called Koshiki no Waza." Koshiki no Waza are "ancient techniques," "old school techniques," or "ancient rites." Accordingly, Gōjū-Ryū is the transmission of traditional fighting methods. Gōjū-Ryū Karate evolved from the study and systematization of effective unarmed fighting movements on Okinawa. The development of Gōjū-Ryū Karate is connected with the history of China, Ryūkyū and Japan.',
+    ],
+    "ja": [
+        "空手の歴史の概要",
+        "「剛柔流は、17世紀から19世紀にかけての中国ボクシングの要素を多く含む、長い伝統を持つ空手道である。五十嵐は、宮城長淳（1888〜1953）が命名した。宮城は、「拳法之大要八句」の中の「宇宙万物は硬軟自在に呼吸する」という秘伝の「武士」にちなんで、この流派名を決めたのである。",
+        "渡谷恭史・山田正著『武芸流派大辞典』（東京、1978年）では、古式の技であるということで、剛柔流は次のように特徴づけられている。(これは（五十嵐が）「古式の技ともいう」という意味である。古式の技とは、「古代の技」「古流の技」「古代の儀式」のことである。したがって、護送流は伝統的な戦法の伝承である。剛柔流空手は、沖縄で効果的な非武装戦闘動作の研究・体系化から発展した。剛柔流空手の発展は、中国、琉球、日本の歴史とリンクしている」。",
+    ],
+    "un": [
+
+        "A karate történelmének áttekintése",
+        "A Gōjū-Ryū egy nagy hagyományokkal rendelkező karate stílus, amely különösen sok elemet tartalmaz a 17-19. századi eredeti kínai bokszból. A Gōjū-Ryū nevet Chōjun Miyagi (1888-1953) választotta. A stílusnév kiválasztásakor Miyagi a sokáig titokban tartott Bubishira hivatkozott, amelyben az 'Ökölvívás nyolc szabályának' (拳法之大要八句 kenpō no taiyō hakku) egyike így szól: 'A világegyetemben minden keményen és lágyan lélegzik' (法剛柔呑吐 hō gōjū donto)",
+        "Kyoshi Watatani és Yamada Tadashi (Tokió, 1978) Bugei Ryūha Daijiten, a harcművészeti stílusok enciklopédiája című művében a Gōjū-Ryū többek között a következőképpen jellemzi: 古式の技であるという. (Koshiki no waza dearu toiu.) Ez azt jelenti, hogy (Gōjū-Ryū) 'Koshiki no wazának is nevezik'. A Koshiki no Waza 'ősi technikák', 'régi iskolai technikák' vagy 'ősi rítusok'. Ennek megfelelően a Gōjū-Ryū a hagyományos harci módszerek átadása. A Gōjū-Ryū karate a hatékony fegyvertelen harci mozdulatok kutatásából és rendszerezéséből fejlődött ki Okinawán. A Gōjū-Ryū Karate fejlődése Kína, Ryūkyū és Japán történetéhez kapcsolódik",
+    ]
+}
+
+export const sponsor = {
+    "de": [
+        "Möchten Sie uns etwas Spenden oder uns Sponsoren? Dann melden Sie sich bei uns!",
+        "Wir freuen uns auf Ihre Nachricht. Doch nun die bisherigen Sponsoren und Spender:",
+    ],
+    "en": [
+        "Would you like to donate something to us or sponsor us? Then get in touch with us!",
+        "We look forward to hearing from you. But now the previous sponsors and donors:",
+    ],
+    "ja": [
+        '何か寄付をしたい"、"スポンサーになりたい "という方はいらっしゃいませんか？それなら、私たちに連絡を取ってください！」。',
+        'お便り "をお待ちしております。しかし、今までのスポンサーやドナーは：」。',
+    ],
+    "un": [
+        "Szeretne nekünk adományozni vagy szponzorálni minket? Akkor vegye fel velünk a kapcsolatot!",
+        "Várjuk, hogy jelentkezzenek. De most a szponzorok és adományozók eddig:",
+    ]
+}

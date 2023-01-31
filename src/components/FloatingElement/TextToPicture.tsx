@@ -22,7 +22,7 @@ export default function FloatingTextToPicture(props: any) {
                 />
             </Modal>
 
-            <Tooltip label={"Foto von: " + props.label} position="right" withArrow>
+            <Tooltip label={props.label} position="right" withArrow>
                 <Indicator inline size={8} color="violet">
                     <Text className={"click"} onClick={() => setOpened(true)}>{props.text}</Text>
                 </Indicator>

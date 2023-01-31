@@ -1,11 +1,14 @@
+// @ts-nocheck
 import MyContent from "../../../Utils/MyContent";
+import {sponsor} from "../../../Content/FooterContent";
 
 export default function Sponsoren() {
+    let current_lang = window.location.href.split("/")[3] as String;
     return (
         <>
-            <MyContent content={"Möchten Sie uns etwas Spenden oder uns Sponsoren? Dann melden Sie sich bei uns!"} />
+            <MyContent content={sponsor[current_lang][0]} />
             <MyContent content={<a href={"mailto: todo@todo.de"}>todo@todo.de</a>} />
-            <MyContent content={"Wir freuen uns auf Ihre Nachricht. Doch nun die bisherigen Sponsoren und Spender:"} />
+            <MyContent content={sponsor[current_lang][1]} />
         </>
     );
 }
