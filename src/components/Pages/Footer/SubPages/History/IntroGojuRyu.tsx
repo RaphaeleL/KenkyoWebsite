@@ -17,7 +17,7 @@ export default function IntroGojuRyu() {
                         label={gojuryu[current_lang][0]}
                         text={"剛柔流 - Gōjū-Ryū"}
                         pic={
-                            "https://raw.githubusercontent.com/RaphaeleL/karate_website/main/src/assets/KarateHistoryOverview.png"
+                            "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/KarateHistoryOverview.png"
                         }
                     />
                     }/>
