@@ -22,7 +22,7 @@ export default function MenuItems() {
                 </li>
                 <li>
                     <a href={"/" + current_lang + "/ueber-uns"}>
-                        <Text c={"dimmed"}>{items[current_lang][2]}</Text>
+                        <Text>{items[current_lang][2]}</Text>
                     </a>
                 </li>
                 <li>
