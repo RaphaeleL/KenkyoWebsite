@@ -24,9 +24,9 @@ export default function LandingPage() {
 
             <Logo />
 
-            <div  className={"scrollHint"} >
+{/*            <div  className={"scrollHint"} >
                 <SlArrowDown size={40}/>
-            </div>
+            </div>*/}
         </div>
     );
 }

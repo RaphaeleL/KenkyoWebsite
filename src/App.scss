@@ -11,7 +11,7 @@ body {
 
 $white-1: #ccc8c8;
 $white-2: #f6f5f5;
-$white-3: #f6f3f3;
+$white-3: #e7e4e4;
 $blur-black-1: #000000d0;
 $gray-1: #dedede;
 $red-1: #5b0204;
@@ -25,7 +25,6 @@ a {
   display: block;
   color: $blur-black-1;
   text-align: center;
-  padding: 10px 12px;
   text-decoration: none;
 }
 
@@ -72,6 +71,10 @@ a {
 
       li {
         float: right;
+
+        a {
+          padding: 10px 12px;
+        }
       }
     }
   }
@@ -102,14 +105,14 @@ a {
       z-index: -1;
     }
 
-    .scrollHint {
+/*    .scrollHint {
       position: absolute;
       bottom: 0;
       color: $white-1;
       animation-name: move_scroll_hint;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-    }
+    }*/
 
   }
 
@@ -176,6 +179,7 @@ a {
 
 }
 
+/*
 @media only screen and (max-width: 900px) {
   .App {
     .LandingPage {
@@ -244,4 +248,4 @@ a {
   50% { bottom: 10px; }
   75% { bottom: 20px; }
   100% { bottom: 10px; }
-}
+}*/
