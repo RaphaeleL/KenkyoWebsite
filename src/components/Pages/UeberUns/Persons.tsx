@@ -177,7 +177,7 @@ export default function Persons() {
                     position={personsContent[current_lang][1] + ", " + personsContent[current_lang][5]}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-7.jpeg"}
                     champion={true}
-                    fulltext="TODO"
+                    fulltext={personsContent[current_lang][11]}
                     succ1={zsoltContent[current_lang][0]}
                 />
                 <MyCard
