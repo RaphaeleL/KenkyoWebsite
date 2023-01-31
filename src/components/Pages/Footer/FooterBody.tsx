@@ -57,21 +57,20 @@ export default function FooterBody() {
                     <Text c={"dimmed"}><Satzung title={footer[current_lang][8]} /></Text>
                 </Stack>
                 <Stack>
-                    <Title order={4}>{footer[current_lang][9]}</Title>
-                    <Text c={"dimmed"}>{footer[current_lang][10]}</Text>
-                    <Text c={"dimmed"}>{footer[current_lang][11]}</Text>
-                    <Text c={"dimmed"}>{footer[current_lang][12]}</Text>
-                </Stack>
-                <Stack>
                     <Title order={4}>Rund ums Training</Title>
-                    <Text c={"dimmed"}>Prüfungsprogramm</Text>
+                    <Text c={"dimmed"}>Begrifflichkeiten</Text>
                     <Text c={"dimmed"}>Verhaltensregeln</Text>
                     <Text c={"dimmed"}>Geschichte</Text>
-                    {/*<Text c={"dimmed"}>Begrifflichkeiten</Text>*/}
+                </Stack>
+                <Stack>
+                    <Title order={4}>Außerhalb vom Training</Title>
+                    <Text c={"dimmed"}>Prüfungsprogramm KYU</Text>
+                    <Text c={"dimmed"}>Prüfungsprogramm DAN</Text>
+                    <Text c={"dimmed"}>Wettkampfregeln</Text>
                 </Stack>
                 <Stack>
                     <Title order={4}>Downloads</Title>
-                    <Text c={"dimmed"}>Anmeldung</Text>
+                    <Text c={"dimmed"}>Anmeldungeformular</Text>
                     <Text c={"dimmed"}>Kündigungsvorlage</Text>
                     <Text c={"dimmed"}>Datenschutzformular</Text>
                 </Stack>

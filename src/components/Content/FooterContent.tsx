@@ -9,10 +9,6 @@ export const footer = {
         "Verbandsmitgliedschaften",
         "Sponsoren und Spenden",
         "Vereinssatzung",
-        "Soziale Medien",
-        "Pressemitteilungen",
-        "Instagram",
-        "TikTok",
     ],
     "en": [
         "Language Selection",
@@ -24,10 +20,6 @@ export const footer = {
         "Association Memberships",
         "Sponsors and Donations",
         "Association statutes",
-        "Social Media",
-        "Press Releases",
-        "Instagram",
-        "TikTok",
     ],
     "ja": [
         "言語選択",
@@ -39,10 +31,6 @@ export const footer = {
         '協会会員 "であること',
         'スポンサーシップ "と "寄付 "について',
         "協会規約",
-        "ソーシャルメディア ",
-        'プレスリリース "をご覧ください',
-        "Instagram ",
-        "TikTok ",
     ],
     "un": [
         "Nyelvválasztás",
@@ -54,10 +42,6 @@ export const footer = {
         "Egyesületi tagság",
         "Szponzorok és adományok",
         "Egyesület alapszabálya",
-        "Közösségi média",
-        "Sajtóközlemények",
-        "Instagram",
-        "TikTok",
     ],
 }
 
