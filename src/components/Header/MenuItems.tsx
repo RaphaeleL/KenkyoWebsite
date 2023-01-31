@@ -12,27 +12,27 @@ export default function MenuItems() {
             <ul>
                 <li>
                     <a href={"/" + current_lang + "/home"}>
-                        <Text fz={"md"}>{items[current_lang][0]}</Text>
+                        <Text>{items[current_lang][0]}</Text>
                     </a>
                 </li>
                 <li>
                     <a href={"/" + current_lang + "/training"}>
-                        <Text fz={"md"}>{items[current_lang][1]}</Text>
+                        <Text>{items[current_lang][1]}</Text>
                     </a>
                 </li>
                 <li>
                     <a href={"/" + current_lang + "/ueber-uns"}>
-                        <Text fz={"md"} c={"dimmed"}>{items[current_lang][2]}</Text>
+                        <Text c={"dimmed"}>{items[current_lang][2]}</Text>
                     </a>
                 </li>
                 <li>
                     <a href={"/" + current_lang + "/termine"}>
-                        <Text fz={"md"} c={"dimmed"}>{items[current_lang][3]}</Text>
+                        <Text c={"dimmed"}>{items[current_lang][3]}</Text>
                     </a>
                 </li>
                 <li>
                     <a href={"/" + current_lang + "/news"}>
-                        <Text fz={"md"}>{items[current_lang][4]}</Text>
+                        <Text>{items[current_lang][4]}</Text>
                     </a>
                 </li>
             </ul>

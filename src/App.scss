@@ -67,7 +67,6 @@ a {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      font-weight: 700;
 
       li {
         float: right;
@@ -163,6 +162,7 @@ a {
   .VorstandBody {
     .MyCard {
       width: 450px;
+      // height: 1020px;
       .PersonInfoButton {
 
       }

@@ -18,7 +18,7 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
   - [x] Layout  
   - Inhalt
     - [ ] Warum Karate?
-    - [ ] Erfolge
+    - [x] Erfolge
     - [x] Qualifikationen
     - [x] Position
 - [ ] Home: Technik, Strategie, Körperkontrolle, Fitness

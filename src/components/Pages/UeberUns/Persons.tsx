@@ -10,11 +10,11 @@ import {
     Image,
     Blockquote,
     Space,
-    ScrollArea,
+    Divider,
 } from "@mantine/core";
 import React from "react";
 import TextToPage from "../../FloatingElement/TextToPage";
-import {personsContent} from "../../Content/PersonsContent";
+import {personsContent, raphaeleContent, zsoltContent} from "../../Content/PersonsContent";
 
 function MyCard(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -29,7 +29,7 @@ function MyCard(props: any) {
             </Card.Section>
 
             <Group position="apart" mt="md" mb="xs">
-                <Title order={3} weight={500}>{props.title}</Title>
+                <Title order={4} weight={500}>{props.title}</Title>
                 <Group>
                     {props.grade && (
                         <Badge
@@ -49,11 +49,34 @@ function MyCard(props: any) {
                     )}
                 </Group>
             </Group>
+
             <Text ta="left" c="dimmed">{props.position}</Text>
 
-            {props.quote && (
+            {props.champion && (
+                <>
+                    <Space h="md" />
+                    <Divider />
+                    <Space h="md" />
+                    <Text ta="left" c="dimmed">{props.succ1}</Text>
+                    <Text ta="left" c="dimmed">{props.succ2}</Text>
+                    <Text ta="left" c="dimmed">{props.succ3}</Text>
+                    <Text ta="left" c="dimmed">{props.succ4}</Text>
+                    <Space h="md" />
+                    <Divider />
+                </>
+            )}
+
+            {props.quote && props.quoteOriginDifferent && (
+                <Blockquote cite={"~ " + props.quoteOrigin}>
+                    <Text ta="left" size="lg" color="dimmed">
+                        {props.quote}
+                    </Text>
+                </Blockquote>
+            )}
+
+            {props.quote && !props.quoteOriginDifferent && (
                 <Blockquote>
-                    <Text size="lg" color="dimmed">
+                    <Text ta="left" size="lg" color="dimmed">
                         {props.quote}
                     </Text>
                 </Blockquote>
@@ -74,18 +97,7 @@ function MyCard(props: any) {
                     </Button>
                 }
                 title={<Title order={1}>{props.title}</Title>}
-                content={
-                    <ScrollArea style={{ height: 700 }}>
-                        <Image
-                            fit="contain"
-                            radius="md"
-                            src={props.url}
-                            alt={props.title}
-                        />
-                        <Space h="xl" />
-                        {props.fulltext}
-                    </ScrollArea>
-                } />
+                content={props.fulltext} />
         </Card>
     );
 }
@@ -107,18 +119,26 @@ export default function Persons() {
                     color={"dark"}
                     grade={"5. Dan"}
                     position={personsContent[current_lang][0] + ", " + personsContent[current_lang][2] + ", " + personsContent[current_lang][3]}
-                    quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/Zsolt.jpg"}
-                    fulltext={"TODO"}
+                    champion={true}
+                    fulltext="TODO"
+                    succ1={zsoltContent[current_lang][0]}
                 />
                 <MyCard
                     title={"Raphaele Salvatore  Licciardo"}
                     color={"dark"}
                     grade={"1. Dan"}
                     position={personsContent[current_lang][0] + ", " + personsContent[current_lang][10] + ", " + personsContent[current_lang][4]}
-                    quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
+                    quote={raphaeleContent[current_lang][0]}
+                    quoteOriginDifferent={true}
+                    quoteOrigin={raphaeleContent[current_lang][1]}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/Raphaele-2.jpg"}
-                    fulltext={"TODO"}
+                    fulltext={raphaeleContent[current_lang][6]}
+                    champion={true}
+                    succ1={raphaeleContent[current_lang][2]}
+                    succ2={raphaeleContent[current_lang][3]}
+                    succ3={raphaeleContent[current_lang][4]}
+                    succ4={raphaeleContent[current_lang][5]}
                 />
             </Flex>
 
@@ -136,17 +156,17 @@ export default function Persons() {
                     title={"Michael Kupper"}
                     color={"dark"}
                     grade={"1. Dan"}
-                    position={personsContent[current_lang][0] + ", " + personsContent[current_lang][6] + ", (?)"}
-                    quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
+                    position={personsContent[current_lang][0] + ", " + personsContent[current_lang][6] + ", " + personsContent[current_lang][4]}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-2.jpeg"}
-                    fulltext={"TODO"}
+                    champion={true}
+                    fulltext="TODO"
+                    succ1={zsoltContent[current_lang][0]}
                 />
                 <MyCard
                     title={"Dr. Evi Gleibs"}
                     color={"#6D4326"}
                     grade={"1. Kyu"}
-                    position={personsContent[current_lang][1] + ", " + personsContent[current_lang][7] + ", (?)"}
-                    quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
+                    position={personsContent[current_lang][1] + ", " + personsContent[current_lang][7]}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-4.jpeg"}
                     fulltext={"TODO"}
                 />
@@ -155,27 +175,26 @@ export default function Persons() {
                     color={"dark"}
                     grade={"1. Dan"}
                     position={personsContent[current_lang][1] + ", " + personsContent[current_lang][5]}
-                    quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-7.jpeg"}
-                    fulltext={personsContent[current_lang][11]}
+                    champion={true}
+                    fulltext="TODO"
+                    succ1={zsoltContent[current_lang][0]}
                 />
                 <MyCard
-                    title={"Darja"}
+                    title={"Darja Alena Kuklinski"}
                     color={"#6D4326"}
                     grade={"1. Kyu"}
                     position={personsContent[current_lang][1]}
                     quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-9.jpeg"}
-                    fulltext={"TODO"}
+                    fulltext="TODO"
                 />
-
                 <MyCard
                     title={"Maria Licciardo"}
                     color={"grape"}
                     position={personsContent[current_lang][1] + ", " + personsContent[current_lang][8]}
-                    quote={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."}
                     url={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-3.jpeg"}
-                    fulltext={"TODO"}
+                    fulltext="TODO"
                 />
             </Flex>
         </>

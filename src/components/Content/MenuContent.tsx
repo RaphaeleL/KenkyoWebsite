@@ -9,7 +9,7 @@ export const items = {
     "en": [
         "Home",
         "Training",
-        "Board of Directors",
+        "About us",
         "Further",
         "News",
     ],

@@ -56,3 +56,57 @@ export const personsContent = {
         "Monika Penderik vagyok. Felnőttként kezdtem el karatézni. Mindig is meg akartam tanulni, hogyan védjem meg magam, de kiderült, hogy ennél sokkal többről van szó. A karate fegyelemre és olyan mozdulatokra tanított meg, amelyekről soha nem gondoltam volna, hogy képes leszek rá. Ez a szerelem már több mint 10 éve tart, és 2021 decemberében megkaptam a fekete övet. Miután találkoztam a férjemmel, aki itt vezető edző, arra bátorított, hogy ne csak karatézni tanuljak, hanem tanítsak is. Ezért kezdtem el gyerekeket tanítani, amikor még csak barna öves voltam. Ma C edzőként tanítom a gyerekeket a karate első lépéseire.  Számomra nagyon szórakoztató látni, ahogy fejlődnek és örömüket lelik a karatéban. A sport mellett a hadsereg és a légierő csereügynökségének adminisztrációjában dolgozom.",
     ]
 }
+
+export const raphaeleContent = {
+    "de": [
+        "Selbst ein Weg von tausend Meilen beginnt mit dem ersten Schritt.",
+        "Sifu Han",
+        "Deutscher Kung Fu Kader",
+        "Deutscher Kung Fu Vize Meister 2018",
+        "Europameisterschaft Kung Fu Qualifikation",
+        "Karate Kampfrichterausbildung",
+        "TODO",
+    ],
+    "en": [
+        "Even a journey of a thousand miles begins with the first step.",
+        "Sifu Han",
+        "German Kung Fu Squad",
+        "German Kung Fu Vice Champion 2018",
+        "European Championship Kung Fu Qualification",
+        "Karate Referee Training",
+        "TODO",
+    ],
+    "ja": [
+        "千里の道も一歩から ",
+        "シーフーハン ",
+        "ドイツ・カンフー部隊",
+        "ドイツ・カンフー副チャンピオン2018",
+        "ヨーロッパカンフーチャンピオンシップ予選",
+        '空手審判員養成講座 "を開催します',
+        "TODO ",
+    ],
+    "un": [
+        "Még egy ezer mérföldes út is az első lépéssel kezdődik",
+        "Sifu Han",
+        "Német Kung Fu osztag",
+        "Német kung-fu albajnok 2018",
+        "Kung Fu Európa-bajnokság selejtező",
+        "Karate bíróképzés",
+        "TODO",
+    ]
+}
+
+export const zsoltContent = {
+    "de": [
+        "Karate Kampfrichterausbildung",
+    ],
+    "en": [
+        "Karate Referee Training",
+    ],
+    "ja": [
+        '空手審判員養成講座 "を開催します',
+    ],
+    "un": [
+        "Karate bíróképzés",
+    ]
+}
