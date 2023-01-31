@@ -20,7 +20,6 @@ export default function Termine() {
 
                 <Seperator />
                 TODO
-                <Space h={"xl"} />
 
                 <FooterBody />
             </div>

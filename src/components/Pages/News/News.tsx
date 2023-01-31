@@ -41,25 +41,24 @@ export default function News() {
                 
                 <Seperator />
 
-                <Seperator />
-                    <Flex
-                        mih={50}
-                        gap="xl"
-                        justify="center"
-                        align="center"
-                        direction="row"
-                        wrap="wrap"
-                    >
-                        <NewsBox news_id={news1} />
-                        <NewsBox news_id={news2} />
-                        <NewsBox news_id={news1} />
-                        <NewsBox news_id={news2} />
-                        <NewsBox news_id={news1} />
-                        <NewsBox news_id={news2} />
-                        <NewsBox news_id={news1} />
-                        <NewsBox news_id={news2} />
-                        <NewsBox news_id={news1} />
-                    </Flex>
+                <Flex
+                    mih={50}
+                    gap="xl"
+                    justify="center"
+                    align="center"
+                    direction="row"
+                    wrap="wrap"
+                >
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                    <NewsBox news_id={news2} />
+                    <NewsBox news_id={news1} />
+                </Flex>
                 <FooterBody />
             </div>
         </>
