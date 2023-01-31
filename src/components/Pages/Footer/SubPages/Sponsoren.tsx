@@ -1,4 +1,4 @@
-import MyContent from "../../Utils/MyContent";
+import MyContent from "../../../Utils/MyContent";
 
 export default function Sponsoren() {
     return (

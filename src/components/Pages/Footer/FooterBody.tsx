@@ -4,11 +4,12 @@ import React from "react";
 import {footer} from "../../Content/FooterContent";
 import Copyright from "./Copyright";
 import TextToPage from "../../FloatingElement/TextToPage";
-import Verbaende from "./Verbaende";
-import Sponsoren from "./Sponsoren";
-import Imprint from "./Imprint";
-import Privacy from "./Privacy";
+import Verbaende from "./SubPages/Verbaende";
+import Sponsoren from "./SubPages/Sponsoren";
+import Imprint from "./SubPages/Imprint";
+import Privacy from "./SubPages/Privacy";
 import Seperator from "../Home/Seperator";
+import Satzung from "./SubPages/Satzung";
 
 export default function FooterBody() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -53,7 +54,7 @@ export default function FooterBody() {
                         title={<Title order={1}>{footer[current_lang][7]}</Title>}
                         content={<Sponsoren />}
                     />
-                    <Text c={"dimmed"}>{footer[current_lang][8]}</Text>
+                    <Text c={"dimmed"}><Satzung title={footer[current_lang][8]} /></Text>
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][9]}</Title>

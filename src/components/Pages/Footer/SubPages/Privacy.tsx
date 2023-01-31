@@ -1,9 +1,9 @@
 // @ts-nocheck
 import {List} from "@mantine/core";
 import React from "react";
-import MyTitle from "../../Utils/MyTitle";
-import MyContent from "../../Utils/MyContent";
-import {privacy} from "../../Content/FooterContent";
+import MyTitle from "../../../Utils/MyTitle";
+import MyContent from "../../../Utils/MyContent";
+import {privacy} from "../../../Content/FooterContent";
 
 export default function Privacy() {
     let current_lang = window.location.href.split("/")[3] as String;

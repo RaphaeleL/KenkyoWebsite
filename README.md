@@ -9,7 +9,7 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 - [ ] Kontoverbindung angeben für Sponsoren, ...
 - [ ] Wettkampfregeln als PDF
 - [ ] Prüfungsprogramm als PDF
-- [ ] Vereinssatzung als PDF
+- [x] Vereinssatzung als PDF
 - [ ] Kontaktseite
 - [ ] Übersicht der Pressemitteilungen
 - [ ] Instagram Link 
