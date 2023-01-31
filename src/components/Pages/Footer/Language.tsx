@@ -18,7 +18,7 @@ export default function Language() {
     function handleUng() { handle("un") }
 
     return (
-        <>
+        <div className={"FloatingLangChooser"}>
             <div onClick={handleJap} style={{cursor: "pointer", width: 50, position: "fixed", bottom: 0, margin: 10}}>
                 <Image
                     radius={"md"}
@@ -43,23 +43,6 @@ export default function Language() {
                     src={"https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/GER.png"}
                 />
             </div>
-        </>
-        /*<>
-            <Space h={"xl"} />
-            <Title order={4}>{footer[current_lang][0]}</Title>
-            <Flex
-                mih={50}
-                gap="md"
-                justify="center"
-                align="center"
-                direction="row"
-                wrap="wrap"
-            >
-                <Text className={"languageChooser"} onClick={handleGer}>Deutsch</Text>
-                <Text className={"languageChooser"} onClick={handleEng}>Englisch</Text>
-                <Text className={"languageChooser"} onClick={handleJap}>やまと</Text>
-                <Text className={"languageChooser"} onClick={handleUng}>Magyar</Text>
-            </Flex>
-        </>*/
+        </div>
     );
 }

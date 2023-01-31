@@ -7,6 +7,8 @@ import MyTitle from "../../Utils/MyTitle";
 import {items} from "../../Content/MenuContent";
 import Header from "../../Header/Header";
 import LandingPage from "../../LandingPage/LandingPage";
+import Persons from "./Persons";
+import Language from "../Footer/Language";
 
 export default function UeberUns() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -20,9 +22,11 @@ export default function UeberUns() {
                 <MyTitle order={1} content={items[current_lang][2]} />
 
                 <Seperator />
-                TODO
+
+                <Persons />
 
                 <FooterBody />
+                <Language />
             </div>
         </>
     );

@@ -20,7 +20,11 @@ export default function TextToPage(props: any) {
                 </Modal>
 
                 <Group position="center">
-                    <Text className={"Button"} onClick={() => {setOpened(true);}}>
+                    <Text
+                        c={props.color}
+                        className={"Button"}
+                        onClick={() => {setOpened(true);}}
+                    >
                         {props.openingText}
                     </Text>
                 </Group>

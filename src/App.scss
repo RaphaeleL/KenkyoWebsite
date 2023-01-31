@@ -37,10 +37,6 @@ a {
   width: 100%;
 }
 
-.Language {
-  cursor: pointer;
-}
-
 .App {
   text-align: center;
 
@@ -109,15 +105,6 @@ a {
       z-index: -1;
     }
 
-/*    .scrollHint {
-      position: absolute;
-      bottom: 0;
-      color: $white-1;
-      animation-name: move_scroll_hint;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-    }*/
-
   }
 
   .HomeBody {
@@ -173,6 +160,15 @@ a {
     border-top-left-radius: 50px;
   }
 
+  .VorstandBody {
+    .MyCard {
+      width: 450px;
+      .PersonInfoButton {
+
+      }
+    }
+  }
+
   .Footer {
     width: 100vw;
 
@@ -180,76 +176,14 @@ a {
       cursor: pointer;
     }
   }
-
 }
 
-/*
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 500px) {
   .App {
-    .LandingPage {
-      .TextContainer {
-        .Title {
-          font-size: 11vw;
-        }
-        .Subtitle {
-          font-size: 5vw;
-        }
+    .VorstandBody {
+      .MyCard {
+        width: 350px;
       }
     }
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .App {
-    .HeaderMobile {
-      .Menu {
-        ul li ul li {
-          font-size: 6vw;
-        }
-        ul li a {
-          font-size: 8vw;
-        }
-      }
-    }
-    .LandingPage {
-      .TextContainer {
-        .Title {
-          font-size: 15vw;
-        }
-        .Subtitle {
-          font-size: 8vw;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .App {
-    .HeaderMobile {
-      .Menu {
-        ul li a {
-          font-size: 8vw;
-        }
-      }
-    }
-    .LandingPage {
-      .TextContainer {
-        .Title {
-          font-size: 12vw;
-        }
-        .Subtitle {
-          font-size: 6vw;
-        }
-      }
-    }
-  }
-}
-
-@keyframes move_scroll_hint {
-  0% { bottom: 10px; }
-  25% { bottom: 20px; }
-  50% { bottom: 10px; }
-  75% { bottom: 20px; }
-  100% { bottom: 10px; }
-}*/

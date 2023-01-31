@@ -9,15 +9,19 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 - [ ] Kontoverbindung angeben für Sponsoren, ...
 - [ ] Verhaltensregeln Seite
 - [ ] Anmeldedaten: Kosten, PDFs, Angebote, Infos, ...
-- [ ] Kündigungsvorlage PDF 
+- [ ] Kündigungsvorlage PDF
+- [ ] Menu mit [Drawer](https://mantine.dev/core/drawer/)?
 - [ ] Datenschutzformular PDF
 - [ ] Kata, Bunkai, ... Videos Seite
 - [ ] Probetraining: Erklärung des Ablaufs, Infos, ... 
-- [ ] Über uns: Warum Karate?, Erfolge, Qualifikationen, ...
+- [ ] Über uns:
+  - [x] Layout  
+  - Inhalt
+    - [ ] Warum Karate?
+    - [ ] Erfolge
+    - [x] Qualifikationen
+    - [x] Position
 - [ ] Home: Technik, Strategie, Körperkontrolle, Fitness
-- [ ] Über uns: Farbiger Pinselstrich mit Gürtelfarbe
-- [ ] Zsolt als Sensei Kennzeichnen
-- [ ] Den Rest als Sempai
 - [ ] Single Page mit Cookies und Hooks
 - [ ] Etwas Parallax in die Body Pages
 - [x] Übersetzungen
