@@ -10,6 +10,7 @@ import MyContent from "../../Utils/MyContent";
 import {items} from "../../Content/MenuContent";
 import Header from "../../Header/Header";
 import LandingPage from "../../LandingPage/LandingPage";
+import Language from "../Footer/Language";
 
 function NewsBox(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -60,6 +61,7 @@ export default function News() {
                     <NewsBox news_id={news1} />
                 </Flex>
                 <FooterBody />
+                <Language />
             </div>
         </>
     );

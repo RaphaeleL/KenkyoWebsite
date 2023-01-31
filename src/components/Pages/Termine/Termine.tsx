@@ -7,6 +7,7 @@ import MyTitle from "../../Utils/MyTitle";
 import {items} from "../../Content/MenuContent";
 import Header from "../../Header/Header";
 import LandingPage from "../../LandingPage/LandingPage";
+import Language from "../Footer/Language";
 
 export default function Termine() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -22,6 +23,7 @@ export default function Termine() {
                 TODO
 
                 <FooterBody />
+                <Language />
             </div>
         </>
     );

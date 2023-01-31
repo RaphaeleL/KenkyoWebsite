@@ -10,6 +10,7 @@ import {dojo, times} from "../../Content/TrainerContent";
 import {items} from "../../Content/MenuContent";
 import Header from "../../Header/Header";
 import LandingPage from "../../LandingPage/LandingPage";
+import Language from "../Footer/Language";
 
 export default function Training() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -19,6 +20,7 @@ export default function Training() {
             <Header />
             <LandingPage />
             <div className={"TrainerBody"}>
+                <Language />
                 <Space h={"xl"} />
                 <MyTitle order={1} content={items[current_lang][1]}/>
 

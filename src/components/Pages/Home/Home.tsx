@@ -17,7 +17,6 @@ export default function Home() {
             <Header />
             <LandingPage />
             <div className={"HomeBody"}>
-                <Language />
                 <Space h={"xl"}/>
                 <MyTitle order={1} content={"Karateverein Kenkyo Rheinzabern e.V."}/>
 
@@ -28,6 +27,7 @@ export default function Home() {
                 TODO
 
                 <FooterBody/>
+                <Language />
             </div>
         </>
     );
