@@ -1,8 +1,11 @@
-import {Container, Group, Modal, ScrollArea, Text} from "@mantine/core";
+// @ts-nocheck
+import {Container, Group, Modal, ScrollArea, Spoiler, Text} from "@mantine/core";
 import React, {useState} from "react";
+import {textToPage} from "../Content/PersonsContent";
 
 export default function TextToPage(props: any) {
     const [opened, setOpened] = useState(false);
+    let current_lang = window.location.href.split("/")[3] as String;
 
     return(
         <div>
@@ -17,7 +20,12 @@ export default function TextToPage(props: any) {
                     size={props.size}
                 >
                     <ScrollArea style={{ height: 600 }}>
-                        {props.content}
+                        <Spoiler
+                            maxHeight={550}
+                            showLabel={textToPage[current_lang][0]}
+                            hideLabel={textToPage[current_lang][1]}>
+                            {props.content}
+                        </Spoiler>
                     </ScrollArea>
                 </Modal>
 
