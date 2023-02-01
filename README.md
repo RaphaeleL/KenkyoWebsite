@@ -14,7 +14,7 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 - [ ] Kündigungsvorlage PDF
 - [ ] Datenschutzformular PDF
 - [ ] Kata, Bunkai, ... Videos Seite
-- [ ] Probetraining: Erklärung des Ablaufs, Infos, ...
+- [x] Probetraining: Erklärung des Ablaufs, Infos, ...
 - [x] Scroll up Fixed Button 
 - [x] Home: Technik, Strategie, Körperkontrolle, Fitness
 - [x] Über uns:
