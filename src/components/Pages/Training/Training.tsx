@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 import {Space} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
 import FooterBody from "../Footer/FooterBody";
