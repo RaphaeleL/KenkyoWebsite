@@ -1,4 +1,4 @@
-import {Container, Group, Modal, Text} from "@mantine/core";
+import {Container, Group, Modal, ScrollArea, Text} from "@mantine/core";
 import React, {useState} from "react";
 
 export default function TextToPage(props: any) {
@@ -16,7 +16,9 @@ export default function TextToPage(props: any) {
                     title={props.title}
                     size={props.size}
                 >
-                    {props.content}
+                    <ScrollArea style={{ height: 600 }}>
+                        {props.content}
+                    </ScrollArea>
                 </Modal>
 
                 <Group position="center">

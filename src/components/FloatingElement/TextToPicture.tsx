@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Text, Image, Modal, Indicator, Tooltip} from "@mantine/core";
+import {Text, Image, Modal, Indicator, Tooltip, ScrollArea} from "@mantine/core";
 
 export default function FloatingTextToPicture(props: any) {
     const [opened, setOpened] = useState(false);
@@ -14,12 +14,14 @@ export default function FloatingTextToPicture(props: any) {
                 withCloseButton={true}
                 onClose={() => setOpened(false)}
             >
-                <Image
-                    radius="md"
-                    src={props.pic}
-                    alt="Hier sollte ein Bild sein ..."
-                    withPlaceholder
-                />
+                <ScrollArea style={{ height: 600 }}>
+                    <Image
+                        radius="md"
+                        src={props.pic}
+                        alt="Hier sollte ein Bild sein ..."
+                        withPlaceholder
+                    />
+                </ScrollArea>
             </Modal>
 
             <Tooltip label={props.label} position="right" withArrow>

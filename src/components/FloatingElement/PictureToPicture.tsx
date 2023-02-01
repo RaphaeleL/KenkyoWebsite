@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Text, Group, Image, Modal, Space} from "@mantine/core";
+import {Text, Group, Image, Modal, Space, ScrollArea} from "@mantine/core";
 
 export default function PictureToPicture(props: any) {
     const [opened, setOpened] = useState(false);
@@ -14,14 +14,17 @@ export default function PictureToPicture(props: any) {
                 withCloseButton={true}
                 onClose={() => setOpened(false)}
             >
-                <Image
-                    radius="md"
-                    src={props.pic}
-                    alt="Hier sollte ein Bild sein ..."
-                    withPlaceholder
-                />
-                <Space h={"xl"} />
-                <Text c="dimmed">{props.full_content}</Text>
+
+                <ScrollArea style={{ height: 600 }}>
+                    <Image
+                        radius="md"
+                        src={props.pic}
+                        alt="Hier sollte ein Bild sein ..."
+                        withPlaceholder
+                    />
+                    <Space h={"xl"} />
+                    <Text c="dimmed">{props.full_content}</Text>
+                </ScrollArea>
             </Modal>
 
             <Group>
