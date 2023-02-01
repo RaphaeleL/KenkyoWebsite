@@ -1,16 +1,27 @@
 // @ts-nocheck
-import {Flex, Title} from "@mantine/core";
+import {Button, Flex, Title} from "@mantine/core";
 import Seperator from "../../Home/Seperator";
 import {contact, footer} from "../../../Content/FooterContent";
 import React from "react";
 import TextToPage from "../../../FloatingElement/TextToPage";
 
-export default function Kontakt() {
+export default function Kontakt(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
     return (
         <TextToPage
+            openingText={
+                <>
+                    {props.button && (
+                        <Button color="gray" compact uppercase>
+                            {footer[current_lang][4]}
+                        </Button>
+                    )}
+                    {!props.button && (
+                        footer[current_lang][4]
+                    )}
+                </>
+            }
             size="xl"
-            openingText={footer[current_lang][4]}
             title={<Title order={1}>{footer[current_lang][4]}</Title>}
             content={
                 <>

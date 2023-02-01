@@ -1,5 +1,5 @@
 // @ts-nocheck
-import {Container, Group, Modal, ScrollArea, Spoiler, Text} from "@mantine/core";
+import {Container, Group, Modal, Spoiler, Text} from "@mantine/core";
 import React, {useState} from "react";
 import {textToPage} from "../Content/PersonsContent";
 
@@ -19,14 +19,12 @@ export default function TextToPage(props: any) {
                     title={props.title}
                     size={props.size}
                 >
-                    <ScrollArea style={{ height: 600 }}>
-                        <Spoiler
-                            maxHeight={550}
-                            showLabel={textToPage[current_lang][0]}
-                            hideLabel={textToPage[current_lang][1]}>
-                            {props.content}
-                        </Spoiler>
-                    </ScrollArea>
+                    <Spoiler
+                        maxHeight={550}
+                        showLabel={textToPage[current_lang][0]}
+                        hideLabel={textToPage[current_lang][1]}>
+                        {props.content}
+                    </Spoiler>
                 </Modal>
 
                 <Group position="center">
