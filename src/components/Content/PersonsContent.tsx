@@ -1,3 +1,22 @@
+export const textToPage = {
+    "de": [
+        "Zeige mehr",
+        "Verstecken"
+    ],
+    "en": [
+        "Show more",
+        "Hide"
+    ],
+    "ja": [
+        "と表示されます",
+        "隠す"
+    ],
+    "un": [
+        "További részletek",
+        "Rejtsd el"
+    ]
+}
+
 export const personsContent = {
     "de": [
         "Gründer",
@@ -62,51 +81,59 @@ export const raphaeleContent = {
         "Selbst ein Weg von tausend Meilen beginnt mit dem ersten Schritt.",
         "Sifu Han",
         "Deutscher Kung Fu Kader",
-        "Deutscher Kung Fu Vize Meister 2018",
+        "Süddeutscher Kung Fu Vize Meister 2018",
         "Europameisterschaft Kung Fu Qualifikation",
         "Karate Kampfrichterausbildung",
-        "TODO",
+        "Mein Name ist Raphaele Salvatore Licciardo. Als ich ein 6 jähriges Kind war, haben sich meine Eltern dazu entschlossen mich bei einem Karateverein anzumelden. Dort blieb ich bis 2015, denn dann hatte ich eine Schulbedingte Pause. Doch der Sport und dessen kontinuierliche Herausforderung fehlte mir. Schließlich ist es eine Kunst, die man nie vollständig beherrschen kann und es gibt immer etwas Neues zu lernen. Zum Beispiel die Tradition und Philosophien. 2016 habe ich mich dann entschlossen an einer Süd Shoalin Kung Fu Schule weiter zu trainieren. 2018 Qualifizierte ich mich für die erste Meisterschaft, die Süddeutschen, wo ich direkt zweiter wurde. Kurze Zeit später folgte die Qualifikation für die Europameisterschaften, aufgrund Corona habe ich nie daran teilgenommen. Trotz aller Erfolge vermisste ich Karate weiterhin, weswegen ich 2021 damit wieder anfing. Meiner Meinung nach Unterscheiden sich Kampfkünste wie Karate und Kung Fu von Kampfsportarten wie Boxen durch seine Fokussierung auf Disziplin, Selbstbeherrschung und Respekt. Es geht nicht darum, andere zu besiegen, sondern sich selbst zu verbessern und stärker zu werden. Während 2021 hielf mir unser Vorstand Zsolt nicht nur die Verloren Jahre wieder aufzuholen, sondern bereitete mich ebenfalls auf den ersten Dan vor. Insgesamt bin ich sehr dankbar für die Jahre, die ich mit Karate verbracht habe. Es hat mein Leben bereichert und ich werde es immer als Teil meiner Reise betrachten, um mich selbst zu verbessern. Meine Pläne für 2023 sind aktuell den Aufbau unseres Karate Dojo, gemeinsam mit den Nordeutschen Kung Fu Meisterschaften. Beruflich schließe ich 2023 mein Informatik Master of Science Studium ab und fange im gleichen Jahr mit meiner Promotion an.",
     ],
     "en": [
         "Even a journey of a thousand miles begins with the first step.",
         "Sifu Han",
         "German Kung Fu Squad",
-        "German Kung Fu Vice Champion 2018",
+        "Southern German Kung Fu Vice Champion 2018",
         "European Championship Kung Fu Qualification",
         "Karate Referee Training",
-        "TODO",
+        "My name is Raphaele Salvatore Licciardo. When I was a 6 year old child, my parents decided to enroll me in a karate club. I stayed there until 2015, because then I had a break due to school. But I missed the sport and its continuous challenge. After all, it is an art that you can never fully master and there is always something new to learn. For example, the tradition and philosophies. Then in 2016 I decided to continue training at a South Shoalin Kung Fu school. In 2018, I qualified for the first championship, the South German, where I was directly second. A short time later followed the qualification for the European Championships, due to Corona I never participated. Despite all the successes, I still missed karate, which is why I started again in 2021. In my opinion, martial arts like karate and kung fu differ from combat sports like boxing by its focus on discipline, self-control and respect. It's not about defeating others, but improving yourself and becoming stronger. During 2021, our board member Zsolt not only helped me make up for the lost years, but also prepared me for the first Dan. Overall, I am very grateful for the years I spent with karate. It has enriched my life and I will always consider it part of my journey to better myself. My plans for 2023 are currently building our karate dojo, along with the Northern German Kung Fu Championships. Professionally, I will complete my Computer Science Master of Science degree in 2023 and start my PhD in the same year."
     ],
     "ja": [
         "千里の道も一歩から ",
         "シーフーハン ",
         "ドイツ・カンフー部隊",
-        "ドイツ・カンフー副チャンピオン2018",
+        "南ドイツ・カンフー副チャンピオン2018 ",
         "ヨーロッパカンフーチャンピオンシップ予選",
         '空手審判員養成講座 "を開催します',
-        "TODO ",
+        '私の名前はラファエレ・サルバトーレ・リシャルドです。歳の時、両親は私を空手クラブに入門させることにしました。学校を休んだ2015年までそこにいました。しかし、スポーツとその継続的な挑戦が恋しくなったのです。結局のところ、完全にマスターすることはできない芸術であり、常に新しいことを学ぶことができるのです。例えば、伝統や哲学など。2016年、南翔嶺カンフー教室でトレーニングを続けることにしました。2018年は、最初の選手権である南ドイツ選手権の出場権を獲得し、2位となりました。しばらくして、ヨーロッパ選手権の出場権を獲得しましたが、コロナのせいで出場できませんでした。成功しても、やはり空手が恋しくなり、2021年に再び始めたのです。私の考えでは、空手やカンフーのような武道は、ボクシングのような格闘技と違い、規律や自制心、敬意に重きを置いています。人に勝つことではなく、自分を磨き、強くなること。2021年、理事のZsoltは、失われた年月を取り戻すだけでなく、初段への準備も手伝ってくれました。全体として、私は空手と過ごした年月にとても感謝しています。私の人生を豊かにしてくれましたし、これからも自分を高めるための旅の一部だと考えています。2023年の予定は、空手道場の建設と、北ドイツカンフー選手権大会の開催です。専門的には、2023年にコンピュータサイエンスの修士号を取得し、同年から博士号を取得する予定です。'
     ],
     "un": [
         "Még egy ezer mérföldes út is az első lépéssel kezdődik",
         "Sifu Han",
         "Német Kung Fu osztag",
-        "Német kung-fu albajnok 2018",
+        "Dél-német kung-fu albajnok 2018",
         "Kung Fu Európa-bajnokság selejtező",
         "Karate bíróképzés",
-        "TODO",
+        "A nevem Raphaele Salvatore Licciardo. Amikor 6 éves gyerek voltam, a szüleim úgy döntöttek, hogy beíratnak egy karate klubba. Ott maradtam 2015-ig, amikor is szünetet tartottam az iskolában. De hiányzott a sport és a folyamatos kihívás. Végül is ez egy olyan művészet, amelyet soha nem lehet teljesen elsajátítani, és mindig van valami új, amit meg lehet tanulni. Például a hagyomány és a filozófiák. 2016-ban úgy döntöttem, hogy egy South Shoalin Kung Fu iskolában folytatom a képzést. 2018-ban kvalifikáltam magam az első bajnokságra, a dél-német bajnokságra, ahol második lettem. Nem sokkal később kvalifikáltam magam az Európa-bajnokságra, de a Corona miatt nem vettem részt rajta. Minden sikerem ellenére még mindig hiányzott a karate, ezért kezdtem újra 2021-ben. Véleményem szerint az olyan harcművészetek, mint a karate és a kung-fu abban különböznek az olyan küzdősportoktól, mint a boksz, hogy a fegyelemre, az önuralomra és a tiszteletre helyezik a hangsúlyt. Nem arról szól, hogy legyőzzünk másokat, hanem arról, hogy fejlesszük magunkat és erősebbé váljunk. 2021-ben Zsolt elnökségi tagunk nemcsak segített bepótolni az elvesztegetett éveket, hanem felkészített az első danra is. Összességében nagyon hálás vagyok a karatéval töltött évekért. Gazdagította az életemet, és mindig úgy fogom tekinteni, hogy ez is része az önmagam jobbá tételéhez vezető utamnak. A 2023-as terveim között jelenleg a karate dojo építése szerepel, az Észak-Német Kung Fu Bajnoksággal együtt. Szakmailag 2023-ban fogom befejezni az informatikai mesterképzést, és ugyanebben az évben kezdem meg a PhD-képzést."
     ]
 }
 
 export const zsoltContent = {
     "de": [
         "Karate Kampfrichterausbildung",
+        "C-Trainer",
+        "B-Prüfer",
     ],
     "en": [
         "Karate Referee Training",
+        "C-Trainer",
+        "B-Examiner",
     ],
     "ja": [
         '空手審判員養成講座 "を開催します',
+        "Cトレーナー",
+        "B審査員",
     ],
     "un": [
         "Karate bíróképzés",
+        "C tréner",
+        "B vizsgáztató",
     ]
 }
