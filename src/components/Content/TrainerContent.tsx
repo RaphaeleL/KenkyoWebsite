@@ -71,6 +71,7 @@ export const offers = {
         "Kurzzeitmitgliedschaft",
         "Als einer der wenigen Kampfsport Verein / Schulen bietet Kenkyo erstmals Kurzzeitmitgliedschaften an. Für einmalig 30€ kannst du innerhalb 3 Monate so oft Trainieren kommen wie du möchtest. Danach wirst du automatisch gekündigt und kannst keine weitere Kurzzeitmitgliedschaft buchen. Hast du also weiterhin Interesse, stehen die obige Angebote offen.",
         "Monate",
+        "Zu den unten genannten Kosten, kommen ebenfalls 20€ Verwaltungsaufwand.",
     ],
     "en": [
         "Our Offers to You",
@@ -86,6 +87,7 @@ export const offers = {
         "Short Term Membership",
         "As one of the few martial arts club / schools Kenkyo offers for the first time short-term memberships. For a one-time fee of 30€ you can come as often as you want to train within 3 months. After that, you will be automatically canceled and can not book another short-term membership. So if you are still interested, the above offers are open.",
         "months",
+        "In addition to the costs mentioned below, there is also an administrative cost of 20€.",
     ],
     "ja": [
         "当社からお客様へのご提案",
@@ -101,6 +103,8 @@ export const offers = {
         '短期会員 "であること。',
         '数少ない武道クラブ／スクール "である建協が、初めて短期会員制を導入。1回30€で、3ヶ月間何度でもトレーニングができます。それ以降は自動的にキャンセルとなり、再度短期会員を予約することはできません。だから、もしあなたがまだ興味を持っているならば、上記のオファーはあなたに開かれたものです」。',
         "月 ",
+        "後述の費用に加えて、事務手数料として20ユーロがかかります。"
+
     ],
     "un": [
         "Ajánlataink Önnek",
@@ -116,5 +120,6 @@ export const offers = {
         "Rövid távú tagság",
         "A Kenkyo azon kevés harcművészeti klubok/iskolák egyikeként először kínál rövid távú tagságot. Egyszeri 30€-ért 3 hónapon belül annyiszor edzhetsz, ahányszor csak szeretnél. Ezt követően automatikusan törlésre kerül, és nem foglalhat újabb rövid távú tagságot. Tehát ha még mindig érdekel, a fenti ajánlatok nyitva állnak számodra.",
         "hónapok",
+        "Az alább említett költségeken kívül 20 euró adminisztrációs költség is felmerül.",
     ],
 }
