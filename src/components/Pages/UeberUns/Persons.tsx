@@ -15,6 +15,7 @@ import {
 import React from "react";
 import TextToPage from "../../FloatingElement/TextToPage";
 import {personsContent, raphaeleContent, zsoltContent} from "../../Content/PersonsContent";
+import Seperator from "../Home/Seperator";
 
 function MyCard(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -97,7 +98,38 @@ function MyCard(props: any) {
                     </Button>
                 }
                 title={<Title order={1}>{props.title}</Title>}
-                content={props.fulltext} />
+                content={
+                    <div>
+                        {props.fulltext}
+                        {props.champion && (
+                            <>
+                                <Seperator />
+                                <Text ta="left">{props.succ1}</Text>
+                                <Text ta="left">{props.succ2}</Text>
+                                <Text ta="left">{props.succ3}</Text>
+                                <Seperator />
+                                <Text ta="left">{props.succ4}</Text>
+                                <Seperator />
+
+                                {props.quote && props.quoteOriginDifferent && (
+                                    <Blockquote cite={"~ " + props.quoteOrigin}>
+                                        <Text ta="left" size="lg">
+                                            {props.quote}
+                                        </Text>
+                                    </Blockquote>
+                                )}
+
+                                {props.quote && !props.quoteOriginDifferent && (
+                                    <Blockquote>
+                                        <Text ta="left" size="lg">
+                                            {props.quote}
+                                        </Text>
+                                    </Blockquote>
+                                )}
+                            </>
+                        )}
+                    </div>
+                } />
         </Card>
     );
 }
@@ -123,6 +155,8 @@ export default function Persons() {
                     champion={true}
                     fulltext="TODO"
                     succ1={zsoltContent[current_lang][0]}
+                    succ2={zsoltContent[current_lang][1]}
+                    succ3={zsoltContent[current_lang][2]}
                 />
                 <MyCard
                     title={"Raphaele Salvatore  Licciardo"}
