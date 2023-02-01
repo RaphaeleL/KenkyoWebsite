@@ -5,6 +5,35 @@ export const page = {
     un_title: "Hírek",
 }
 
+export const home = {
+    "de": [
+        "Wir sind ein Goju Ryu Karateverein der enormen Wert auf Tradition, Stategie, Philosophie, Technik und Körperkontrolle legt.",
+        "Wir Wünschen euch Viel Spaß auf unserer Webseite und hoffen euch im Training Persönlich begrüßen zu dürfen.",
+        "Durch Mitgliedschaft im JKF sind wir in direktem Kontakt mit den Japanischen Großmeistern unserer Zeit.",
+        "Nach Oben",
+
+    ],
+    "en": [
+        "We are a Goju Ryu Karate club that places great emphasis on tradition, strategy, philosophy, technique and body control,",
+        "We wish you a lot of fun on our website and hope to welcome you personally in the training.",
+        "Through membership in the JKF, we are in direct contact with the Japanese Grandmasters of our time.",
+        "Go up",
+    ],
+    "ja": [
+        '伝統""戦略""哲学""技術""ボディコントロール "を重視する剛柔流空手道部です。',
+        'ウェブサイト "を楽しんでいただき、トレーニングへのご参加をお待ちしています。',
+        "JKFの会員になることで、私たちは現代の日本のグランドマスターと直接コンタクトをとることができます。",
+        "上 "
+    ],
+    "un": [
+        "Mi egy Goju Ryu Karate klub vagyunk, amely nagy hangsúlyt fektet a hagyományokra, a stratégiára, a filozófiára, a technikára és a testkontrollra",
+        "Reméljük, hogy tetszik a honlapunk, és szeretettel várjuk Önt a képzéseinken",
+        "A JKF tagság révén közvetlen kapcsolatban állunk korunk japán nagymestereivel.",
+        "Fel",
+    ]
+
+}
+
 export const succ = {
     "de": [
         "Dan",

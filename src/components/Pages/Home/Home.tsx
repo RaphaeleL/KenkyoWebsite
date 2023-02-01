@@ -6,8 +6,9 @@ import MyTitle from "../../Utils/MyTitle";
 import Header from "../../Header/Header";
 import LandingPage from "../../LandingPage/LandingPage";
 import Quote from "./Quote";
-import {succ} from "../../Content/HomeContent";
+import {home, succ} from "../../Content/HomeContent";
 import Language from "../Footer/Language";
+import MyContent from "../../Utils/MyContent";
 
 export default function Home() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -20,11 +21,11 @@ export default function Home() {
                 <Space h={"xl"}/>
                 <MyTitle order={1} content={"Karateverein Kenkyo Rheinzabern e.V."}/>
 
-                {/*<Success/>*/}
-
                 <Quote author={succ[current_lang][5]} text={succ[current_lang][4]}/>
 
-                TODO
+                <MyContent content={home[current_lang][0]} />
+                <MyContent content={home[current_lang][1]} />
+                <MyContent content={home[current_lang][2]} />
 
                 <FooterBody/>
                 <Language />

@@ -15,6 +15,7 @@ $white-3: #e7e4e4;
 $blur-black-1: #000000d0;
 $gray-1: #dedede;
 $red-1: #5b0204;
+$red-2: #981212;
 $gray-2: rgba(245, 244, 244, 0.44);
 
 .click:hover {
@@ -157,6 +158,12 @@ a {
     z-index: 100;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+  }
+
+  .TrainerBody {
+    .OfferCard {
+      border: 2px solid black;
+    }
   }
 
   .VorstandBody {
