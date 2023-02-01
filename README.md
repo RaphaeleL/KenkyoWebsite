@@ -6,6 +6,7 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 
 ## TODO
 
+- [ ] Ukrainisch
 - [ ] Single Page mit Cookies und Hooks
 - [ ] Home: Technik, Strategie, Körperkontrolle, Fitness
 - [ ] Menu mit [Drawer](https://mantine.dev/core/drawer/)?
@@ -17,6 +18,7 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 - [ ] Kündigungsvorlage PDF
 - [ ] Datenschutzformular PDF
 - [ ] Kata, Bunkai, ... Videos Seite
+- [ ] Scroll up Fixed Button 
 - [x] Über uns:
   - [x] Layout
   - [x] Inhalt
