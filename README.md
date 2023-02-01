@@ -8,17 +8,15 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 
 - [ ] Ukrainisch
 - [ ] Single Page mit Cookies und Hooks
-- [ ] Home: Technik, Strategie, Körperkontrolle, Fitness
 - [ ] Menu mit [Drawer](https://mantine.dev/core/drawer/)?
 - [ ] Probetraining: Erklärung des Ablaufs, Infos, ...
-- [ ] Etwas Parallax in die Body Pages
-- [ ] Kontoverbindung angeben für Sponsoren, ...
 - [ ] Verhaltensregeln Seite
 - [ ] Anmeldedaten: Kosten, PDFs, Angebote, Infos, ...
 - [ ] Kündigungsvorlage PDF
 - [ ] Datenschutzformular PDF
 - [ ] Kata, Bunkai, ... Videos Seite
-- [ ] Scroll up Fixed Button 
+- [x] Scroll up Fixed Button 
+- [x] Home: Technik, Strategie, Körperkontrolle, Fitness
 - [x] Über uns:
   - [x] Layout
   - [x] Inhalt

@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react';
+// @ts-nocheck
+import React, {useEffect} from 'react';
 import './App.scss';
-import {MantineProvider} from "@mantine/core";
+import {Affix, Button, MantineProvider, Transition} from "@mantine/core";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {NotificationsProvider, showNotification} from "@mantine/notifications";
 import Home from "./components/Pages/Home/Home";
@@ -8,8 +9,12 @@ import Training from "./components/Pages/Training/Training";
 import UeberUns from "./components/Pages/UeberUns/UeberUns";
 import News from "./components/Pages/News/News";
 import Termine from "./components/Pages/Termine/Termine";
+import {useWindowScroll} from "@mantine/hooks";
+import {AiOutlineArrowUp} from "@react-icons/all-files/ai/AiOutlineArrowUp";
+import {home} from "./components/Content/HomeContent";
 
 export default function App() {
+    const [scroll, scrollTo] = useWindowScroll();
 
     useEffect( () =>{
         let name = "";
@@ -42,12 +47,27 @@ export default function App() {
         }
     }, []);
 
+    let current_lang = window.location.href.split("/")[3] as String;
+
     return (
         <MantineProvider
             withGlobalStyles
             withNormalizeCSS
         >
             <NotificationsProvider>
+                <Affix position={{ bottom: 20, right: 20 }}>
+                    <Transition transition="slide-up" mounted={scroll.y > 0}>
+                        {(transitionStyles) => (
+                            <Button color="gray" compact uppercase
+                                leftIcon={<AiOutlineArrowUp size={16} />}
+                                style={transitionStyles}
+                                onClick={() => scrollTo({ y: 0 })}
+                            >
+                                {home[current_lang][3]}
+                            </Button>
+                        )}
+                    </Transition>
+                </Affix>
                 <div className="App" id="App">
                     <BrowserRouter>
                         <Routes>
