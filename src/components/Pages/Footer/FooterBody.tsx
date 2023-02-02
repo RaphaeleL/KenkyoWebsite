@@ -39,14 +39,25 @@ export default function FooterBody() {
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][5]}</Title>
-                    <Verbaende />
-                    <Sponsoren />
-                </Stack>
-                <Stack>
-                    <Title order={4}>{footer[current_lang][18]}</Title>
-                    <Begrifflichkeiten />
-                    <History />
-                    <Rules />
+
+                    <Flex
+                        mih={50}
+                        gap="md"
+                        justify="center"
+                        align="flex-start"
+                        direction="row"
+                        wrap="wrap"
+                    >
+                        <Stack>
+                            <Begrifflichkeiten />
+                            <History />
+                            <Rules />
+                        </Stack>
+                        <Stack>
+                            <Verbaende />
+                            <Sponsoren />
+                        </Stack>
+                    </Flex>
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][16]}</Title>
