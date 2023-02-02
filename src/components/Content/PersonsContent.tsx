@@ -14,6 +14,10 @@ export const textToPage = {
     "un": [
         "További részletek",
         "Rejtsd el"
+    ],
+    "uk": [
+        "Показати більше",
+        "Приховати"
     ]
 }
 
@@ -73,6 +77,20 @@ export const personsContent = {
         "További információk",
         "Helyettes igazgatótanács",
         "Monika Penderik vagyok. Felnőttként kezdtem el karatézni. Mindig is meg akartam tanulni, hogyan védjem meg magam, de kiderült, hogy ennél sokkal többről van szó. A karate fegyelemre és olyan mozdulatokra tanított meg, amelyekről soha nem gondoltam volna, hogy képes leszek rá. Ez a szerelem már több mint 10 éve tart, és 2021 decemberében megkaptam a fekete övet. Miután találkoztam a férjemmel, aki itt vezető edző, arra bátorított, hogy ne csak karatézni tanuljak, hanem tanítsak is. Ezért kezdtem el gyerekeket tanítani, amikor még csak barna öves voltam. Ma C edzőként tanítom a gyerekeket a karate első lépéseire.  Számomra nagyon szórakoztató látni, ahogy fejlődnek és örömüket lelik a karatéban. A sport mellett a hadsereg és a légierő csereügynökségének adminisztrációjában dolgozom.",
+    ],
+    "uk": [
+        "Засновник",
+        "Засновник",
+        "Рада директорів",
+        "управління додзьо",
+        "дитячий тренер",
+        "дитячий тренер",
+        "скарбник",
+        "секретар",
+        "Майстриня на всі руки",
+        "Більше інформації",
+        "Заступник директора",
+        "Я Моніка Пендерик. Я почав займатися карате в дорослому віці. Я завжди хотіла навчитися захищатися, але виявилося, що це набагато більше. Карате навчило мене дисципліні та рухам, які я ніколи не думав, що зможу виконувати. Ця любов триває вже понад 10 років, і в грудні 2021 року я отримав чорний пояс. Після знайомства з моїм чоловіком, який працює тут головним тренером, він заохотив мене не тільки вивчати карате, а й викладати. Тож я почав навчати дітей, коли у мене був лише коричневий пояс. Сьогодні, як тренер категорії С, я навчаю дітей перших кроків у карате.  Мені дуже цікаво спостерігати, як вони розвиваються і знаходять задоволення в карате. Окрім спорту, я працюю в адміністрації Служби обміну армії та повітряних сил"
     ]
 }
 
@@ -112,6 +130,15 @@ export const raphaeleContent = {
         "Kung Fu Európa-bajnokság selejtező",
         "Karate bíróképzés",
         "A nevem Raphaele Salvatore Licciardo. Amikor 6 éves gyerek voltam, a szüleim úgy döntöttek, hogy beíratnak egy karate klubba. Ott maradtam 2015-ig, amikor is szünetet tartottam az iskolában. De hiányzott a sport és a folyamatos kihívás. Végül is ez egy olyan művészet, amelyet soha nem lehet teljesen elsajátítani, és mindig van valami új, amit meg lehet tanulni. Például a hagyomány és a filozófiák. 2016-ban úgy döntöttem, hogy egy South Shoalin Kung Fu iskolában folytatom a képzést. 2018-ban kvalifikáltam magam az első bajnokságra, a dél-német bajnokságra, ahol második lettem. Nem sokkal később kvalifikáltam magam az Európa-bajnokságra, de a Corona miatt nem vettem részt rajta. Minden sikerem ellenére még mindig hiányzott a karate, ezért kezdtem újra 2021-ben. Véleményem szerint az olyan harcművészetek, mint a karate és a kung-fu abban különböznek az olyan küzdősportoktól, mint a boksz, hogy a fegyelemre, az önuralomra és a tiszteletre helyezik a hangsúlyt. Nem arról szól, hogy legyőzzünk másokat, hanem arról, hogy fejlesszük magunkat és erősebbé váljunk. 2021-ben Zsolt elnökségi tagunk nemcsak segített bepótolni az elvesztegetett éveket, hanem felkészített az első danra is. Összességében nagyon hálás vagyok a karatéval töltött évekért. Gazdagította az életemet, és mindig úgy fogom tekinteni, hogy ez is része az önmagam jobbá tételéhez vezető utamnak. A 2023-as terveim között jelenleg a karate dojo építése szerepel, az Észak-Német Kung Fu Bajnoksággal együtt. Szakmailag 2023-ban fogom befejezni az informatikai mesterképzést, és ugyanebben az évben kezdem meg a PhD-képzést."
+    ],
+    "uk": [
+        "Навіть подорож у тисячу миль починається з першого кроку",
+        "Сифу Хан",
+        "Німецький загін кунг-фу",
+        "Віце-чемпіон Південної Німеччини з кунг-фу 2018",
+        "Відбірковий турнір чемпіонату Європи з кунг-фу",
+        "Підготовка суддів з карате",
+        "Мене звати Рафаеле Сальваторе Ліччардо. Коли мені було 6 років, батьки вирішили записати мене в секцію карате. Я пробув там до 2015 року, бо потім у мене була перерва через навчання. Але я скучив за спортом і його постійними викликами. Зрештою, це мистецтво, яким ніколи не можна оволодіти повністю, і завжди є чому вчитися. Наприклад, традиції та філософії. У 2016 році я вирішив продовжити тренування в школі кунг-фу Південного Шоаліну. У 2018 році я пройшла відбір на перший чемпіонат, чемпіонат Південної Німеччини, де посіла друге місце. Через деякий час я пройшов відбір на чемпіонат Європи, але через корону так і не взяв участі. Незважаючи на всі мої успіхи, я все ще сумував за карате, тому в 2021 році я знову почав займатися. На мою думку, бойові мистецтва, такі як карате і кунг-фу, відрізняються від бойових видів спорту, таких як бокс, тим, що вони зосереджені на дисципліні, самоконтролі та повазі. Йдеться не про перемогу над іншими, а про вдосконалення себе і ставання сильнішими. Протягом 2021 року наш член правління Жолт не тільки допоміг мені надолужити втрачені роки, а й підготував мене до першого Дану. Загалом, я дуже вдячний за роки, проведені з карате. Він збагатив моє життя, і я завжди вважатиму його частиною мого шляху до самовдосконалення. У моїх планах на 2023 рік - побудувати наше карате-додзьо, а також провести чемпіонат Північної Німеччини з кунг-фу. У професійному плані я отримаю ступінь магістра комп'ютерних наук у 2023 році і того ж року почну писати докторську дисертацію"
     ]
 }
 
@@ -135,5 +162,10 @@ export const zsoltContent = {
         "Karate bíróképzés",
         "C tréner",
         "B vizsgáztató",
+    ],
+    "uk": [
+        "Підготовка суддів з карате",
+        "Тренер С",
+        "Б-екзаменатор",
     ]
 }

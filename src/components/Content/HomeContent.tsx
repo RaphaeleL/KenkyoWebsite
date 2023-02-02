@@ -30,6 +30,12 @@ export const home = {
         "Reméljük, hogy tetszik a honlapunk, és szeretettel várjuk Önt a képzéseinken",
         "A JKF tagság révén közvetlen kapcsolatban állunk korunk japán nagymestereivel.",
         "Fel",
+    ],
+    "uk": [
+        "Ми - клуб карате Годзю-рю, який приділяє велику увагу традиціям, стратегії, філософії, техніці та контролю над тілом",
+        "Ми сподіваємося, що вам сподобається наш сайт, і запрошуємо вас на наші тренінги",
+        "Завдяки членству в JKF ми маємо прямий контакт з японськими гросмейстерами нашого часу",
+        "Нагорі",
     ]
 
 }
@@ -67,4 +73,12 @@ export const succ = {
         "A világegyetemben minden lélegzik keményen és lágyan",
         "Chōjun Miyagi",
     ],
+    "uk": [
+        "Ден",
+        "екзаменатор",
+        "тренування",
+        "чемпіони",
+        "Усе у Всесвіті дихає то жорстко, то м'яко",
+        "Чоджун Міяґі",
+    ]
 }

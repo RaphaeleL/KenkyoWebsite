@@ -160,6 +160,20 @@ export default function App() {
                                         setShowNews={setShowNews}
                                     />
                                 } />
+                                <Route index path="/uk" element={
+                                    <Body
+                                        showHome={showHome}
+                                        showTraining={showTraining}
+                                        showUeberUns={showUeberUns}
+                                        showTermine={showTermine}
+                                        showNews={showNews}
+                                        setShowHome={setShowHome}
+                                        setShowTraining={setShowTraining}
+                                        setShowUeberUns={setShowUeberUns}
+                                        setShowTermine={setShowTermine}
+                                        setShowNews={setShowNews}
+                                    />
+                                } />
                             </Route>
                         </Routes>
                     </BrowserRouter>
