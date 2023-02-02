@@ -14,6 +14,7 @@ import Pruefungsordnung from "./SubPages/Pruefungsordnung";
 import Wettkampfregeln from "./SubPages/Wettkampfregeln";
 import Kontakt from "./SubPages/Kontakt";
 import History from "./SubPages/History/History";
+import Rules from "./SubPages/Rules";
 
 export default function FooterBody() {
     let current_lang = window.location.href.split("/")[3] as String;
@@ -45,7 +46,7 @@ export default function FooterBody() {
                     <Title order={4}>{footer[current_lang][18]}</Title>
                     <Begrifflichkeiten />
                     <History />
-                    <Text c={"dimmed"}>{footer[current_lang][10]}</Text>
+                    <Rules />
                 </Stack>
                 <Stack>
                     <Title order={4}>{footer[current_lang][16]}</Title>

@@ -788,3 +788,284 @@ export const sponsor = {
         "Ми з нетерпінням чекаємо на вашу відповідь. Але зараз спонсори та донори поки що:",
     ]
 }
+
+export const verhalten = {
+    "de": [
+        "Dojo-Regeln",
+
+        "Höflichkeitsformen beachten",
+        "Kurze Verbeugung beim Betreten und Verlassen des Dojos. Begrüßung und Verabschiedung des/r Trainers/in. Biete dem/r Trainer/in dieselbe Achtung, die auch er/sie Dir entgegenbringt. Behandle alle Trainingsteilnehmer so, wie Du selbst behandelt werden möchtest.",
+
+        "Prüfung vor Trainingsbeginn",
+        "Kurze Finger- und Fußnägel, Schmuck ablegen, Unfallgefahren ausschließen.",
+        "Biete anderen Vereinsmitgliedern eine/n angenehme/n Trainingspartner/in.",
+        "Schützer griffbereit",
+
+        "Für das Karatetraining (nicht für SV) gilt zusätzlich:",
+        "Wir trainieren barfuß.",
+        "Ausnahme: Stoppersocken/Gymnastikschläppchen/Schuhe ohne Schnürsenkel/Kanten werden nur bei ärztlicher Verordnung oder akuter Erkältung zugelassen.",
+        "Gi und Gürtel korrekt angezogen.",
+        "Ausnahme: Bei Temperaturen > 30° C dürfen Trainingsteilnehmer alternativ zum Gi-Oberteil ein weißes T-Shirt tragen. Die Temperatur wird durch den Trainer festgestellt.",
+
+        "Trainingsbetrieb",
+        "An Übungen und Gymnastik intensiv teilnehmen, Gespräche unterlassen, Aufmerksamkeit, Konzentration.",
+        "Bei dem/r Trainer/in anmelden, Seiza vorne seitlich.",
+        "Kurz den/die Trainer/in informieren.",
+        "Nur einzeln, bei dem/r Trainer/in abmelden und unverzüglich bei dem/r Trainer/in rückmelden. Die Hallentür zu den Toiletten bleibt in der Zeit geöffnet.",
+
+        "Traineranweisungen",
+        "Den Anweisungen des/r Trainers/in ist unbedingt Folge zu leisten. Er/Sie ist für den geordneten Ablauf des Trainings verantwortlich.",
+
+        "Krankheiten/Medikamente",
+        "Liegt eine Erkrankung vor, die zu lebensbedrohlichen Situationen führen kann, wie z. B. Diabetes oder Asthma, so ist der/die Trainer/in darüber schriftlich in Kenntnis zu setzen und zu informieren, wie er/sie gegebenenfalls helfen kann, vorausgesetzt der Arzt stimmt per Attest der Aufnahme eines Trainings zu.",
+
+        "Keine Gewalt",
+        "Achtung vor der Gesundheit des/r Trainingspartners/in. Unnötige Härte insbesondere beim Freikampf, aber auch bei allen anderen Übungen, vermeiden. Die Kondition und die Grenzen der Partner respektieren und berücksichtigen. Keinerlei Anwendung von physischer, psychischer oder sexualisierter Gewalt.",
+
+        "Trainingsgäste",
+        "Trainingsgäste sind mit Zustimmung des/der jeweiligen Trainers/in willkommen.",
+
+        "Missverständnisse",
+        "Missverständnisse im Training sind anschließend an das Training im direkten Gespräch mit dem/der Trainer/in zu klären (im Zweifelsfall Vorstand einschalten).",
+
+        "Elektronik, Spielzeug, Waffen",
+        "Die Benutzung von elektronischen Geräten (z. B. Smartphone) und Spielzeug ist während des Trainings, auch während der Trinkpausen, verboten. Das Mitbringen und Mitführen von Waffen (z. B. Messer, Schreckschusspistole) jeglicher Art ist strengstens untersagt, selbst wenn sie nicht aus der Tasche ausgepackt werden.",
+
+        "Alkohol und Rauschmittel",
+        "Alkohol und Rauschmittel dürfen nicht ins Training mitgebracht oder mitgeführt werden. Die Trainingsteilnehmer müssen absolut nüchtern sein. Keine Macht den Drogen!",
+
+        "Aufsicht",
+        "Die Trainer, Ersatztrainer und sonstige Vereinsorgane übernehmen die Aufsicht minderjähriger Trainingsteilnehmer/innen nur zu den offiziellen Trainingszeiten in der Sporthalle (bei heißem Wetter auch auf Pamina-Wiese), beginnend mit dem Angrüßen, endend mit dem Abgrüßen.",
+        "Der Verein übernimmt insbesondere keine Aufsicht in der Umkleide und sonstigen umliegenden Räumen/Gängen. Sämtliche persönliche Gegenstände der Trainingsteilnehmer/innen sind mit in die Halle zu nehmen.",
+        "Minderjährige Trainingsteilnehmer/innen dürfen bei gegebener Veranlassung nur dann das Training vorzeitig verlassen, wenn die Eltern/Sorgeberechtigten eine schriftliche Einwilligung erteilt haben.",
+        "Der Verein übernimmt keine Aufsicht bei anderen Veranstaltungen (z. B. Feste, Ausflüge, Lehrgänge, Lauftreff), es sei denn, es wird zu einer bestimmten Veranstaltung eine besondere Vereinbarung getroffen.",
+
+        "Mitwirkung der Eltern/Sorgeberechtigten",
+        "Es ist ausdrücklich erwünscht, dass die Eltern/Sorgeberechtigten der Teilnehmer/innen des Kinder-/Jugendtrainings vor und nach dem Training (bis zum Angrüßen, im Anschluss an das Abgrüßen) ihre Aufsichtspflicht wahrnehmen und gelegentlich beim Training und bei Lehrgängen zuschauen.",
+
+        "Benehmen außerhalb des Dojos",
+        "Kein Missbrauch mit dem Namen oder der Sportart treiben. Die Gesetze der Notwehr beachten. Denn Angeben schadet unserem Sport.",
+    ],
+    "en": [
+        "Dojo Rules",
+
+        "Observe forms of politeness",
+        "Short bow when entering and leaving the dojo. Greet and bid farewell to the trainer. Offer the instructor the same respect that he/she offers you. Treat all training participants as you would like to be treated.",
+
+        "Check before training begins.",
+        "Short fingernails and toenails, remove jewelry, eliminate accident hazards.",
+        "Provide a pleasant training partner for other club members.",
+        "Protectors handy",
+
+        "For karate training (not for SV), the following also applies:",
+        "We train barefoot.",
+        "Exception: stopper socks/gymnastic slippers/shoes without laces/edges will only be allowed if prescribed by a doctor or if you have an acute cold.",
+        "Gi and belt properly donned.",
+        "Exception: in temperatures > 30° C, training participants may wear a white T-shirt as an alternative to the gi top. The temperature will be determined by the trainer.",
+
+        "Training operation",
+        "Participate intensively in exercises and gymnastics, refrain from conversations, attention, concentration.",
+        "Sign in with the trainer, seiza at the front side.",
+        "Briefly inform the trainer.",
+        "One at a time only, sign out with the trainer and report back to the trainer immediately. The hall door to the restrooms will remain open during this time.",
+
+        "Coach Instructions",
+        "The instructions of the trainer must be followed at all times. He/she is responsible for the orderly conduct of the training session.",
+
+        "Illnesses/Medications",
+        "If there is an illness that can lead to life-threatening situations, such as diabetes or asthma, the trainer must be informed of this in writing and informed of how he/she can help if necessary, provided the doctor agrees to the start of a training session by certificate.",
+        "No violence",
+        "Respect for the health of the training partner. Avoid unnecessary harshness, especially in free-fighting, but also in all other exercises. Respect and take into account the condition and limits of the partners. No use of physical, psychological or sexual violence.",
+
+        "Training guests",
+        "Training guests are welcome with the approval of the respective trainer.",
+
+        "Misunderstandings",
+        "Misunderstandings in the training are to be clarified afterwards in direct conversation with the trainer (if in doubt, involve the board).",
+
+        "Electronics, toys, weapons",
+        "The use of electronic devices (e.g. smartphone) and toys is prohibited during training, including during drinking breaks. Bringing or carrying weapons (e.g., knives, scare guns) of any kind is strictly prohibited, even if they are not unpacked from the bag.",
+
+        "Alcohol and intoxicants",
+        "Alcohol and intoxicants may not be brought or carried into training. Training participants must be absolutely sober. No power to drugs!",
+
+        "Supervision",
+        "The coaches, substitute coaches and other club organs take over the supervision of underage training participants only during the official training times in the sports hall (in hot weather also on Pamina meadow), beginning with the greeting, ending with the farewell.",
+        "In particular, the club does not provide supervision in the locker room and other surrounding rooms/corridors. All personal belongings of the training participants are to be taken into the hall.",
+        "Underage training participants may only leave the training prematurely if there is a reason to do so and their parents/guardians have given their written consent.",
+        "The club does not provide supervision at other events (e.g. parties, excursions, training courses, running club) unless a special agreement is made for a particular event.",
+
+        "Participation of parents/guardians",
+        "It is expressly desired that the parents/guardians of the participants of the children's/youth training exercise their supervisory duty before and after the training (up to the greeting, following the farewell) and occasionally watch the training and courses.",
+
+        "Behavior outside the dojo",
+        "Do not abuse the name or the sport. Observe the laws of self-defense. Because showing off harms our sport.",
+    ],
+    "ja": [
+        "道場ルール ",
+
+        "礼儀作法 ",
+        "道場に入るとき、出るとき、短いお辞儀をする。監督に挨拶して別れる。トレーナーがあなたに示すのと同じように、敬意を払ってください。すべての参加者に、自分がされたいように接する」。",
+
+        "トレーニング開始前の確認",
+        "爪と足の爪を短くし、アクセサリーを外し、事故のリスクをなくす",
+        "他の部員にとって気持ちの良いトレーニングパートナーになること",
+        "プロテクターハンディ",
+
+        '空手の練習用（SV用ではありません）"には、次のようなものもあります。',
+        "裸足でトレーニング",
+        "「例外：ストッパー付きソックス/体操用スリッパ/ひも/縁のない靴は、医師の処方による場合、または急性の風邪の場合のみ許可されます",
+        "Giとベルトがきちんと締まっていること",
+        "「例外：気温が30℃を超える場合、トレーニング参加者はGIトップスの代わりに白いTシャツを着用することができる。温度はトレーナーが決める」。",
+
+        "トレーニング ",
+        "体操や運動に集中的に参加する、おしゃべりを控える、注意を払う、集中する",
+        'トレーナーと一緒にサインインしてください。" "正座してください。" "正座してください。',
+        "トレーナーに簡潔に伝える",
+        "一度に一人だけ、コーチと一緒にサインアウトして、すぐにコーチに報告してください。この間、トイレに通じるホールのドアは開けたままです」。",
+
+        "コーチの指示 ",
+        "監督の指示には、常に従わなければならない。トレーニングの秩序ある運営に責任を持つ」。",
+
+        '病気・薬 "について',
+        "糖尿病や喘息など、命にかかわるような病気がある場合、医師が証明書によってトレーニングの開始を承諾することを条件に、トレーナーはその旨を書面で伝え、必要な場合はどのように支援できるかを知らなければならない ",
+        '暴力 "はダメ。',
+        'トレーニングパートナーの健康 "を尊重すること。特にフリーファイトだけでなく、他のすべての運動においても、不必要な厳しさを避けること。パートナーの体調や限界を尊重し、配慮すること。身体的、心理的、性的な暴力を用いないこと」。',
+
+        "ゲストを鍛える ",
+        "トレーニングゲストは、各トレーナーの同意のもとで歓迎します",
+
+        '誤解 "を生む。',
+        "研修での誤解は、研修後に研修講師と直接会話して明らかにすること（疑問がある場合は役員会を巻き込む）",
+
+        "電子機器、玩具、武器",
+        '飲み会 "を含むトレーニング中の電子機器（スマートフォンなど）や玩具の使用は禁止されています。いかなる種類の武器（ナイフ、空砲など）の持ち込み・携帯も、バッグから取り出していない状態でも厳禁です。',
+
+        "アルコールと酩酊物質",
+        'アルコール "や "酩酊物 "を訓練中に持ち込んだり、携帯したりすることはできません。トレーニング参加者は、完全にシラフであることが必要です。ドラッグに力を入れない！」。',
+
+        "監督 ",
+        '「トレーナー、代理トレーナー、その他のクラブ機関は、スポーツホール（暑い時期にはパミーナ草原も）での公式練習時間中に限り、挨拶に始まり見送りに終わる未成年者のトレーニング参加者の監督を引き継ぎます。',
+        "特に、更衣室やその周辺の部屋・廊下での監視は想定していません。研修参加者の私物は、すべて会場内に持ち込むこと。",
+        "未成年者は、理由があり、保護者が書面で同意した場合に限り、トレーニングセッションを早退することができます。",
+        "クラブは、特定の行事のために特別な契約が結ばれていない限り、その他の行事（パーティー、遠足、トレーニングコース、ランニングクラブなど）での監督を行いません。",
+
+        "保護者の参加 ",
+        "児童/青少年研修参加者の保護者が、研修の前後（挨拶まで、見送りまで）に監督義務を行使し、時には研修やコースを見学することが明示的に望まれる。",
+
+        "道場外での振る舞い ",
+        '名前 "や "スポーツ "を悪用しないこと。自衛のための法律を守る。見せびらかすと我々のスポーツに害を及ぼすから」。'
+    ],
+    "un": [
+        "Dojo szabályok",
+
+        "Tartsd be az udvariassági formákat",
+        "Rövid meghajlás a dojóba való belépéskor és kilépéskor. Üdvözölje és búcsúzzon el az autóbusztól. Ajánlja fel az edzőnek ugyanazt a tiszteletet, amit ő is tanúsít ön iránt. Minden résztvevővel úgy bánj, ahogy szeretnéd, hogy veled is bánjanak",
+
+        "Ellenőrizze az edzés megkezdése előtt",
+        "Rövid körmök és lábkörmök, ékszerek eltávolítása, balesetveszély kiküszöbölése.",
+        "Légy kellemes edzőpartner más klubtagok számára",
+        "Védelmezők kéznél",
+
+        "A karate edzésre (nem SV) a következők is érvényesek:",
+        "Mezítláb edzünk.",
+        "Kivétel: A stoplis zokni/tornapapucs/cipő fűző/szegély nélküli cipő csak orvosi utasításra vagy akut megfázás esetén engedélyezett",
+        "Gi és öv megfelelően viselve.",
+        "Kivétel: 30 °C feletti hőmérsékleten az edzésen résztvevők a gi felső helyett fehér pólót is viselhetnek. A hőmérsékletet az edző határozza meg.",
+
+        "Kiképzési művelet",
+        "Vegyen részt intenzíven a gyakorlatokban és a tornában, tartózkodjon a beszédtől, figyeljen, koncentráljon",
+        "Jelentkezz be az edzőnél, Seiza az elülső részen.",
+        "Röviden tájékoztassa az oktatót",
+        "Egyszerre csak egy, jelentkezzen ki az edzőnél, és azonnal jelentkezzen vissza az edzőnél. A mosdókhoz vezető folyosó ajtaja ez idő alatt nyitva marad.",
+
+        "Edzői utasítások",
+        "Az edző utasításait mindenkor be kell tartani. Ő felel a képzés szabályos lebonyolításáért.",
+
+        "Betegségek/gyógyszerek",
+        "Ha olyan betegség áll fenn, amely életveszélyes helyzetekhez vezethet, például cukorbetegség vagy asztma, erről írásban tájékoztatni kell az edzőt, és tájékoztatni kell arról, hogy szükség esetén hogyan tud segíteni, feltéve, hogy az orvos igazolással hozzájárul a képzés megkezdéséhez.",
+        "Nincs erőszak",
+        "Az edzőpartner egészségének tiszteletben tartása. Kerülje a felesleges keménységet, különösen a szabadfogású harcban, de minden más gyakorlatban is. Tisztelje és vegye figyelembe a partnerek állapotát és korlátait. Fizikai, pszichológiai vagy szexuális erőszak alkalmazása tilos.",
+
+        "Vendégek képzése",
+        "Az edzésre érkező vendégeket az adott edző beleegyezésével fogadjuk.",
+
+        "Félreértések",
+        "A képzés során felmerült félreértéseket a képzés után a trénerrel való közvetlen beszélgetés során kell tisztázni (kétség esetén vonja be a testületet).",
+
+        "Elektronika, játékok, fegyverek",
+        "Elektronikus eszközök (pl. okostelefonok) és játékok használata tilos az edzés alatt, beleértve az ivószüneteket is. Bármilyen fegyver (pl. kés, vaktöltény) behozatala és szállítása szigorúan tilos, még akkor is, ha nincs kicsomagolva a táskából.",
+
+        "Alkohol és bódítószerek",
+        "Alkohol és bódítószerek nem hozhatók vagy vihetők be az edzésre. A képzés résztvevőinek teljesen józannak kell lenniük. Nincs hatalom a drogokhoz!",
+
+        "Felügyelet",
+        "Az edzők, utánpótlásedzők és más klubszervek csak a hivatalos edzésidőszakokban, a sportcsarnokban (meleg időben a Pamina réten is), a köszöntéssel kezdődő és a búcsúztatással végződő edzéseken veszik át a kiskorú edzésen résztvevők felügyeletét",
+        "A klub különösen az öltözőben és a környező helyiségekben/folyosókon nem vállal felügyeletet. A képzésben résztvevők minden személyes holmiját be kell vinni a terembe,",
+        "Kiskorúak csak akkor hagyhatják el idő előtt az edzést, ha erre okuk van, és szüleik/gondviselőik írásban beleegyeztek,",
+        "A klub nem biztosít felügyeletet más rendezvényeken (pl. partik, kirándulások, edzések, futóklub), kivéve, ha az adott eseményre külön megállapodás születik.",
+
+        "A szülők/gondviselők részvétele",
+        "Kifejezetten kívánatos, hogy a gyermek/ifjúsági képzésben résztvevők szülei/gondviselői a képzés előtt és után (a köszöntésig, a búcsúztatást követően) gyakorolják felügyeleti kötelezettségüket, és alkalmanként figyelemmel kísérjék a képzést, tanfolyamokat.",
+
+        "Viselkedés a dojón kívül",
+        "Ne élj vissza a névvel vagy a sportággal. Tartsa be az önvédelem törvényeit. Mert a magamutogatás árt a sportágunknak.",
+    ],
+    "uk": [
+        "Правила додзьо",
+
+        "Дотримуйтесь форм ввічливості",
+        "Короткий уклін при вході та виході з додзьо. Привітайтеся і попрощайтеся з тренером. Проявляйте до тренера таку ж повагу, яку він/вона виявляє до вас. Ставтеся до всіх учасників так, як би ви хотіли, щоб ставилися до вас",
+
+        "Перевірте перед початком тренування",
+        "Короткі нігті на руках і ногах, зняти прикраси, усунути ризик нещасних випадків",
+        "Бути приємним партнером по тренуваннях для інших членів клубу",
+        "Зручні протектори",
+
+        "Для тренувань з карате (не для SV) також застосовується наступне:",
+        "Ми тренуємося босоніж",
+        "Виняток: шкарпетки/гімнастичні капці/взуття без шнурків/кантів дозволяється носити лише за призначенням лікаря або в разі гострої застуди",
+        "Гі і ремінь затягнуті належним чином.",
+        "Виняток: при температурі > 30° C учасники тренінгу можуть носити білу футболку як альтернативу гіпоалергенному топу. Температуру визначає тренер",
+
+        "Тренувальна операція",
+        "Інтенсивно брати участь у вправах і гімнастиці, утримуватися від розмов, бути уважним, зосередженим",
+        "Запишіться до тренера, Сейза спереду",
+        "Коротко поінформуйте тренера",
+        "Тільки по одному, виходьте з тренером і негайно звітуйте тренеру. Двері до туалетів у коридорі залишаються відчиненими протягом цього часу",
+
+        "Інструкції для тренера",
+        "Інструкцій тренера потрібно дотримуватися завжди. Він/вона відповідає за організоване проведення тренінгу",
+
+        "Хвороби/лікування",
+        "Якщо є захворювання, яке може призвести до небезпечних для життя ситуацій, наприклад, діабет або астма, тренер повинен бути проінформований про це в письмовій формі та проінформований про те, як він/вона може допомогти в разі необхідності, за умови, що лікар дає згоду на початок тренінгу за допомогою довідки",
+
+        "Ніякого насильства",
+        "Повага до здоров'я партнера по тренінгу. Уникайте непотрібної жорсткості, особливо у вільній боротьбі, а також у всіх інших вправах. Поважайте і враховуйте стан і обмеження партнерів. Без застосування фізичного, психологічного чи сексуального насильства",
+
+        "Тренування гостей,",
+        "Гості на тренінги запрошуються за згодою відповідного тренера",
+
+        "Непорозуміння",
+        "Непорозуміння під час тренінгу з'ясовувати в безпосередній розмові з тренером після тренінгу (у разі сумнівів - викликати комісію)",
+
+        "Електроніка, іграшки, зброя",
+        "Використання електронних пристроїв (наприклад, смартфонів) та іграшок заборонено під час тренувань, у тому числі під час перерв на пиття. Приносити і носити зброю (наприклад, ножі, холості пістолети) в будь-якому вигляді суворо заборонено, навіть якщо вона не розпакована з сумки",
+
+        "Алкоголь та інтоксиканти",
+        "Алкоголь та інтоксикаційні речовини не можна приносити або проносити на тренінг. Учасники тренінгу повинні бути абсолютно тверезими. Ніякої влади наркотикам!",
+
+        "Нагляд",
+        "Тренери, заступники тренерів та інші органи клубу здійснюють нагляд за неповнолітніми учасниками тренувань тільки під час офіційних тренувань у спортивному залі (у спекотну погоду також на галявині Паміна), починаючи з привітання і закінчуючи прощанням",
+        "Зокрема, клуб не передбачає жодного нагляду в роздягальні та інших прилеглих приміщеннях/коридорах. Всі особисті речі учасники тренінгу повинні взяти з собою в зал,",
+        "Неповнолітні можуть покинути тренінг достроково лише за наявності поважної причини та письмової згоди батьків/опікунів,",
+        "Клуб не забезпечує нагляд на інших заходах (наприклад, вечірках, екскурсіях, навчальних курсах, бігових клубах), якщо тільки не укладена спеціальна угода для конкретного заходу",
+
+        "Участь батьків/опікунів",
+        "Дуже бажано, щоб батьки/опікуни учасників дитячого/молодіжного вишколу виконували свої наглядові обов'язки до і після вишколу (аж до привітання, після прощання) та час від часу спостерігали за вишколом і курсами",
+
+        "Поведінка за межами додзьо",
+        "Не зловживайте назвою чи видом спорту. Дотримуйтесь законів самозахисту. Тому що хвастощі шкодять нашому виду спорту",
+
+    ]
+}
