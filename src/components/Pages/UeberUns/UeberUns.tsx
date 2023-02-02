@@ -5,8 +5,6 @@ import Seperator from "../Home/Seperator";
 import {Space} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
 import {items} from "../../Content/MenuContent";
-import Header from "../../Header/Header";
-import LandingPage from "../../LandingPage/LandingPage";
 import Persons from "./Persons";
 import Language from "../Footer/Language";
 
@@ -15,8 +13,6 @@ export default function UeberUns() {
 
     return (
         <>
-            <Header />
-            <LandingPage />
             <div className={"VorstandBody"}>
                 <Space h={"xl"} />
                 <MyTitle order={1} content={items[current_lang][2]} />

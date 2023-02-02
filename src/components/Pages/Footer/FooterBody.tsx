@@ -3,7 +3,6 @@ import {Flex, Stack, Text, Title} from "@mantine/core";
 import React from "react";
 import {footer} from "../../Content/FooterContent";
 import Copyright from "./Copyright";
-import TextToPage from "../../FloatingElement/TextToPage";
 import Verbaende from "./SubPages/Verbaende";
 import Sponsoren from "./SubPages/Sponsoren";
 import Imprint from "./SubPages/Imprint";

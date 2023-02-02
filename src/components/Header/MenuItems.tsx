@@ -2,42 +2,67 @@
 import React from "react";
 import {items} from "../Content/MenuContent";
 import {Text} from "@mantine/core";
-import NoPage from "../Pages/NoPage";
 
-export default function MenuItems() {
+export default function MenuItems(props: any) {
     let current_lang = window.location.href.split("/")[3] as String;
 
-    if (current_lang.length === 2) {
-        return (
-            <ul>
-                <li>
-                    <a href={"/" + current_lang + "/home"}>
-                        <Text>{items[current_lang][0]}</Text>
-                    </a>
-                </li>
-                <li>
-                    <a href={"/" + current_lang + "/training"}>
-                        <Text>{items[current_lang][1]}</Text>
-                    </a>
-                </li>
-                <li>
-                    <a href={"/" + current_lang + "/ueber-uns"}>
-                        <Text>{items[current_lang][2]}</Text>
-                    </a>
-                </li>
-                <li>
-                    <a href={"/" + current_lang + "/termine"}>
-                        <Text c={"dimmed"}>{items[current_lang][3]}</Text>
-                    </a>
-                </li>
-                <li>
-                    <a href={"/" + current_lang + "/news"}>
-                        <Text>{items[current_lang][4]}</Text>
-                    </a>
-                </li>
-            </ul>
-        );
+    function handleHome() {
+        props.showHome(true);
+        props.showTraining(false);
+        props.showUeberUns(false);
+        props.showTermine(false);
+        props.showNews(false);
     }
-    return (<NoPage />);
 
+    function handleTraining() {
+        props.showHome(false);
+        props.showTraining(true);
+        props.showUeberUns(false);
+        props.showTermine(false);
+        props.showNews(false);
+    }
+
+    function handleUeberUns() {
+        props.showHome(false);
+        props.showTraining(false);
+        props.showUeberUns(true);
+        props.showTermine(false);
+        props.showNews(false);
+    }
+
+    function handleTermine() {
+        props.showHome(false);
+        props.showTraining(false);
+        props.showUeberUns(false);
+        props.showTermine(true);
+        props.showNews(false);
+    }
+
+    function handleNews() {
+        props.showHome(false);
+        props.showTraining(false);
+        props.showUeberUns(false);
+        props.showTermine(false);
+        props.showNews(true);
+    }
+
+    return (
+        <ul>
+            <li>
+                <Text className="MenuItem" onClick={handleHome}>{items[current_lang][0]}</Text>
+            </li>
+            <li>
+                <Text className="MenuItem" onClick={handleTraining}>{items[current_lang][1]}</Text>
+            </li>
+            <li>
+                <Text className="MenuItem" onClick={handleUeberUns}>{items[current_lang][2]}</Text>
+            </li>
+            <li>
+                <Text className="MenuItem" onClick={handleTermine}>{items[current_lang][3]}</Text>
+            </li>
+            <li>
+                <Text className="MenuItem" onClick={handleNews}>{items[current_lang][4]}</Text>
+            </li>
+        </ul>
+    );
 }

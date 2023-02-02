@@ -8,8 +8,6 @@ import {news1, news2} from "../../Content/NewsContent";
 import MyTitle from "../../Utils/MyTitle";
 import MyContent from "../../Utils/MyContent";
 import {items} from "../../Content/MenuContent";
-import Header from "../../Header/Header";
-import LandingPage from "../../LandingPage/LandingPage";
 import Language from "../Footer/Language";
 
 function NewsBox(props: any) {
@@ -34,8 +32,6 @@ export default function News() {
 
     return (
         <>
-            <Header />
-            <LandingPage />
             <div className={"NewsBody"}>
                 <Space h={"xl"} />
                 <MyTitle order={1} content={items[current_lang][4]} />

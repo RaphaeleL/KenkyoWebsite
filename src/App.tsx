@@ -1,8 +1,8 @@
 // @ts-nocheck
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {Affix, Button, MantineProvider, Transition} from "@mantine/core";
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {NotificationsProvider, showNotification} from "@mantine/notifications";
 import Home from "./components/Pages/Home/Home";
 import Training from "./components/Pages/Training/Training";
@@ -12,6 +12,32 @@ import Termine from "./components/Pages/Termine/Termine";
 import {useWindowScroll} from "@mantine/hooks";
 import {AiOutlineArrowUp} from "@react-icons/all-files/ai/AiOutlineArrowUp";
 import {home} from "./components/Content/HomeContent";
+import Header from "./components/Header/Header";
+import LandingPage from "./components/LandingPage/LandingPage";
+
+function Body(props: any) {
+    return (
+        <>
+            <Header
+                showHome={props.setShowHome}
+                showTraining={props.setShowTraining}
+                showUeberUns={props.setShowUeberUns}
+                showTermine={props.setShowTermine}
+                showNews={props.setShowNews}/>
+            <LandingPage
+                showHome={props.showHome}
+                showTraining={props.showTraining}
+                showUeberUns={props.showUeberUns}
+                showTermine={props.showTermine}
+                showNews={props.showNews}/>
+            {props.showHome && <Home />}
+            {props.showTraining && <Training />}
+            {props.showUeberUns && <UeberUns />}
+            {props.showTermine && <Termine />}
+            {props.showNews && <News />}
+        </>
+    );
+}
 
 export default function App() {
     const [scroll, scrollTo] = useWindowScroll();
@@ -49,6 +75,12 @@ export default function App() {
 
     let current_lang = window.location.href.split("/")[3] as String;
 
+    const [showHome, setShowHome] = useState(true);
+    const [showTraining, setShowTraining] = useState(false);
+    const [showUeberUns, setShowUeberUns] = useState(false);
+    const [showTermine, setShowTermine] = useState(false);
+    const [showNews, setShowNews] = useState(false);
+
     return (
         <MantineProvider
             withGlobalStyles
@@ -59,9 +91,9 @@ export default function App() {
                     <Transition transition="slide-up" mounted={scroll.y > 0}>
                         {(transitionStyles) => (
                             <Button color="gray" compact uppercase
-                                leftIcon={<AiOutlineArrowUp size={16} />}
-                                style={transitionStyles}
-                                onClick={() => scrollTo({ y: 0 })}
+                                    leftIcon={<AiOutlineArrowUp size={16} />}
+                                    style={transitionStyles}
+                                    onClick={() => scrollTo({ y: 0 })}
                             >
                                 {home[current_lang][3]}
                             </Button>
@@ -72,31 +104,62 @@ export default function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route path="/">
-                                <Route path="/" element={<Navigate to="/de/home" />}></Route>
-                                {/* GERMAN */}
-                                <Route index path="/de/home" element={<Home />} />
-                                <Route index path="/de/training" element={<Training />} />
-                                <Route index path="/de/ueber-uns" element={<UeberUns />} />
-                                <Route index path="/de/termine" element={<Termine />} />
-                                <Route index path="/de/news" element={<News />} />
-                                {/* ENGLISCH */}
-                                <Route index path="/en/home" element={<Home />} />
-                                <Route index path="/en/training" element={<Training />} />
-                                <Route index path="/en/ueber-uns" element={<UeberUns />} />
-                                <Route index path="/en/termine" element={<Termine />} />
-                                <Route index path="/en/news" element={<News />} />
-                                {/* JAPANESE */}
-                                <Route index path="/ja/home" element={<Home />} />
-                                <Route index path="/ja/training" element={<Training />} />
-                                <Route index path="/ja/ueber-uns" element={<UeberUns />} />
-                                <Route index path="/ja/termine" element={<Termine />} />
-                                <Route index path="/ja/news" element={<News />} />
-                                {/* HUNGARY */}
-                                <Route index path="/un/home" element={<Home />} />
-                                <Route index path="/un/training" element={<Training />} />
-                                <Route index path="/un/ueber-uns" element={<UeberUns />} />
-                                <Route index path="/un/termine" element={<Termine />} />
-                                <Route index path="/un/news" element={<News />} />
+                                <Route index path="/de" element={
+                                    <Body
+                                        showHome={showHome}
+                                        showTraining={showTraining}
+                                        showUeberUns={showUeberUns}
+                                        showTermine={showTermine}
+                                        showNews={showNews}
+                                        setShowHome={setShowHome}
+                                        setShowTraining={setShowTraining}
+                                        setShowUeberUns={setShowUeberUns}
+                                        setShowTermine={setShowTermine}
+                                        setShowNews={setShowNews}
+                                    />
+                                } />
+                                <Route index path="/en" element={
+                                    <Body
+                                        showHome={showHome}
+                                        showTraining={showTraining}
+                                        showUeberUns={showUeberUns}
+                                        showTermine={showTermine}
+                                        showNews={showNews}
+                                        setShowHome={setShowHome}
+                                        setShowTraining={setShowTraining}
+                                        setShowUeberUns={setShowUeberUns}
+                                        setShowTermine={setShowTermine}
+                                        setShowNews={setShowNews}
+                                    />
+                                } />
+                                <Route index path="/ja" element={
+                                    <Body
+                                        showHome={showHome}
+                                        showTraining={showTraining}
+                                        showUeberUns={showUeberUns}
+                                        showTermine={showTermine}
+                                        showNews={showNews}
+                                        setShowHome={setShowHome}
+                                        setShowTraining={setShowTraining}
+                                        setShowUeberUns={setShowUeberUns}
+                                        setShowTermine={setShowTermine}
+                                        setShowNews={setShowNews}
+                                    />
+                                } />
+                                <Route index path="/un" element={
+                                    <Body
+                                        showHome={showHome}
+                                        showTraining={showTraining}
+                                        showUeberUns={showUeberUns}
+                                        showTermine={showTermine}
+                                        showNews={showNews}
+                                        setShowHome={setShowHome}
+                                        setShowTraining={setShowTraining}
+                                        setShowUeberUns={setShowUeberUns}
+                                        setShowTermine={setShowTermine}
+                                        setShowNews={setShowNews}
+                                    />
+                                } />
                             </Route>
                         </Routes>
                     </BrowserRouter>

@@ -3,8 +3,6 @@ import React from "react";
 import FooterBody from "../Footer/FooterBody";
 import {Space} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
-import Header from "../../Header/Header";
-import LandingPage from "../../LandingPage/LandingPage";
 import Quote from "./Quote";
 import {home, succ} from "../../Content/HomeContent";
 import Language from "../Footer/Language";
@@ -15,8 +13,6 @@ export default function Home() {
 
     return (
         <>
-            <Header />
-            <LandingPage />
             <div className={"HomeBody"}>
                 <Space h={"xl"}/>
                 <MyTitle order={1} content={"Karateverein Kenkyo Rheinzabern e.V."}/>
@@ -26,7 +22,6 @@ export default function Home() {
                 <MyContent content={home[current_lang][0]} />
                 <MyContent content={home[current_lang][1]} />
                 <MyContent content={home[current_lang][2]} />
-
                 <FooterBody/>
                 <Language />
             </div>

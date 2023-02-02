@@ -72,8 +72,12 @@ a {
       li {
         float: right;
 
-        a {
+        a, .MenuItem {
           padding: 10px 12px;
+        }
+
+        .MenuItem:hover {
+          cursor: pointer;
         }
       }
     }

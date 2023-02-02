@@ -1,19 +1,18 @@
 import React from "react";
 import Logo from "../Header/Logo";
 
-export default function LandingPage() {
-    let page = window.location.href.split("/")[4] as String;
+export default function LandingPage(props: any) {
     let url = "";
 
-    if (page === "home") {
+    if (props.showHome) {
         url = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-5.jpeg";
-    } else if (page === "training") {
+    } else if (props.showTraining) {
         url = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-8.jpeg";
-    } else if (page === "ueber-uns") {
+    } else if (props.showUeberUns) {
         url = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-1.jpeg";
-    } else if (page === "termine") {
+    } else if (props.showTermine) {
         url = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-3.jpeg";
-    } else if (page === "news") {
+    } else if (props.showNews) {
         url = "https://raw.githubusercontent.com/RaphaeleL/KenkyoWebsite/main/src/assets/LandingPage-7.jpeg";
     }
 
@@ -23,9 +22,6 @@ export default function LandingPage() {
 
             <Logo />
 
-{/*            <div  className={"scrollHint"} >
-                <SlArrowDown size={40}/>
-            </div>*/}
         </div>
     );
 }
