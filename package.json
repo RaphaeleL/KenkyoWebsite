@@ -1,7 +1,7 @@
 {
   "name": "kenkyo",
   "version": "0.1.0",
-  "homepage": "/de/home",
+  "homepage": "/de",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
