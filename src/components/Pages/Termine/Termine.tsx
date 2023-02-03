@@ -16,7 +16,9 @@ export default function Termine() {
                 <MyTitle order={1} content={items[current_lang][3]} />
 
                 <Seperator />
-                TODO
+
+                Aktuell haben wir noch keine Termine.
+
                 <FooterBody/>
                 <Language />
             </div>
