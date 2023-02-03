@@ -6,27 +6,26 @@ import {Center, Space, Table} from "@mantine/core";
 import MyTitle from "../../Utils/MyTitle";
 import {items} from "../../Content/MenuContent";
 import Language from "../Footer/Language";
+import {termine, termineHeader} from "../../Content/TermineContent";
 
 export default function Termine() {
     let current_lang = window.location.href.split("/")[3] as String;
 
-    const elements = [
-        { event: "Lehrgang", date: "01.01.1970", location: "Schifferstadt (GER)", organizer: "Hoffmann", info: "-" },
-        { event: "Wettkampf", date: "01.01.1970", location: "Lissabon (POR)", organizer: "JKF", info: "-" },
-        { event: "C-Trainer Ausbildung", date: "01.01.1970", location: "Frankfurt a. M. (GER)", organizer: "DKV", info: "Mindestens 1. Dan" },
-        { event: "Kyu Prüfungen", date: "01.01.1970", location: "Karate Kenkyo (GER)", organizer: "Kenkyo", info: "-" },
-        { event: "Dan Prüfung", date: "01.01.1970", location: "Walldürn (GER)", organizer: "DKV", info: "-" },
-    ];
 
-    const rows = elements.map((element) => (
-        <tr key={element.name}>
-            <td><Center>{element.event}</Center></td>
-            <td><Center>{element.date}</Center></td>
-            <td><Center>{element.location}</Center></td>
-            <td><Center>{element.organizer}</Center></td>
-            <td><Center>{element.info}</Center></td>
-        </tr>
-    ));
+    let rows: any;
+    for (let i = 0; i < 6; i++) {
+        //@ts-ignore
+        rows = termine[current_lang].map((e) => (
+            //@ts-ignore
+            <tr key={e.name}>
+                <td><Center>{e.event}</Center></td>
+                <td><Center>{e.date}</Center></td>
+                <td><Center>{e.location}</Center></td>
+                <td><Center>{e.organizer}</Center></td>
+                <td><Center>{e.info}</Center></td>
+            </tr>
+        ));
+    }
 
     return (
         <>
@@ -38,11 +37,11 @@ export default function Termine() {
                 <Table verticalSpacing="xs">
                     <thead>
                     <tr>
-                        <th><Center>Event</Center></th>
-                        <th><Center>Datum</Center></th>
-                        <th><Center>Ort</Center></th>
-                        <th><Center>Ausrichter</Center></th>
-                        <th><Center>Info's</Center></th>
+                        <th><Center>{termineHeader[current_lang][0]}</Center></th>
+                        <th><Center>{termineHeader[current_lang][1]}</Center></th>
+                        <th><Center>{termineHeader[current_lang][2]}</Center></th>
+                        <th><Center>{termineHeader[current_lang][3]}</Center></th>
+                        <th><Center>{termineHeader[current_lang][4]}</Center></th>
                     </tr>
                     </thead>
                     <tbody>{rows}</tbody>
