@@ -6,9 +6,9 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 
 ## TODO
 
-- [ ] Termin Seite
 - [ ] Kündigungsvorlage PDF
 - [ ] Datenschutzformular PDF
+- [x] Termin Seite
 - [x] Verhaltensregeln Seite
 - [x] Ukrainisch
 - [x] Single Page statt Multi Page
