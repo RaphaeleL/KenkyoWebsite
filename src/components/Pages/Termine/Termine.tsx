@@ -42,7 +42,7 @@ export default function Termine() {
                         <th><Center>Datum</Center></th>
                         <th><Center>Ort</Center></th>
                         <th><Center>Ausrichter</Center></th>
-                        <th><Center>Info"s</Center></th>
+                        <th><Center>Info's</Center></th>
                     </tr>
                     </thead>
                     <tbody>{rows}</tbody>
