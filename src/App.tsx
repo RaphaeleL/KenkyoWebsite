@@ -57,6 +57,11 @@ export default function App() {
             name = "hun-banner"
             title = "Fordítási hiba";
             text = "A fordítás részben hibás lehet. Elnézést kérünk az esetleges pontatlanságokért. Ha bármilyen hibát észlel, kérjük, ne habozzon kapcsolatba lépni velünk.";
+        } else if (window.location.href.split("/")[3] === "uk") {
+            show = true;
+            name = "hun-banner"
+            title = "Помилка перекладу";
+            text = "Переклад може бути частково неправильним. Приносимо вибачення за можливі неточності. Якщо ви помітили будь-які помилки, будь ласка, зв'яжіться з нами";
         }
         if (show) {
             //show = false;
