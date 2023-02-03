@@ -26,6 +26,11 @@ Die Offizielle Webseite des 'Karateverein Kenkyo Rheinzabern'
 - [x] Begrifflichkeiten Seite
 - [x] Pfade der URL anpassen 
 
+### Subdomains
+
+- [ ] Kurzmitgliedschaften Handle Page
+- [ ] Mitgliederbereich mit Videos 
+
 ### Postponed 
 
 - [ ] Menu mit [Drawer](https://mantine.dev/core/drawer/)? (*postponed*)
