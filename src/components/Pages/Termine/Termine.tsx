@@ -22,7 +22,6 @@ export default function Termine() {
                 <td><Center>{e.date}</Center></td>
                 <td><Center>{e.location}</Center></td>
                 <td><Center>{e.organizer}</Center></td>
-                <td><Center>{e.info}</Center></td>
             </tr>
         ));
     }
@@ -34,14 +33,13 @@ export default function Termine() {
                 <MyTitle order={1} content={items[current_lang][3]} />
 
                 <Seperator />
-                <Table verticalSpacing="xs">
+                <Table verticalSpacing="xs" highlightOnHover>
                     <thead>
                     <tr>
                         <th><Center>{termineHeader[current_lang][0]}</Center></th>
                         <th><Center>{termineHeader[current_lang][1]}</Center></th>
                         <th><Center>{termineHeader[current_lang][2]}</Center></th>
                         <th><Center>{termineHeader[current_lang][3]}</Center></th>
-                        <th><Center>{termineHeader[current_lang][4]}</Center></th>
                     </tr>
                     </thead>
                     <tbody>{rows}</tbody>
