@@ -2,7 +2,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {Affix, Button, MantineProvider, Transition} from "@mantine/core";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import {NotificationsProvider, showNotification} from "@mantine/notifications";
 import Home from "./components/Pages/Home/Home";
 import Training from "./components/Pages/Training/Training";
@@ -109,6 +109,7 @@ export default function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route path="/">
+                                <Route path="/" element={<Navigate to="/de" />}></Route>
                                 <Route index path="/de" element={
                                     <Body
                                         showHome={showHome}
