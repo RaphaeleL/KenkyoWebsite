@@ -25,16 +25,16 @@ export default function Begrifflichkeiten() {
     ];
 
     let zahlen = [
-        { japan: "ichi",    deutsch: "eins",    hinweis: "itsch" },
-        { japan: "ni",      deutsch: "zwei",    hinweis: "-" },
-        { japan: "san",     deutsch: "drei",    hinweis: "-" },
-        { japan: "shi",     deutsch: "vier",    hinweis: "tschi" },
-        { japan: "go",      deutsch: "fünf",    hinweis: "-" },
-        { japan: "roku",    deutsch: "sechs",   hinweis: "rok" },
-        { japan: "shichi",  deutsch: "sieben",  hinweis: "sitsch" },
-        { japan: "hachi",   deutsch: "acht",    hinweis: "hatsch" },
-        { japan: "kyû",     deutsch: "neuen",   hinweis: "qu" },
-        { japan: "jû",      deutsch: "zehn",    hinweis: "tschu" },
+        { japan: "ichi",    deutsch: "1",    hinweis: "itsch" },
+        { japan: "ni",      deutsch: "2",    hinweis: "-" },
+        { japan: "san",     deutsch: "3",    hinweis: "-" },
+        { japan: "shi",     deutsch: "4",    hinweis: "tschi" },
+        { japan: "go",      deutsch: "5",    hinweis: "-" },
+        { japan: "roku",    deutsch: "6",   hinweis: "rok" },
+        { japan: "shichi",  deutsch: "7",  hinweis: "sitsch" },
+        { japan: "hachi",   deutsch: "8",    hinweis: "hatsch" },
+        { japan: "kyû",     deutsch: "9",   hinweis: "qu" },
+        { japan: "jû",      deutsch: "10",    hinweis: "tschu" },
     ];
 
     const grusformelRow = grusformeln.map((grusformel) => (
